@@ -1,7 +1,7 @@
 baseURL = "https://canodelacuadra.github.io/"
 languageCode = "en-en"
 publishDir = "docs"
-title = "Jardín de Desarrollo Web"
+title = "canodelacuadra"
 theme = "hugo-theme-bootstrap4-blog"
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
