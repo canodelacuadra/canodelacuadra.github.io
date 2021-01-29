@@ -24,9 +24,10 @@ summaryLength = 50
   name = "Apuntes web distribuidas"
   url = "https://example.org"
 
-#[[menu.navbar]]
-#  name = "Link 1"
-#  url = "https://example.org"
+[[menu.navbar]]
+  name = "Acerca"
+  title ="Acerca"
+   url = "/acerca/"
 
 
 # Theme variables
