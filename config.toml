@@ -95,3 +95,4 @@ DefaultContentLanguage = "es"
   #date_format = "02.01.2006"
 
 # vim: ts=2 sw=2 et
+enableGitInfo = true
