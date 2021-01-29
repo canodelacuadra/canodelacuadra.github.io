@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Jardín de Desarrollo Web</title>
+    <title>hugo on canodelacuadra</title>
     <link>https://canodelacuadra.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on Jardín de Desarrollo Web</description>
+    <description>Recent content in hugo on canodelacuadra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-en</language>
-    <lastBuildDate>Fri, 29 Jan 2021 10:51:38 +0100</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mi primer artículo</title>
-      <link>https://canodelacuadra.github.io/2021/01/mi-primer-art%C3%ADculo/</link>
-      <pubDate>Fri, 29 Jan 2021 10:51:38 +0100</pubDate>
+      <title>Getting Started with Hugo</title>
+      <link>https://canodelacuadra.github.io/2014/04/getting-started-with-hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://canodelacuadra.github.io/2021/01/mi-primer-art%C3%ADculo/</guid>
-      <description>Este será un blog con hugo</description>
+      <guid>https://canodelacuadra.github.io/2014/04/getting-started-with-hugo/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.</description>
     </item>
     
   </channel>
