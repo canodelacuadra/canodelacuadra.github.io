@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/node/</link>
+    <description>Recent content in Node on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Mon, 16 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creando una web con Webpack - Node</title>
+      <link>https://canodelacuadra.github.io/posts/webpack/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/webpack/</guid>
+      <description>Los modulos de Javascript permiten la importación y exportación de código entre diferentes ficheros Javascript. Webpack es una herramienta que permite compilar módulos de JavaScript. Dada una gran cantidad de archivos, webpack, genera un solo archivo (o algunos archivos) que ejecutan su aplicación web.
+ En la actualidad, muchos sitios web ya no están escritos sólo HTML simple y un poco de JavaScript opcional. A menudo, están completamente creados por JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Instalar Node JS en Windows</title>
+      <link>https://canodelacuadra.github.io/posts/instalar-node-windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/instalar-node-windows/</guid>
+      <description>Node.js es un popular entorno de ejecución de código abierto que puede ejecutar JavaScript fuera del navegador mediante el motor JavaScript V8, que es el mismo motor que se utiliza para ejecutar JavaScript en el navegador web Google Chrome . El tiempo de ejecución de Node se usa comúnmente para crear herramientas de línea de comandos y servidores web
+ Por qué aprender y usar node.js y npm Para usar casi cualquier herramienta de desarrollo basada en JavaScript, necesitará saber cómo usar npm y Node.</description>
+    </item>
+    
+  </channel>
+</rss>

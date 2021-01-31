@@ -3,83 +3,203 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://canodelacuadra.github.io/2014/09/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://canodelacuadra.github.io/acerca/</loc>
-    <lastmod>2021-01-29T11:43:12+01:00</lastmod>
+    <lastmod>2021-01-29T11:54:11+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://canodelacuadra.github.io/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://canodelacuadra.github.io/posts/comandos-basicos-sql/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://canodelacuadra.github.io/posts/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/2014/04/hugo-template-primer/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/categories/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/2014/04/getting-started-with-hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://canodelacuadra.github.io/tags/snipets/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://canodelacuadra.github.io/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://canodelacuadra.github.io/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://canodelacuadra.github.io/posts/sql-pdo-php/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://canodelacuadra.github.io/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://canodelacuadra.github.io/tags/git/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/git/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/herramientas/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/webpack/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/javascript/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/node/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/servidor-http-server-node/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/about/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/api/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/archivos-batch/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/consola/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/contacto/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-11-30-crear-db-shell-xampp./</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-11-22-crear-virtualhost/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/linea-comandos/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/emmet/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-11-29-que-es-laravel./</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-11-30-instalacion-laravel./</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-12-16-vuepress-instalacion/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-12-26-npm/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/instalar-node-windows/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/interfaz-usuario/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-12-05-rutas-laravel./</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-12-06-controlador-laravel./</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/libreria-curl/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/l%C3%ADneadecomandos/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-12-16-generador-sitios-estaticos/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/lista-comandos/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/script-bash/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2021-01-07-sqlite-php/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/simbolo-sistema/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/2020-11-28-vscode/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/visualstudiocode/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   
 </urlset>

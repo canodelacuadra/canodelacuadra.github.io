@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VisualStudioCode on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/visualstudiocode/</link>
+    <description>Recent content in VisualStudioCode on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language><atom:link href="https://canodelacuadra.github.io/tags/visualstudiocode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emmet</title>
+      <link>https://canodelacuadra.github.io/posts/emmet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/emmet/</guid>
+      <description>Emmet (anteriormente Zen Codding) nos facilita escribir HTML y CSS,entre otros, por medio de abreviaturas, las cuales se expanden en código html o CSS, tras ejecutarse. Es un plugin que viene ( en algunos editores por defecto) con un buen número de editores de texto avanzados : Notepad++, Visual Studio Code, Brackets, Atom, Sublime Text&amp;hellip;
+Por ejemplo, para escribir un div con id container sería esctibir
+div#container y al dar a la tecla intro se expandiría</description>
+    </item>
+    
+  </channel>
+</rss>

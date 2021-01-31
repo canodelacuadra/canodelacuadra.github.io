@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>consola on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/consola/</link>
+    <description>Recent content in consola on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language><atom:link href="https://canodelacuadra.github.io/tags/consola/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>un script de shell con bash (V)</title>
+      <link>https://canodelacuadra.github.io/posts/script-bash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/script-bash/</guid>
+      <description>Los scripts de Bash son una heramienta poderosa para la administración y el desarrollo del sistema. Al principio puede ser aterrador pero puede ser sencillo.
+Bash es un shell de Unix, que es una interfaz de línea de comandos (CLI) para interactuar con un sistema operativo (SO). Cualquier comando que pueda ejecutar desde la línea de comandos puede usarse en un script bash. Las secuencias de comandos se utilizan para ejecutar una serie de comandos.</description>
+    </item>
+    
+  </channel>
+</rss>

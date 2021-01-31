@@ -3,6 +3,7 @@ languageCode: es-es
 defaultContentLanguage: es
 title: Canodelacuadra
 theme: cupper-hugo-theme
+publishDir: "docs"
 #googleAnalytics: UA-123456789-1
 #disqusShortname: yourdiscussshortname
 enableGitInfo: true

@@ -1,40 +1,270 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on canodelacuadra</title>
+    <title>Blog on Canodelacuadra</title>
     <link>https://canodelacuadra.github.io/posts/</link>
-    <description>Recent content in Posts on canodelacuadra</description>
+    <description>Recent content in Blog on Canodelacuadra</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-en</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>es-es</language><atom:link href="https://canodelacuadra.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Creating a New Theme</title>
-      <link>https://canodelacuadra.github.io/2014/09/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>Comandos básicos de SQL</title>
+      <link>https://canodelacuadra.github.io/posts/comandos-basicos-sql/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://canodelacuadra.github.io/2014/09/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme.</description>
+      <guid>https://canodelacuadra.github.io/posts/comandos-basicos-sql/</guid>
+      <description>Sintaxis SQL SQL (Structured Query Language) es un lenguaje que usamos para interactuar con un sistema de administración de bases de datos (DBMS). Una guía de los comandos SQL más utilizados
+SQL Create Database CREATE DATABASE IF NOT EXISTS database_name Drop Database DROP DATABASE IF EXISTS database_name Create Table CREATE TABLE IF NOT EXISTS table_name (column_a Datatype Constraints,column_b Datatype Constraints,); Datatypes    Datatype Description     INT(n) Integer values   FLOAT(n, d) Decimal values   VARCHAR(n) String with max number of characters   TEXT String with without set limit (max value of 65,535)   DATE(&#39;YYYY-MM-DD&#39;) Year, month, and day   DATETIME(&#39;YYYY-MM-DD HH:MI:SS&#39;) Year, month, day, hour, minute, and second   TIMESTAMP(&#39;YYYY-MM-DD HH:MI:SS&#39;) Datetime corresponding to UNIX epoch time    Constraints    Constraint Description     PRIMARY KEY Unique identifier   AUTO_INCREMENT Integer value is automatically added and incremented   UNIQUE Value must be unique   NOT NULL Value cannot be NULL   DEFAULT Initialized with default value    Modificar Tabla ALTER TABLE table_aADD column_a DataTypeALTER COLUMN column_a DataType DROP column_aRENAME TO table_b Drop Table DROP TABLE IF EXISTS table_name Select Rows SELECT *, column_a, column_b, AggregateFunction(column_a)AS AliasFROM table_aJOIN table_bON table_a.</description>
     </item>
     
     <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://canodelacuadra.github.io/2014/04/hugo-template-primer/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Uso de  SQL y PHP PDO</title>
+      <link>https://canodelacuadra.github.io/posts/sql-pdo-php/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://canodelacuadra.github.io/2014/04/hugo-template-primer/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.</description>
+      <guid>https://canodelacuadra.github.io/posts/sql-pdo-php/</guid>
+      <description>Operaciones PDO con PHP código para usar la clase PDO en PHP para conectarse de forma segura y trabajar con una base de datos. Primero crearemos una base de datos con la consola mysql de xampp y luego haremos
+Crear Conexión $host = &#39;localhost&#39;;$username = &#39;root&#39;;$password = &#39;&#39;;$dbname = &#39;pdo&#39;;$dsn = &amp;quot;mysql:host=$host;dbname=$dbname&amp;quot;;$options = [PDO::ATTR_ERRMODE =&amp;gt; PDO::ERRMODE_EXCEPTION,PDO::ATTR_EMULATE_PREPARES =&amp;gt; false];$connection = new PDO($dsn, $username, $password, $options); Datatypes    Datatype Description     PDO::PARAM_BOOL Represents a boolean data type   PDO::PARAM_NULL Represents the SQL NULL data type   PDO::PARAM_INT Represents the SQL INTEGER data type   PDO::PARAM_STR Represents the SQL CHAR, VARCHAR, or other string data type    Seleccionar registros $sql = &amp;quot;SELECT * FROM usersWHERE location = :location&amp;quot;;$location = &#39;Chicago&#39;;$statement = $connection-&amp;gt;prepare($sql);$statement-&amp;gt;bindParam(&#39;:location&#39;, $location, PDO::PARAM_STR);$statement-&amp;gt;execute();$rows = $statement-&amp;gt;fetchAll(PDO::FETCH_ASSOC);foreach ($rows as $row) {echo $row[&#39;location&#39;];}  Crear Registro $sql = &amp;quot;INSERT INTO users (username, email) VALUES (:username, :email)&amp;quot;;$username = &#39;Tania&#39;;$email = &#39;tania@example.</description>
     </item>
     
     <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://canodelacuadra.github.io/2014/04/getting-started-with-hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Git, y los sistemas de control de versiones</title>
+      <link>https://canodelacuadra.github.io/posts/git/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://canodelacuadra.github.io/2014/04/getting-started-with-hugo/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.</description>
+      <guid>https://canodelacuadra.github.io/posts/git/</guid>
+      <description>Git, Sistema de Control de versiones Git y los Sistemas de control de versiones Los Sistemas de Control de Versiones permiten gestionar los cambios realizados en el código fuente de programas o documentos.
+En los años 90 la mayoría de VCS era sistemas centralizados, en el que un servidor central guarda toda la información y los clientes se conectan al servidor. En el mundo del software libre, el sistema más popular fue CVS (Concurrent Versions System), sustituido a partir del 2004 por Subversion.</description>
+    </item>
+    
+    <item>
+      <title>Creando una web con Webpack - Node</title>
+      <link>https://canodelacuadra.github.io/posts/webpack/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/webpack/</guid>
+      <description>Los modulos de Javascript permiten la importación y exportación de código entre diferentes ficheros Javascript. Webpack es una herramienta que permite compilar módulos de JavaScript. Dada una gran cantidad de archivos, webpack, genera un solo archivo (o algunos archivos) que ejecutan su aplicación web.
+ En la actualidad, muchos sitios web ya no están escritos sólo HTML simple y un poco de JavaScript opcional. A menudo, están completamente creados por JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>http-server, herramienta de servidor http</title>
+      <link>https://canodelacuadra.github.io/posts/servidor-http-server-node/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/servidor-http-server-node/</guid>
+      <description>http-server es un servidor http de línea de comandos simple y sin configuración. Es lo suficientemente simple y lo suficientemente adaptable como para usarse para pruebas, desarrollo local y aprendizaje.
+Prerequisitos  Tener node.js y npm instalados de forma global en nuestro equipo  Objetivos  Conseguir un servidor http de pruebas de forma rápida en un directorio dado  Instalación a través de NPM Globalmente a través de npm</description>
+    </item>
+    
+    <item>
+      <title>Archivos batch (IV)</title>
+      <link>https://canodelacuadra.github.io/posts/archivos-batch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/archivos-batch/</guid>
+      <description>Un archivo de texto con extensión *.bat que contiene una secuencia de órdenes para ser ejecutadas en los sistemas sistemas DOS, OS/2 y Microsoft Windows.Se trata de archivos de texto sin formato, guardados con la extensión .BAT que contienen un conjunto de instrucciones MS-DOS. Cuando se ejecuta este archivo, las órdenes contenidas son ejecutadas en grupo, de forma secuencial, permitiendo automatizar diversas tareas. Cualquier orden reconocible por MS-DOS puede ser utilizado en un archivo batch.</description>
+    </item>
+    
+    <item>
+      <title>Crear DB con el shell de xampp</title>
+      <link>https://canodelacuadra.github.io/posts/2020-11-30-crear-db-shell-xampp./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-11-30-crear-db-shell-xampp./</guid>
+      <description>Acceder al prompt de mysql en xampp Abrimos el shell de xampp desde el panel de control de xampp Nos situamos con el shell en el directorio mysql
+cd mysql Nos autenticamos
+Jose@DESKTOP-BF0SC2G c:\xampp\mysql# mysql -u root -p` Nos pedirá el password y tras ponerlo (por defecto no lleva)nos dirigirá al prompt de mysql o mariadb en este caso
+Enter password:Welcome to the MariaDB monitor. Commands end with ; or \g.</description>
+    </item>
+    
+    <item>
+      <title>Cómo crear un vitualhost en Xampp Windows</title>
+      <link>https://canodelacuadra.github.io/posts/2020-11-22-crear-virtualhost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-11-22-crear-virtualhost/</guid>
+      <description>Crear Virtualhost en Xampp con windows  Hay diversas formas, proponemos una sencilla y rápida. (xampp para windows ya viene con Apache configurado para poder crear virtualhost) Lo hacemos pensando en un proyecto que contenga una aplicación escrita con php y mysql    Creamos el Directorio del proyecto dentro de htdocs Ej: app-pedidos
+  Creamos un directorio public (que contendrá las páginas accesibles desde internet)
+  Dentro de public, creamos un index.</description>
+    </item>
+    
+    <item>
+      <title>Cómo se usa la línea de comandos bash (III)</title>
+      <link>https://canodelacuadra.github.io/posts/linea-comandos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/linea-comandos/</guid>
+      <description>Puede que os haya pasado lo que a mí: utilicé ordenadores durante veinte años sin tocar la línea de comandos. No sabía nada al respecto, y me parecía aterrador y abrumador. Pensé que era algo de lo que solo los usuarios realmente avanzados sabían algo. Cuando me encontré con una situación en la que tuve que obtener algunos conocimientos básicos de línea de comandos (empezando a utilizar git&amp;hellip;), descubrí lo útil poderosa y fácil que es.</description>
+    </item>
+    
+    <item>
+      <title>Emmet</title>
+      <link>https://canodelacuadra.github.io/posts/emmet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/emmet/</guid>
+      <description>Emmet (anteriormente Zen Codding) nos facilita escribir HTML y CSS,entre otros, por medio de abreviaturas, las cuales se expanden en código html o CSS, tras ejecutarse. Es un plugin que viene ( en algunos editores por defecto) con un buen número de editores de texto avanzados : Notepad++, Visual Studio Code, Brackets, Atom, Sublime Text&amp;hellip;
+Por ejemplo, para escribir un div con id container sería esctibir
+div#container y al dar a la tecla intro se expandiría</description>
+    </item>
+    
+    <item>
+      <title>Instalación de Laravel 8 en Xampp</title>
+      <link>https://canodelacuadra.github.io/posts/2020-11-29-que-es-laravel./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-11-29-que-es-laravel./</guid>
+      <description>Laravel 0 Laravel es un framework web basado en PHP. Se denomina framework para artesanos web. La base del framework propone los fundamentos, liberando al artesano web para crear sin preocuparse por las pequeñas cosas.
+Laravel recurre a un modelo de arquitectura MVC (Model View Controller) y gira en torno a las operaciones CRUD (Create, Retrieve, Update, Delete).
+Laravel 8, se lanzó el 8 de septiembre de 2020.</description>
+    </item>
+    
+    <item>
+      <title>Instalación de Laravel 8 en Xampp</title>
+      <link>https://canodelacuadra.github.io/posts/2020-11-30-instalacion-laravel./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-11-30-instalacion-laravel./</guid>
+      <description>Laravel I Instalamos laravel en el entorno de desarrollo que nos procura xampp
+Pasos  Instalar Xampp Intalar Composer Crear Virtual Host Instalar Laravel  Instalar XAMPP Primero que nada, necesitamos xampp, vamos a descargarlo desde la pagina oficial:
+Descargar XAMPP
+Podemos comprobar ahora los requerimientos mínimos de laravel (a día de hoy xampp los trae instalados y activados)
+Requerimientos  PHP &amp;gt;= 7.3 BCMath PHP Extension Ctype PHP Extension Fileinfo PHP Extension JSON PHP Extension Mbstring PHP Extension OpenSSL PHP Extension PDO PHP Extension Tokenizer PHP Extension XML PHP Extension  Podemos comprobar los requerimientos mediante un archivo en httdocs ejecutando la función de php</description>
+    </item>
+    
+    <item>
+      <title>Instalación de Vuepress y Publicación en Github Pages</title>
+      <link>https://canodelacuadra.github.io/posts/2020-12-16-vuepress-instalacion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-12-16-vuepress-instalacion/</guid>
+      <description>¿Qué es Vuepress? VuePress es un generador de sitios estáticos, originalmente pensado para escribir la documentación de los propios proyectos de Vue. Un sitio en VuePress es en realidad una SPA (Single-Page Application) que utiliza Vue, Vue Router y webpack como base.
+Instalar vuepress en Windows 10 Vamos a instalar vuepress en windows 10 y publicarlo como contenido estatico en un repositorio de github y visualizar el contenido estático aprovechandonos de gituhub pages.</description>
+    </item>
+    
+    <item>
+      <title>Instalar  con npm</title>
+      <link>https://canodelacuadra.github.io/posts/2020-12-26-npm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-12-26-npm/</guid>
+      <description>Iniciar proyectos con NPM Qué es NPM NPM son las siglas de Node Package Manager, es decir, gestor de paquetes de NodeJS, un entorno de ejecución multiplataforma para ejecutar Javascript no sólo en un navegador web (como se concibió originalmente) sino fuera de él, y poder utilizarlo en sistemas de escritorio o servidores web.
+Este gestor de paquetes (muy similar al concepto de apt-get en GNU/Linux), nos permitirá instalar de forma muy sencilla y automática paquetes Javascript (tanto de Node como Javascript para el navegador) y utilizarlo para nuestros fines.</description>
+    </item>
+    
+    <item>
+      <title>Instalar Node JS en Windows</title>
+      <link>https://canodelacuadra.github.io/posts/instalar-node-windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/instalar-node-windows/</guid>
+      <description>Node.js es un popular entorno de ejecución de código abierto que puede ejecutar JavaScript fuera del navegador mediante el motor JavaScript V8, que es el mismo motor que se utiliza para ejecutar JavaScript en el navegador web Google Chrome . El tiempo de ejecución de Node se usa comúnmente para crear herramientas de línea de comandos y servidores web
+ Por qué aprender y usar node.js y npm Para usar casi cualquier herramienta de desarrollo basada en JavaScript, necesitará saber cómo usar npm y Node.</description>
+    </item>
+    
+    <item>
+      <title>Interfaces de usuario y  línea de comandos (I)</title>
+      <link>https://canodelacuadra.github.io/posts/interfaz-usuario/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/interfaz-usuario/</guid>
+      <description>Las herramientas de línea de comandos son útiles que diseñador o desarrollador web debería conocer y manejar en mayor o menor medida y llevarlas consigo en su maletín profesional. A primera vista pueden parecernos herramientas anticuadas, complejas, diseñadas para expertos informáticos altamente cualificados pero un acercamiento y comprensión básica de las mismas puede demostrar qué fáciles, necesarias, potentes y útiles que pueden llegar a ser.
+ Saber qué son exactamente, qué se puede hacer con ellas, en qué entornos son primordiales y cómo utilizarlas es el objeto de esta serie de artículos.</description>
+    </item>
+    
+    <item>
+      <title>Las ruttas el laravel</title>
+      <link>https://canodelacuadra.github.io/posts/2020-12-05-rutas-laravel./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-12-05-rutas-laravel./</guid>
+      <description>Laravel II, Las rutas en Laravel En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.
+Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes. Las rutas de Laravel más básicas aceptan una URI y una Closure (una función anónima), proporcionando un método muy simple y expresivo para definir rutas:</description>
+    </item>
+    
+    <item>
+      <title>Las ruttas el laravel</title>
+      <link>https://canodelacuadra.github.io/posts/2020-12-06-controlador-laravel./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-12-06-controlador-laravel./</guid>
+      <description>Laravel III, Los Controladores Laravel implementa el patrón de diseño MVC para desarrollar las aplicaciones web.
+Cuando un usuario realiza la petición de un recurso, la aplicación se le asigna a un controlador, que será el responsable de solicitar a un modelo unos datos Una vez que el modelo retorna los datos, el controlador acopla esos datos a una vista y se los manda al usuario
+Un controlador es un archivo php que esta dentro de app/http/controllers</description>
+    </item>
+    
+    <item>
+      <title>Librería curl</title>
+      <link>https://canodelacuadra.github.io/posts/libreria-curl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/libreria-curl/</guid>
+      <description>Curl
+Permite realizar peticiones HTTP con el objetivo de transferir información con sintaxis de URL.
+En el contexto de PHP, permite armar un script que literalmente se comporte como un navegador para así realizar una petición a otro servidor remoto. Su utilidad es muy similar al objeto XMLHttpRequest de JavaScript en el sentido de comunicarse con un servidor distinto para la obtención de recursos, datos u otra información.
+Curl es una librería de funciones para conectar con servidores y trabajar con ellos (transferir datos: enviar o recibir datos) mediante línea de comandos.</description>
+    </item>
+    
+    <item>
+      <title>SSG Generador de sitios estaticos</title>
+      <link>https://canodelacuadra.github.io/posts/2020-12-16-generador-sitios-estaticos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-12-16-generador-sitios-estaticos/</guid>
+      <description>¿Qué es un generador de sitios estáticos? Un generador de sitios estáticos crea un sitio web creando archivos HTML simples.
+Cuando un usuario visita un sitio web creado por un generador de sitios estáticos, se carga de de la misma forma que si hubieramos creado un sitio web con HTML simple. Por el contrario, un sitio dinámico que se ejecuta en un lenguaje del lado del servidor, como PHP, se construye cada vez que un usuario visita el sitio.</description>
+    </item>
+    
+    <item>
+      <title>Tablas de comandos CLI, CMD y bash (Anexo)</title>
+      <link>https://canodelacuadra.github.io/posts/lista-comandos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/lista-comandos/</guid>
+      <description>Depende en el entorno del sistema operativo que nos movamos pueden variar los comandos de la CLI. Esta tabla pretende ser un anexo de ayuda por si queremos que nos sirva de referencia y tenerlos ordenados y comparados.
+ Se puede ir actualizando y mejorando porque son muchos&amp;hellip; ¡Hay que probarlos! Y si alguno no funciona, buscar alternativas
+ shell Bash o cmd CMD es la CLI habitual de Windows .</description>
+    </item>
+    
+    <item>
+      <title>un script de shell con bash (V)</title>
+      <link>https://canodelacuadra.github.io/posts/script-bash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/script-bash/</guid>
+      <description>Los scripts de Bash son una heramienta poderosa para la administración y el desarrollo del sistema. Al principio puede ser aterrador pero puede ser sencillo.
+Bash es un shell de Unix, que es una interfaz de línea de comandos (CLI) para interactuar con un sistema operativo (SO). Cualquier comando que pueda ejecutar desde la línea de comandos puede usarse en un script bash. Las secuencias de comandos se utilizan para ejecutar una serie de comandos.</description>
+    </item>
+    
+    <item>
+      <title>Usa SQLite y PHP</title>
+      <link>https://canodelacuadra.github.io/posts/2021-01-07-sqlite-php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2021-01-07-sqlite-php/</guid>
+      <description>XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP.
+Crearemos de una nueva base de datos SQLite usando XAMPP, luego accederá a los datos dentro de ella usando PHP.
+Comience por crear y completar una nueva base de datos utilizando el cliente de línea de comandos SQLite, como se muestra a continuación:
+  Abra el símbolo del sistema de Windows haciendo clic en el botón &amp;ldquo;Shell&amp;rdquo; en el panel de control de XAMPP.</description>
+    </item>
+    
+    <item>
+      <title>Uso de la CLI en Windows (II)</title>
+      <link>https://canodelacuadra.github.io/posts/simbolo-sistema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/simbolo-sistema/</guid>
+      <description>Conocer los comandos de la CLI y usar herramientas de calidad puede hacernos más productivos y también pueden abrir las puertas a varios enfoques de la automatización que son mucho más prácticos con las interfaces textuales (CLI o editores de texto) que con las aplicaciones GUI. Puede mejorar al realizar tareas repetitivas en GUI, hasta el punto de que sus múltiples clics se escuchen como uno solo. El problema es que esto no mejorará la eficiencia de un script especializado.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Code, Editor web</title>
+      <link>https://canodelacuadra.github.io/posts/2020-11-28-vscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/2020-11-28-vscode/</guid>
+      <description>Visual Studio Code. Tips de uso, configuración y extensiones Visual Studio Code es un editor de programación multiplataforma desarrollado por Microsoft.
+Visual Studio Code es un editor de código fuente ligero pero potente que se ejecuta en su escritorio y está disponible para Windows, macOS y Linux. Viene con soporte incorporado para JavaScript, TypeScript y Node.js y tiene un rico ecosistema de extensiones para otros lenguajes (como C ++, C #, Java, Python, PHP, Go) y tiempos de ejecución (como .</description>
     </item>
     
   </channel>

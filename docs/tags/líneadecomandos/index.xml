@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LíneaDeComandos on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/l%C3%ADneadecomandos/</link>
+    <description>Recent content in LíneaDeComandos on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language><atom:link href="https://canodelacuadra.github.io/tags/l%C3%ADneadecomandos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Librería curl</title>
+      <link>https://canodelacuadra.github.io/posts/libreria-curl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/libreria-curl/</guid>
+      <description>Curl
+Permite realizar peticiones HTTP con el objetivo de transferir información con sintaxis de URL.
+En el contexto de PHP, permite armar un script que literalmente se comporte como un navegador para así realizar una petición a otro servidor remoto. Su utilidad es muy similar al objeto XMLHttpRequest de JavaScript en el sentido de comunicarse con un servidor distinto para la obtención de recursos, datos u otra información.
+Curl es una librería de funciones para conectar con servidores y trabajar con ellos (transferir datos: enviar o recibir datos) mediante línea de comandos.</description>
+    </item>
+    
+  </channel>
+</rss>

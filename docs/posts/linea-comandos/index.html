@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="generator" content="Hugo 0.79.0" />
+  <link rel="canonical" href="/posts/linea-comandos/">
+
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/css/prism.css" media="none" onload="this.media='all';">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+  
+    <link rel="stylesheet" href="/css/custom_01.css">
+  
+    <link rel="stylesheet" href="/css/custom_02.css">
+  
+
+  
+  
+  <title>Cómo se usa la línea de comandos bash (III) | Canodelacuadra</title>
+</head>
+
+  <body>
+    <a href="#main">skip to content</a>
+    <noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+    <svg style="display: none">
+  <symbol id="bookmark" viewBox="0 0 40 50">
+   <g transform="translate(2266 3206.2)">
+    <path style="stroke:currentColor;stroke-width:3.2637;fill:none" d="m-2262.2-3203.4-.2331 42.195 16.319-16.318 16.318 16.318.2331-42.428z"/>
+   </g>
+  </symbol>
+
+  <symbol id="w3c" viewBox="0 0 127.09899 67.763">
+   <text font-size="83" style="font-size:83px;font-family:Trebuchet;letter-spacing:-12;fill-opacity:0" letter-spacing="-12" y="67.609352" x="-26.782778">W3C</text>
+   <text font-size="83" style="font-size:83px;font-weight:bold;font-family:Trebuchet;fill-opacity:0" y="67.609352" x="153.21722" font-weight="bold">SVG</text>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m33.695.377 12.062 41.016 12.067-41.016h8.731l-19.968 67.386h-.831l-12.48-41.759-12.479 41.759h-.832l-19.965-67.386h8.736l12.061 41.016 8.154-27.618-3.993-13.397h8.737z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m91.355 46.132c0 6.104-1.624 11.234-4.862 15.394-3.248 4.158-7.45 6.237-12.607 6.237-3.882 0-7.263-1.238-10.148-3.702-2.885-2.47-5.02-5.812-6.406-10.022l6.82-2.829c1.001 2.552 2.317 4.562 3.953 6.028 1.636 1.469 3.56 2.207 5.781 2.207 2.329 0 4.3-1.306 5.909-3.911 1.609-2.606 2.411-5.738 2.411-9.401 0-4.049-.861-7.179-2.582-9.399-1.995-2.604-5.129-3.912-9.397-3.912h-3.327v-3.991l11.646-20.133h-14.062l-3.911 6.655h-2.493v-14.976h32.441v4.075l-12.31 21.217c4.324 1.385 7.596 3.911 9.815 7.571 2.22 3.659 3.329 7.953 3.329 12.892z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.21 0 1.414 8.6-5.008 9.583s-1.924-4.064-5.117-6.314c-2.693-1.899-4.447-2.309-7.186-1.746-3.527.73-7.516 4.938-9.258 10.13-2.084 6.21-2.104 9.218-2.178 11.978-.115 4.428.58 7.043.58 7.043s-3.04-5.626-3.011-13.866c.018-5.882.947-11.218 3.666-16.479 2.404-4.627 5.954-7.404 9.114-7.728 3.264-.343 5.848 1.229 7.841 2.938 2.089 1.788 4.213 5.698 4.213 5.698l4.94-9.837z"/>
+   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.82 48.674s-2.208 3.957-3.589 5.48c-1.379 1.524-3.849 4.209-6.896 5.555-3.049 1.343-4.646 1.598-7.661 1.306-3.01-.29-5.807-2.032-6.786-2.764-.979-.722-3.486-2.864-4.897-4.854-1.42-2-3.634-5.995-3.634-5.995s1.233 4.001 2.007 5.699c.442.977 1.81 3.965 3.749 6.572 1.805 2.425 5.315 6.604 10.652 7.545 5.336.945 9.002-1.449 9.907-2.031.907-.578 2.819-2.178 4.032-3.475 1.264-1.351 2.459-3.079 3.116-4.108.487-.758 1.276-2.286 1.276-2.286l-1.276-6.644z"/>
+  </symbol>
+
+  <symbol id="tag" viewBox="0 0 177.16535 177.16535">
+    <g transform="translate(0 -875.2)">
+     <path style="fill-rule:evenodd;stroke-width:0;fill:currentColor" d="m159.9 894.3-68.79 8.5872-75.42 77.336 61.931 60.397 75.429-76.565 6.8495-69.755zm-31.412 31.835a10.813 10.813 0 0 1 1.8443 2.247 10.813 10.813 0 0 1 -3.5174 14.872l-.0445.0275a10.813 10.813 0 0 1 -14.86 -3.5714 10.813 10.813 0 0 1 3.5563 -14.863 10.813 10.813 0 0 1 13.022 1.2884z"/>
+    </g>
+  </symbol>
+
+  <symbol id="balloon" viewBox="0 0 141.73228 177.16535">
+   <g transform="translate(0 -875.2)">
+    <g>
+     <path style="fill:currentColor" d="m68.156 882.83-.88753 1.4269c-4.9564 7.9666-6.3764 17.321-5.6731 37.378.36584 10.437 1.1246 23.51 1.6874 29.062.38895 3.8372 3.8278 32.454 4.6105 38.459 4.6694-.24176 9.2946.2879 14.377 1.481 1.2359-3.2937 5.2496-13.088 8.886-21.623 6.249-14.668 8.4128-21.264 10.253-31.252 1.2464-6.7626 1.6341-12.156 1.4204-19.764-.36325-12.93-2.1234-19.487-6.9377-25.843-2.0833-2.7507-6.9865-7.6112-7.9127-7.8436-.79716-.20019-6.6946-1.0922-6.7755-1.0248-.02213.0182-5.0006-.41858-7.5248-.22808l-2.149-.22808h-3.3738z"/>
+     <path style="fill:currentColor" d="m61.915 883.28-3.2484.4497c-1.7863.24724-3.5182.53481-3.8494.63994-2.4751.33811-4.7267.86957-6.7777 1.5696-.28598 0-1.0254.20146-2.3695.58589-5.0418 1.4418-6.6374 2.2604-8.2567 4.2364-6.281 7.6657-11.457 18.43-12.932 26.891-1.4667 8.4111.71353 22.583 5.0764 32.996 3.8064 9.0852 13.569 25.149 22.801 37.517 1.3741 1.841 2.1708 2.9286 2.4712 3.5792 3.5437-1.1699 6.8496-1.9336 10.082-2.3263-1.3569-5.7831-4.6968-21.86-6.8361-33.002-.92884-4.8368-2.4692-14.322-3.2452-19.991-.68557-5.0083-.77707-6.9534-.74159-15.791.04316-10.803.41822-16.162 1.5026-21.503 1.4593-5.9026 3.3494-11.077 6.3247-15.852z"/>
+     <path style="fill:currentColor" d="m94.499 885.78c-.10214-.0109-.13691 0-.0907.0409.16033.13489 1.329 1.0675 2.5976 2.0723 6.7003 5.307 11.273 14.568 12.658 25.638.52519 4.1949.24765 14.361-.5059 18.523-2.4775 13.684-9.7807 32.345-20.944 53.519l-3.0559 5.7971c2.8082.76579 5.7915 1.727 8.9926 2.8441 11.562-11.691 18.349-19.678 24.129-28.394 7.8992-11.913 11.132-20.234 12.24-31.518.98442-10.02-1.5579-20.876-6.7799-28.959-.2758-.4269-.57803-.86856-.89617-1.3166-3.247-6.13-9.752-12.053-21.264-16.131-2.3687-.86369-6.3657-2.0433-7.0802-2.1166z"/>
+     <path style="fill:currentColor" d="m32.52 892.22c-.20090-.13016-1.4606.81389-3.9132 2.7457-11.486 9.0476-17.632 24.186-16.078 39.61.79699 7.9138 2.4066 13.505 5.9184 20.562 5.8577 11.77 14.749 23.219 30.087 38.74.05838.059.12188.1244.18052.1838 1.3166-.5556 2.5965-1.0618 3.8429-1.5199-.66408-.32448-1.4608-1.3297-3.8116-4.4602-5.0951-6.785-8.7512-11.962-13.051-18.486-5.1379-7.7948-5.0097-7.5894-8.0586-13.054-6.2097-11.13-8.2674-17.725-8.6014-27.563-.21552-6.3494.13041-9.2733 1.775-14.987 2.1832-7.5849 3.9273-10.986 9.2693-18.07 1.7839-2.3656 2.6418-3.57 2.4409-3.7003z"/>
+     <path style="fill:currentColor" d="m69.133 992.37c-6.2405.0309-12.635.76718-19.554 2.5706 4.6956 4.7759 9.935 10.258 12.05 12.625l4.1272 4.6202h11.493l3.964-4.4516c2.0962-2.3541 7.4804-7.9845 12.201-12.768-8.378-1.4975-16.207-2.6353-24.281-2.5955z"/>
+     <rect style="stroke-width:0;fill:currentColor" ry="2.0328" height="27.746" width="22.766" y="1017.7" x="60.201"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="info" viewBox="0 0 41.667 41.667">
+   <g transform="translate(-37.035 -1004.6)">
+    <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m76.25 1030.2a18.968 18.968 0 0 1 -23.037 13.709 18.968 18.968 0 0 1 -13.738 -23.019 18.968 18.968 0 0 1 23.001 -13.768 18.968 18.968 0 0 1 13.798 22.984"/>
+    <g transform="matrix(1.1146 0 0 1.1146 -26.276 -124.92)">
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m75.491 1039.5v-8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" transform="scale(-1)" d="m-73.193-1024.5a2.3719 2.3719 0 0 1 -2.8807 1.7142 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+   </g>
+  </symbol>
+
+  <symbol id="warning" viewBox="0 0 48.430474 41.646302">
+    <g transform="translate(-1.1273 -1010.2)">
+     <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:4.151;fill:none" d="m25.343 1012.3-22.14 37.496h44.28z"/>
+     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:4.1512;fill:none" d="m25.54 1027.7v8.7472"/>
+     <path style="stroke-width:0;fill:currentColor" d="m27.839 1042.8a2.3719 2.3719 0 0 1 -2.8807 1.7143 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
+    </g>
+  </symbol>
+
+  <symbol id="menu" viewBox="0 0 50 50">
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="0" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="20" x="0"/>
+     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="40" x="0"/>
+   </symbol>
+
+   <symbol id="link" viewBox="0 0 50 50">
+    <g transform="translate(0 -1002.4)">
+     <g transform="matrix(.095670 0 0 .095670 2.3233 1004.9)">
+      <g>
+       <path style="stroke-width:0;fill:currentColor" d="m452.84 192.9-128.65 128.65c-35.535 35.54-93.108 35.54-128.65 0l-42.881-42.886 42.881-42.876 42.884 42.876c11.845 11.822 31.064 11.846 42.886 0l128.64-128.64c11.816-11.831 11.816-31.066 0-42.9l-42.881-42.881c-11.822-11.814-31.064-11.814-42.887 0l-45.928 45.936c-21.292-12.531-45.491-17.905-69.449-16.291l72.501-72.526c35.535-35.521 93.136-35.521 128.64 0l42.886 42.881c35.535 35.523 35.535 93.141-.001 128.66zm-254.28 168.51-45.903 45.9c-11.845 11.846-31.064 11.817-42.881 0l-42.884-42.881c-11.845-11.821-11.845-31.041 0-42.886l128.65-128.65c11.819-11.814 31.069-11.814 42.884 0l42.886 42.886 42.876-42.886-42.876-42.881c-35.54-35.521-93.113-35.521-128.65 0l-128.65 128.64c-35.538 35.545-35.538 93.146 0 128.65l42.883 42.882c35.51 35.54 93.11 35.54 128.65 0l72.496-72.499c-23.956 1.597-48.092-3.784-69.474-16.283z"/>
+      </g>
+     </g>
+    </g>
+  </symbol>
+
+  <symbol id="doc" viewBox="0 0 35 45">
+   <g transform="translate(-147.53 -539.83)">
+    <path style="stroke:currentColor;stroke-width:2.4501;fill:none" d="m149.38 542.67v39.194h31.354v-39.194z"/>
+    <g style="stroke-width:25" transform="matrix(.098003 0 0 .098003 133.69 525.96)">
+     <path d="m220 252.36h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path style="stroke:currentColor;stroke-width:25;fill:none" d="m220 409.95h200"/>
+     <path d="m220 488.74h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+     <path d="m220 331.15h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
+    </g>
+   </g>
+ </symbol>
+
+ <symbol id="tick" viewBox="0 0 177.16535 177.16535">
+  <g transform="translate(0 -875.2)">
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="155" width="40" y="702.99" x="556.82"/>
+   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="40" width="90.404" y="817.99" x="506.42"/>
+  </g>
+ </symbol>
+</svg>
+
+    <div class="wrapper">
+      <header class="intro-and-nav" role="banner">
+  <div>
+    <div class="intro">
+      <a
+        class="logo"
+        href="https://canodelacuadra.github.io/"
+        aria-label="Canodelacuadra home page"
+      >
+        <img src="/images/logo.svg" alt="">
+      </a>
+      <p class="library-desc">
+         Un proyecto de documentación personal creado con Hugo. 
+      </p>
+    </div>
+    <nav id="patterns-nav" class="patterns" role="navigation">
+  <h2 class="vh">Main navigation</h2>
+  <button id="menu-button" aria-expanded="false">
+    <svg viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+      <use xlink:href="#menu"></use>
+    </svg>
+    Menu
+  </button>
+  
+  <ul id="patterns-list">
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Home</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/posts/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Blog</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/tags/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">Tags</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/about/" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">About</span>
+      </a>
+    </li>
+  
+    <li class="pattern">
+      
+      
+      
+      
+      <a href="/index.xml" >
+        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
+          <use xlink:href="#bookmark"></use>
+        </svg>
+        <span class="text">RSS</span>
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+    
+  </div>
+</header>
+
+      <div class="main-and-footer">
+        <div>
+          
+  <main id="main">
+    <h1>Cómo se usa la línea de comandos bash (III)</h1>
+    <p>Puede que os haya pasado lo que a mí: utilicé ordenadores durante veinte años sin tocar la <code>línea de comandos</code>. No sabía nada al respecto, y me parecía aterrador y abrumador. Pensé que era algo de lo que solo los usuarios realmente avanzados sabían algo. Cuando me encontré con una situación en la que tuve que obtener algunos conocimientos básicos de línea de comandos (empezando a utilizar git&hellip;), descubrí lo útil poderosa y fácil que es.
+Aprender a usar la línea de comandos nos abrirá infinitas posibilidades: sin duda es esencial en el desarrollo y la programación web, pero incluso los usuarios habituales que realizan tareas cotidianas se beneficiarán.</p>
+<blockquote>
+<p>Apple macOS y la mayoría de los servidores Linux usan casi todos los mismos comandos, por lo que este tutorial se aplica a ambos. Incluso si usas un PC con Windows, esto será útil para aprender ya que sus sitios web probablemente estén alojados en un servidor Linux.</p>
+</blockquote>
+<h4 id="prerequisites">Prerequisites</h4>
+<ul>
+<li>No hay requisitos previos para este artículo: siempre que tenga conocimientos básicos de informática, podrá seguirlos</li>
+</ul>
+<h4 id="objetivos">Objetivos</h4>
+<ul>
+<li>Aprender qué es la interfaz de línea de comandos y cómo se relaciona con su computadora</li>
+<li>Aprenda algo de terminología básica relacionada con la línea de comando</li>
+<li>Aprenda los comandos más comunes y útiles.</li>
+</ul>
+<h4 id="qué-aprenderemos">Qué aprenderemos</h4>
+<ul>
+<li>
+<p>Mostrar el directorio actual y el contenido del directorio</p>
+</li>
+<li>
+<p>Moverse entre directorios</p>
+</li>
+<li>
+<p>Crear archivos y directorios</p>
+<ul>
+<li>Escribir texto en un archivo</li>
+<li>Ver el contenido de un archivo</li>
+</ul>
+</li>
+<li>
+<p>Eliminar archivos y directorios</p>
+</li>
+<li>
+<p>Copiar y pegar archivos y directorios</p>
+</li>
+<li>
+<p>Mover / cortar archivos y directorios</p>
+</li>
+<li>
+<p>Ejecutando múltiples comandos</p>
+</li>
+<li>
+<p>Cambio de permisos</p>
+</li>
+<li>
+<p>Ejecutar como administrador</p>
+</li>
+<li>
+<p>Conectarse a otra computadora o servidor</p>
+</li>
+<li>
+<p>Algunos comandos más útiles</p>
+</li>
+<li>
+<p>Usando un editor de texto básico</p>
+</li>
+</ul>
+<h2 id="qué-es-la-línea-de-comandos">¿Qué es la línea de comandos?</h2>
+<p>Prometo que esto es lo más importante de entender, y que me estalló la cabeza por completo cuando finalmente lo entendí.</p>
+<p>Windows, macOS, sea cual sea el sistema operativo que esté utilizando, es simplemente una representación visual de su computadora. Esto se conoce como interfaz gráfica de usuario (GUI) . Elimine el explorador de archivos, el escritorio, los iconos y todos los demás gráficos, y quedará con la línea de comando. En lugar de arrastrar y soltar, señalar y hacer clic, estás escribiendo. Esa es la única diferencia.</p>
+<p>Realmente quiero reiterar esto. Se puede acceder a toda su computadora a través de la línea de comando. Puedes hacer todo a través de la línea de comando. Es la misma computadora que ya conoces y amas.</p>
+<p>En una Mac, si abro Finder, esta es mi carpeta de inicio. Se llama taniarascia.</p>
+<p><img src="../images/Screen-Shot-2017-01-07-at-2.46.52-PM-1.png" alt=""></p>
+<p>Puedo acceder a los mismos archivos exactos a través de un navegador web. Si abro Google Chrome y escribo /Users/taniarascia, estaré en el mismo lugar.</p>
+<p><img src="../images/Screen-Shot-2017-01-07-at-2.48.38-PM-1.png" alt=""></p>
+<p>Lo mismo es cierto para la interfaz de línea de comandos. Voy a abrir Terminal.app abriendo la búsqueda de Spotlight (comando + barra espaciadora) y escribiré Terminal .</p>
+<p><img src="../images/Screen-Shot-2017-01-07-at-3.00.00-PM.png" alt=""></p>
+<blockquote>
+<p>My terminal background is dark. Yours might be white or blue or different depending on what you&rsquo;re using. This is simply a personal preference, which we can learn to change later.</p>
+</blockquote>
+<p>Just as I was &ldquo;in&rdquo; the <code>taniarascia</code> folder in Google Chrome and Finder, I&rsquo;m currently &ldquo;in&rdquo; the same folder via the command prompt/terminal. I&rsquo;m going to prove this by typing <code>pwd</code> into the terminal, then pressing enter. <code>pwd</code> stands for <strong>Print Working Directory</strong>, and will show me exactly &ldquo;where I am&rdquo; at any point.</p>
+<p>Here&rsquo;s what I type.</p>
+<pre><code class="language-bash">pwd
+</code></pre>
+<p>And here&rsquo;s what is written (printed) to the screen.</p>
+<pre><code class="language-terminal">NolBook:~ taniarascia$ pwd
+/Users/taniarascia
+</code></pre>
+<p><img src="../images/Screen-Shot-2017-01-07-at-3.07.35-PM.png" alt=""></p>
+<p>It wrote <code>/Users/taniarascia</code> as my current working directory, where I &ldquo;am&rdquo;. But how do I know what&rsquo;s there? How do I interact with any of those files and directories? I&rsquo;m going to use the <code>ls</code> command, which stands for <strong>List Directory Contents</strong></p>
+<pre><code class="language-bash">ls
+</code></pre>
+<pre><code class="language-terminal">NolBook:~ taniarascia$ ls
+  Desktop   Documents Library   Music     Private   Sites
+  Dev       Downloads Movies    Pictures  Public    Songs
+</code></pre>
+<p>And now I see exactly what I see in Finder and Chrome/a web browser!</p>
+<p>Now you should understand that you&rsquo;re accessing the same files and folders from the command line as you would from any program on the computer. If it doesn&rsquo;t quite make sense yet, just follow along and I promise it will very soon. If you think that&rsquo;s incredibly simple and I spent way too much time explaining it, then you&rsquo;re probably a little brighter than I am.</p>
+<blockquote>
+<p>In programming, <code>print</code> means &ldquo;show on the screen&rdquo;, not to be confused with &ldquo;send to printer&rdquo;.</p>
+</blockquote>
+<h2 id="comprendiendo-la-sintaxis">Comprendiendo la sintaxis</h2>
+<p>When I open terminal, I see this.</p>
+<pre><code class="language-terminal">NolBook:~ taniarascia$
+</code></pre>
+<p>You&rsquo;ll probably see something else, but the <code>~</code> and <code>$</code> will remain. Here&rsquo;s what&rsquo;s going on, which you can look back on for reference:</p>
+<pre><code class="language-terminal">Computer Name:Directory UsernameREADY
+</code></pre>
+<ul>
+<li><strong>Computer Name</strong> (NolBook) - That&rsquo;s just the name I gave my computer.</li>
+<li><strong>Directory</strong> (<code>~</code> ) - Directly next to the computer name is the current directory you&rsquo;re working in. <code>~</code> stands for home directory, which is my <code>taniarascia</code> folder.</li>
+<li><strong>Username</strong> (taniarascia) - This might be slightly confusing because my home folder AND username are both taniarascia, but this is specifically referring to the computer user.</li>
+<li><strong>READY</strong> (<code>$</code>) - A dollar sign signifies that the prompt is ready to accept your command. You do not type the <code>$</code>, it&rsquo;s just there. On a Windows computer, this is represented by a <code>&gt;</code> symbol.</li>
+</ul>
+<blockquote>
+<p>A terminal or command prompt is a program (command line interface) that runs a shell, which interprets the commands.</p>
+</blockquote>
+<h2 id="commands">Commands</h2>
+<p>Vamos a aprender cómo hacer muchas de las cosas habituales que haces en una computadora con atajos de mouse o teclado. Vamos a movernos entre directorios, crear archivos y carpetas, eliminarlos, moverlos, copiarlos y pegarlos, y editar archivos. También puede presionar <code>clear</code> en cualquier momento para limpiar todo el historial y tener una pantalla limpia.</p>
+<p>Hasta ahora, hemos aprendido tres cosas.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pwd</code></td>
+<td><strong>Muestra el directorio de trabajo</strong></td>
+<td>saber dónde estás</td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td><strong>Lista los contenidos del directorio</strong></td>
+<td>ver qué archivos y directorios están en la localizacón acutal</td>
+</tr>
+<tr>
+<td><code>clear</code></td>
+<td><strong>Clear</strong></td>
+<td>limpia la pantalla de la terminal</td>
+</tr>
+</tbody>
+</table>
+<p>Always remember to type <code>pwd</code> before writing any commands to make sure you know where you are.</p>
+<blockquote>
+<p>By default, if you quit Terminal, you will end up back in your home directory.</p>
+</blockquote>
+<h3 id="moving-between-directories">Moving between directories</h3>
+<p>Right now, I&rsquo;m in my home folder. If I want to move somewhere else, I will use the <code>cd</code> command - <strong>Change Directory</strong>. I&rsquo;m going to move to the <strong>Music</strong> folder, then check my location. Type these commands, and press enter after each one.</p>
+<pre><code class="language-bash">cd music
+pwd
+ls
+</code></pre>
+<p>Here is the output.</p>
+<pre><code class="language-terminal">NolBook:~ taniarascia$ cd music
+NolBook:music taniarascia$ pwd
+/Users/taniarascia/music
+NolBook:music taniarascia$ ls
+Audio Music Apps GarageBand iTunes
+</code></pre>
+<p>First, I moved to the <strong>Music</strong> folder. The terminal will understand a directory regardless of case, so I can write <strong>music</strong> or <strong>Music</strong>. As you can see, it says <code>NolBook:music</code> instead of <code>NolBook:~</code>, so I know I&rsquo;m in a different directory now. I printed out my current location to make sure, then listed the contents.</p>
+<p>That&rsquo;s great, but I don&rsquo;t really want to do anything in the <strong>Music</strong> folder. How do I go back? In the terminal, one dot (<code>.</code>) represents the current directory, and two dots (<code>..</code>) represents one directory backwards, or closer to the root.</p>
+<p>I want to go back one directory, back into my home folder.</p>
+<pre><code class="language-bash">cd ..
+</code></pre>
+<pre><code class="language-terminal">NolBook:~ taniarascia$
+</code></pre>
+<p>By typing <code>cd ..</code> I&rsquo;ve told the shell to take me back one directory, and now I&rsquo;m back in home/<code>~</code>. Right now would be a good time to practice moving between directories. <code>../..</code> will take you back two directories, and so on.</p>
+<h4 id="spaces-in-directory-and-file-names">Spaces in directory and file names</h4>
+<p>If you try to move into a directory that has a space, you may encounter an issue. For example, in my <strong>Music</strong> folder, there was a directory called <strong>Audio Music Apps</strong>. However, if I try to simply type that..</p>
+<pre><code class="language-bash">cd Audio Music Apps
+</code></pre>
+<pre><code class="language-terminal">-bash: cd: Audio: No such file or directory
+</code></pre>
+<p>The shell thinks I&rsquo;m trying to move into <strong>Audio</strong> instead of <strong>Audio Music Apps</strong> because it does not recognize the space. There are two ways to remedy this.</p>
+<h4 id="using-quotations">Using Quotations</h4>
+<p>Wrap any file in double quotes to preserve the spaces.</p>
+<pre><code class="language-bash">cd &quot;Audio Music Apps&quot;
+</code></pre>
+<h4 id="escaping">Escaping</h4>
+<p>Type a backslash <code>\</code> character before each space. If you press tab, the Terminal will do this for you! Simply type <code>cd A</code> and press tab and the shell will automatically assume what you want to type.</p>
+<pre><code class="language-bash">cd Audio\ Music\ Apps/
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cd</code></td>
+<td><strong>Change Directory</strong></td>
+<td>move between directories</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>You can end a command at any point by pressing control + C</p>
+</blockquote>
+<h3 id="creating-files-and-directories">Creating files and directories</h3>
+<p>You can create files and folders from the command line.</p>
+<h4 id="create-directory">Create directory</h4>
+<p>Let&rsquo;s create a folder for practicing named <strong>Shell</strong> with the <code>mkdir</code> (<strong>Make Directory</strong>) command.</p>
+<pre><code class="language-bash">mkdir Shell
+</code></pre>
+<p>Congratulations, you created a directory! If I type <code>ls</code>, I&rsquo;ll see my newly created directory in the home folder. I can also see this through Finder.</p>
+<p><img src="../images/Screen-Shot-2017-01-08-at-9.32.13-PM.png" alt=""></p>
+<p>Now you can move into the <strong>Shell</strong> directory by inputting <code>cd shell</code>.</p>
+<pre><code class="language-terminal">NolBook:~ taniarascia$ cd shell
+NolBook:shell taniarascia$ pwd
+/Users/taniarascia/shell
+
+</code></pre>
+<h4 id="create-file">Create file</h4>
+<p>Now let&rsquo;s make a file. You can do this with the <code>touch</code> command. I imagine it as Merlin tapping a wand and creating something out of thin air.</p>
+<pre><code class="language-bash">touch test.html
+</code></pre>
+<p>I&rsquo;m not very unique with my example names, so I just called it <strong>test.html</strong>. When you input this code, it won&rsquo;t output anything to signify that the command was successful. You can <code>ls</code> to see it, or check in Finder that you have created a valid .html file.</p>
+<p>You can create any sort of file, but it likely only makes sense to create text based files through terminal.</p>
+<p>You can also create multiple files at the same time.</p>
+<pre><code class="language-bash">touch one.txt two.txt three.txt
+</code></pre>
+<h4 id="write-text-to-a-file">Write text to a file</h4>
+<p>We used <code>touch</code> to create an empty file, but we can even create a file on the fly with some content using <code>echo</code>.</p>
+<pre><code class="language-bash">echo &quot;Hello World&quot; &gt; hello.txt
+</code></pre>
+<p>Now I have a plain text file called <strong>hello.txt</strong> that contains the contents <code>Hello World</code>.</p>
+<h4 id="view-contents-of-a-file">View contents of a file</h4>
+<p>I can check this by opening it from Finder, but I can also see the contents through Terminal with the <code>cat</code> command.</p>
+<pre><code class="language-bash">cat hello.txt
+</code></pre>
+<pre><code class="language-terminal">NolBook:shell taniarascia$ cat hello.txt
+Hello World
+</code></pre>
+<p>At this point, I would recommend creating some more files and directories and moving between them to get more familiarized with the commands.</p>
+<blockquote>
+<p>These commands - <code>touch</code>, <code>cat</code>, and <code>echo</code> - can do much more than what I&rsquo;ve shown in these quick examples.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mkdir</code></td>
+<td><strong>Make Directory</strong></td>
+<td>create a new directory</td>
+</tr>
+<tr>
+<td><code>touch</code></td>
+<td><strong>Touch</strong></td>
+<td>create a new file</td>
+</tr>
+<tr>
+<td><code>cat</code></td>
+<td><strong>Concatenate</strong></td>
+<td>view the contents of a file</td>
+</tr>
+<tr>
+<td><code>echo &quot;x&quot; &gt;</code></td>
+<td><strong>Echo</strong></td>
+<td>quickly print text to a file</td>
+</tr>
+</tbody>
+</table>
+<h3 id="deleting-files-and-directories">Deleting files and directories</h3>
+<p>Now hopefully you&rsquo;ve make a big mess of files and directories in your testing folder, so we can start cleaning it up.</p>
+<h4 id="delete-a-file">Delete a file</h4>
+<p>Use the <code>rm</code> (<strong>Remove</strong>) command to remove a file.</p>
+<pre><code class="language-bash">rm hello.txt
+</code></pre>
+<p>Note that this will permanently delete the file - it won&rsquo;t send to the Trash/Recycling bin.</p>
+<blockquote>
+<p>The asterisk (<code>*</code>) is known as a wildcard in programming. I can choose to delete all the files of a certain filetype with a wildcard. For example, if I saved many .png files as .jpg, I could run <code>rm *.png</code> to batch delete the whole set of .png files.</p>
+</blockquote>
+<h4 id="delete-a-directory">Delete a directory</h4>
+<p>Now, let&rsquo;s say you create a new directory called <strong>goodbye</strong> with <code>mkdir goodbye</code>, and you try to delete it with <code>rm goodbye</code>. You&rsquo;ll get this error.</p>
+<pre><code class="language-terminal">NolBook:shell taniarascia$ rm goodbye
+rm: goodbye: is a directory
+</code></pre>
+<p>No problem, we&rsquo;ll just delete it with <code>rmdir</code> (<strong>Remove Directory</strong>).</p>
+<pre><code class="language-bash">rmdir goodbye
+</code></pre>
+<p>And now it&rsquo;s gone. If you want to remove a folder that has files in it, you&rsquo;ll have to run a slightly different command.</p>
+<pre><code class="language-bash">rm -r goodbye
+</code></pre>
+<p>Just like with <code>touch</code>, we can remove multiple files or folders at the same time.</p>
+<pre><code class="language-bash">rm one.txt two.txt three.txt
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rm</code></td>
+<td><strong>Remove</strong></td>
+<td>remove directory entries</td>
+</tr>
+<tr>
+<td><code>rmdir</code></td>
+<td><strong>Remove Directory</strong></td>
+<td>remove directories</td>
+</tr>
+</tbody>
+</table>
+<h3 id="copying-files-and-directories">Copying files and directories</h3>
+<p>We can also copy and paste files through the command line with the <code>cp</code> (<strong>Copy</strong>) command. Simply type <code>cp</code> followed by the source (file you want to copy) and destination (place you want to copy it to).</p>
+<pre><code class="language-bash">cp source destination
+</code></pre>
+<p>I&rsquo;m in my <strong>Shell</strong> folder. Let&rsquo;s say I make a new directory called <strong>websites</strong> with <code>mkdir websites</code>. Now I can copy my <code>test.html</code> from <code>/Users/taniarascia/shell</code> to <code>/Users/taniarascia/shell/websites</code>.</p>
+<pre><code class="language-bash">cp test.html websites
+</code></pre>
+<p>This is the same as copying and pasting (command + C).</p>
+<p>To copy an entire directory, use the <code>-R</code> option. I can copy the <strong>websites</strong> directory and all of it&rsquo;s contents to a new directory.</p>
+<pre><code class="language-bash">cp -R websites websites2
+</code></pre>
+<h4 id="duplicating-a-file">Duplicating a file</h4>
+<p>You can also duplicate a file in the same folder.</p>
+<pre><code class="language-bash">cp test.html test2.html
+</code></pre>
+<h3 id="moving-files-and-directories">Moving files and directories</h3>
+<p>You can move files just as you copy them with the <code>mv</code> (<strong>Move</strong>) command.</p>
+<pre><code class="language-bash">mv source destination
+</code></pre>
+<p>This is similar to cutting and pasting (command + X).</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cp</code></td>
+<td><strong>Copy</strong></td>
+<td>copy files</td>
+</tr>
+<tr>
+<td><code>cp -R</code></td>
+<td><strong>Copy Recursively</strong></td>
+<td>copy a directory and all its contents</td>
+</tr>
+<tr>
+<td><code>mv</code></td>
+<td><strong>Move</strong></td>
+<td>move (cut and paste) files and directories</td>
+</tr>
+</tbody>
+</table>
+<h3 id="running-multiple-commands">Running multiple commands</h3>
+<p>We can run multiple commands with the double ampersand (<code>&amp;&amp;</code>) operator. As long as the first command is successful, the subsequent one will run.</p>
+<pre><code class="language-bash">touch newfile.txt &amp;&amp; mv newfile.txt websites
+</code></pre>
+<p>I just created a new file and moved it to a different directory with one command.</p>
+<h3 id="changing-permissions">Changing permissions</h3>
+<p>File permissions aren&rsquo;t often taken into consideration when you&rsquo;re a casual Windows or Mac user, but if you&rsquo;ve ever worked on a web server you likely have experience with permissions. You can change permissions with the <code>chmod</code> (<strong>Change Mode</strong>) command.</p>
+<pre><code class="language-bash">chmod 644 test.html
+</code></pre>
+<p>I&rsquo;ve given <code>644</code> (read and write by owner) permissions to test.html, a common permission for files.</p>
+<h3 id="run-as-administrator">Run as administrator</h3>
+<p>[<a href="https://xkcd.com/149/"><img src="../images/sandwich.png" alt="">
+</a></p>
+<p>The term <code>sudo</code> stands for Super User Do. You might encounter a situation in which the current user you&rsquo;re logged in as does not have sufficient permissions to perform a task. You can precede a command with <code>sudo</code> to run the command as administrator, as long as you have the admin password. When you type the password, it will <em>not</em> show any asterisks to indicate that you&rsquo;ve typed anything.</p>
+<pre><code class="language-bash">sudo chmod 775 directory
+</code></pre>
+<p>You can also switch to the administrator user. This is not something you should do often, but it&rsquo;s useful to know. At times you will need to be logged in as admin to move between restricted directories.</p>
+<pre><code class="language-bash">sudo su
+</code></pre>
+<p>Now my terminal looks different - it has a <code>#</code> instead of a <code>$</code> to indicate that I&rsquo;m logged in as the super user.</p>
+<pre><code class="language-terminal">sh-3.2#
+</code></pre>
+<p>Since I don&rsquo;t really want to be logged in as admin, I&rsquo;m going to <code>exit</code>, which will return me to my regular user account.</p>
+<pre><code class="language-bash">exit
+</code></pre>
+<h3 id="connecting-to-another-computer-or-server">Connecting to another computer or server</h3>
+<p>If you&rsquo;re a web developer or designer, you&rsquo;ll be familiar with connecting to a web server via FTP or SFTP. You can achieve a secure connection via the command line with <code>ssh</code> (<strong>Secure SHell</strong>).</p>
+<p>You connect to the server with the same information you&rsquo;d use to connect via a GUI like FileZilla or Transmit.</p>
+<pre><code class="language-bash">ssh username@host
+</code></pre>
+<p>Once you&rsquo;ve entered your password, you are now &ldquo;inside&rdquo; the other server. Your console will most likely look something like this:</p>
+<pre><code class="language-terminal">[username@host ~]$
+</code></pre>
+<p>All the commands we&rsquo;ve already learned will work on your web host as well. You can exit the server and return to your own computer with the <code>exit</code> command.</p>
+<h3 id="a-few-useful-commands">A few useful commands</h3>
+<p>Sometimes, when I&rsquo;m having an existential crisis, I turn to my computer to bring me back to reality.</p>
+<pre><code class="language-bash">whoami
+</code></pre>
+<pre><code class="language-terminal">NolBook:~ taniarascia$ whoami
+taniarascia
+</code></pre>
+<p>I often need to check the IP address of a given domain when I&rsquo;m migrating a website. I can do this with the <code>dig</code> (<strong>DNS Lookup</strong>) command.</p>
+<pre><code class="language-bash">dig google.com
+</code></pre>
+<pre><code class="language-terminal">;; QUESTION SECTION:
+;google.com.			IN	A
+
+;; ANSWER SECTION:
+google.com.		279	IN	A	216.58.192.238
+</code></pre>
+<p>If I forget something, I can also check the help guide for the command line with <code>man</code> (<strong>Manual</strong>).</p>
+<pre><code class="language-bash">man touch
+</code></pre>
+<pre><code class="language-terminal">NAME
+touch -- change file access and modification times
+</code></pre>
+<p>To exit the manual pages, simply press q.</p>
+<h2 id="using-a-basic-text-editor">Using a basic text editor</h2>
+<p>You may have heard of programs such as Vim or Emacs. These are Terminal-based text editors. Both of these programs have a bit of a learning curve. Most (if not all) Macs and Linux-based computers come with a program installed called <strong>Nano</strong>, which is a very simple text editor.</p>
+<p>I can use the <code>nano</code> command to open a file with <strong>Nano</strong>.</p>
+<p>First, I&rsquo;ll create a new file.</p>
+<pre><code class="language-bash">touch index.html
+</code></pre>
+<p>Then I&rsquo;ll edit it with <code>nano</code>.</p>
+<pre><code class="language-bash">nano index.html
+</code></pre>
+<p>Now my Terminal screen will look something like this.</p>
+<p><img src="../images/Screen-Shot-2017-01-09-at-12.20.29-AM.png" alt=""></p>
+<p>At the top, I can see what file I&rsquo;m editing (<strong>index.html</strong>) and at the bottom are the various commands I can do. <code>^</code> stands for control. You won&rsquo;t be able to use your mouse to move around or do anything except copy the contents of the file.</p>
+<p>So I&rsquo;ll just type something unique.</p>
+<p><img src="../images/Screen-Shot-2017-01-09-at-12.24.39-AM.png" alt=""></p>
+<p>Now to save my file, I&rsquo;ll press control + O (the letter), and enter to confirm. I can exit <strong>Nano</strong> at this point by typing control + X, and I&rsquo;ll be back where I started.</p>
+<p>Now I can check the contents of <strong>index.html</strong> with <code>cat</code> to make sure it all worked properly.</p>
+<pre><code class="language-terminal">NolBook:shell taniarascia$ cat index.html
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;Hello, World!&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+</code></pre>
+<h2 id="tabla-resumen-de-comandos">Tabla resumen de comandos</h2>
+<p>Here&rsquo;s a recap of all the commands I went over today.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pwd</code></td>
+<td><strong>Print Working Directory</strong></td>
+<td>Encuentra dónde estás</td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td><strong>List Directory Contents</strong></td>
+<td>see what files and directories are in your current location</td>
+</tr>
+<tr>
+<td><code>clear</code></td>
+<td><strong>Clear</strong></td>
+<td>clear the terminal screen</td>
+</tr>
+<tr>
+<td><code>cd</code></td>
+<td><strong>Change Directory</strong></td>
+<td>move between directories</td>
+</tr>
+<tr>
+<td><code>mkdir</code></td>
+<td><strong>Make Directory</strong></td>
+<td>create a new directory</td>
+</tr>
+<tr>
+<td><code>touch</code></td>
+<td><strong>Touch</strong></td>
+<td>create a new file</td>
+</tr>
+<tr>
+<td><code>cat</code></td>
+<td><strong>Concatenate</strong></td>
+<td>view the contents of a file</td>
+</tr>
+<tr>
+<td><code>echo &quot;x&quot; &gt;</code></td>
+<td><strong>Echo</strong></td>
+<td>quickly print text to a file</td>
+</tr>
+<tr>
+<td><code>rm</code></td>
+<td><strong>Remove</strong></td>
+<td>remove directory entries</td>
+</tr>
+<tr>
+<td><code>rmdir</code></td>
+<td><strong>Remove Directory</strong></td>
+<td>remove directories</td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td><strong>Copy</strong></td>
+<td>copy files</td>
+</tr>
+<tr>
+<td><code>cp -R</code></td>
+<td><strong>Copy Recursively</strong></td>
+<td>copy a directory and all its contents</td>
+</tr>
+<tr>
+<td><code>mv</code></td>
+<td><strong>Move</strong></td>
+<td>move (cut and paste) files and directories</td>
+</tr>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td><strong>And</strong></td>
+<td>run multiple commands</td>
+</tr>
+<tr>
+<td><code>whoami</code></td>
+<td><strong>Who Am I</strong></td>
+<td>display current user id</td>
+</tr>
+<tr>
+<td><code>dig</code></td>
+<td><strong>Dig</strong></td>
+<td>DNS lookup</td>
+</tr>
+<tr>
+<td><code>man</code></td>
+<td><strong>Manual</strong></td>
+<td>open manual (help) pages</td>
+</tr>
+<tr>
+<td><code>nano</code></td>
+<td><strong>Nano&rsquo;s ANOther editor</strong></td>
+<td>free text editing program</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conclusion">Conclusion</h2>
+<p>Now that you know how to use the command line, you can do a few things like&hellip;</p>
+<ul>
+<li><a href="/learn-sass-now/">Run Sass from the command line</a></li>
+<li><a href="/getting-started-with-gulp/">Set up a workflow with Gulp</a></li>
+<li><a href="/getting-started-with-grunt-and-sass/">Or Grunt</a></li>
+<li><a href="/setting-up-a-brand-new-mac-for-development/">Download all your programs with a single command</a></li>
+<li><a href="/getting-started-with-aws-setting-up-a-virtual-server/">Set up a Linux server (AWS)</a></li>
+<li><a href="/setting-up-a-basic-cron-job-in-linux/">Set up a cron job</a></li>
+</ul>
+<p>and plenty more. There are no more limits! Have fun.</p>
+
+  </main>
+
+          
+            <footer role="contentinfo">
+  <div
+  
+  >
+    <label for="themer">
+      Tema Oscuro: <input type="checkbox" id="themer" class="vh">
+      
+      <span aria-hidden="true"></span>
+    </label>
+  </div>
+  
+    Hecho con <a href="https://gohugo.io/">Hugo</a>. El Theme es <a href="https://github.com/zwbetz-gh/cupper-hugo-theme">Cupper</a>. Implementado en  <a href="https://canodelacuadra.github.io/">Github Pages</a>.
+  
+</footer>
+
+          
+        </div>
+      </div>
+    </div>
+    
+
+<script src="/js/dom-scripts.js"></script>  
+
+<script src="/js/prism.js"></script>
+
+
+
+<script src="/js/search.da4e0819db35e5fc5289562d46cf4a2173684e337d69d997639a24b79ecd6416.js"></script>
+
+<link rel="stylesheet" href="/css/search.54f9a90ceddfdaa3e66698090e7d4a7e7a7f217c85bc79c48ed09c8cb3ee6777.css"></link>
+
+
+
+  <script src="/js/custom_01.js"></script>
+
+  <script src="/js/custom_02.js"></script>
+
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+    
+  
+
+  </body>
+</html>
