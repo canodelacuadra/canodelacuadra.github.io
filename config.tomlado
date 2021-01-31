@@ -1,12 +1,16 @@
 baseURL = "https://canodelacuadra.github.io/"
-languageCode = "en-en"
+languageCode = "es-es"
+# Default content language for Hugo 0.17's multilingual support (default is "en")
+# See: https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md
+defaultContentLanguage = "es"
+weight =1
 publishDir = "docs"
 title = "canodelacuadra"
-theme = "hugo-theme-bootstrap4-blog"
+theme = "cupper-hugo-theme"
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
 # number of words to use for summary on home/category/tag pages (Default: 70)
-summaryLength = 50
+summaryLength = 20
 # optionally override the site's footer with custom copyright text
 # copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)."
 #googleAnalytics = "UA-123-45"
@@ -43,11 +47,11 @@ summaryLength = 50
   #header_visible = true
 
   # Format dates with Go's time formatting
-  date_format = "Mon Jan 02, 2006"
+  # date_format = "Mon  02 Jan, 2006"
+date_format = "Mon  02 Jan , 2006"
 
   # verification string for Google Webmaster Tools
   #google_verify_meta = "BAi57DROASu4b2mkVNA_EyUsobfA7Mq8BmSg7Rn-Zp9"
-
   # verification string for Bing Webmaster Tools
   #bing_verify_meta = "3DA353059F945D1AA256B1CD8A3DA847"
 
@@ -73,7 +77,7 @@ summaryLength = 50
 
   [params.sidebar]
     # Optional about block for sidebar (can be Markdown)
-    about = "Documentando lo que voy aprendiendo de tecnologías web."
+    about = "Documentando lo que voy aprendiendo de tecnologías web. [Leer Más →](/acerca/)"
 
     # How many posts to show on the sidebar (Default: 5)
     #num_recent_posts = 2
@@ -84,9 +88,7 @@ summaryLength = 50
     # See: https://dev.twitter.com/cards/types/summary-large-image
     twitter = "canodelacuadra"
 
-# Default content language for Hugo 0.17's multilingual support (default is "en")
-# See: https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md
-DefaultContentLanguage = "es"
+
 
 # Languages to render
 #[languages.en]
@@ -96,3 +98,4 @@ DefaultContentLanguage = "es"
 
 # vim: ts=2 sw=2 et
 enableGitInfo = true
+Copyright = "José Antonio Cano de la Cuadra, Toledo, Spain"
