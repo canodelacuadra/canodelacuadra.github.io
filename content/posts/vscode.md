@@ -1,8 +1,8 @@
 ---
-layout: "post"
+date: "2020-11-28"
 title: "Visual Studio Code, Editor web"
 cover: "command_line.png"
-categories: ['VisualStudioCode', 'herramientas']
+tags: ['Visual Studio Code', 'herramientas']
 ---
 
 #  Visual Studio Code. Tips de uso, configuración  y extensiones

@@ -1,8 +1,8 @@
 ---
-layout: "post"
+date: "2020-12-16"
 title: "Instalación de Vuepress y Publicación en Github Pages"
-cover: "command_line.png"
-categories: [ 'ssg', 'cms', 'spa']
+
+tags: [ 'ssg', 'cms', 'spa']
 ---
 
 

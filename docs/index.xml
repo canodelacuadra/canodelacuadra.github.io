@@ -8,15 +8,6 @@
     <language>es-es</language>
     <lastBuildDate>Mon, 26 Jun 2017 18:27:58 +0100</lastBuildDate><atom:link href="https://canodelacuadra.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>acerca</title>
-      <link>https://canodelacuadra.github.io/acerca/</link>
-      <pubDate>Fri, 29 Jan 2021 11:43:12 +0100</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/acerca/</guid>
-      <description>Soy Jose</description>
-    </item>
-    
-    <item>
       <title>Comandos básicos de SQL</title>
       <link>https://canodelacuadra.github.io/posts/comandos-basicos-sql/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
@@ -37,6 +28,85 @@ Crear Conexión $host = &#39;localhost&#39;;$username = &#39;root&#39;;$passwo
     </item>
     
     <item>
+      <title>Usa SQLite y PHP</title>
+      <link>https://canodelacuadra.github.io/posts/sqlite-php/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/sqlite-php/</guid>
+      <description>XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP.
+Crearemos de una nueva base de datos SQLite usando XAMPP, luego accederá a los datos dentro de ella usando PHP.
+Comience por crear y completar una nueva base de datos utilizando el cliente de línea de comandos SQLite, como se muestra a continuación:
+  Abra el símbolo del sistema de Windows haciendo clic en el botón &amp;ldquo;Shell&amp;rdquo; en el panel de control de XAMPP.</description>
+    </item>
+    
+    <item>
+      <title>Instalación de Vuepress y Publicación en Github Pages</title>
+      <link>https://canodelacuadra.github.io/posts/vuepress-instalacion/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/vuepress-instalacion/</guid>
+      <description>¿Qué es Vuepress? VuePress es un generador de sitios estáticos, originalmente pensado para escribir la documentación de los propios proyectos de Vue. Un sitio en VuePress es en realidad una SPA (Single-Page Application) que utiliza Vue, Vue Router y webpack como base.
+Instalar vuepress en Windows 10 Vamos a instalar vuepress en windows 10 y publicarlo como contenido estatico en un repositorio de github y visualizar el contenido estático aprovechandonos de gituhub pages.</description>
+    </item>
+    
+    <item>
+      <title>Laravel III Los Controladores</title>
+      <link>https://canodelacuadra.github.io/posts/controlador-laravel./</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/controlador-laravel./</guid>
+      <description>Laravel implementa el patrón de diseño MVC para desarrollar las aplicaciones web.
+Cuando un usuario realiza la petición de un recurso, la aplicación se le asigna a un controlador, que será el responsable de solicitar a un modelo unos datos Una vez que el modelo retorna los datos, el controlador acopla esos datos a una vista y se los manda al usuario
+Un controlador es un archivo php que esta dentro de app/http/controllers</description>
+    </item>
+    
+    <item>
+      <title>Laravel II Las</title>
+      <link>https://canodelacuadra.github.io/posts/rutas-laravel./</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/rutas-laravel./</guid>
+      <description>Laravel II, Las rutas en Laravel En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.
+Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes. Las rutas de Laravel más básicas aceptan una URI y una Closure (una función anónima), proporcionando un método muy simple y expresivo para definir rutas:</description>
+    </item>
+    
+    <item>
+      <title>Crear DB MySQL con el shell de xampp</title>
+      <link>https://canodelacuadra.github.io/posts/crear-db-shell-xampp./</link>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/crear-db-shell-xampp./</guid>
+      <description>Acceder al prompt de mysql en xampp Abrimos el shell de xampp desde el panel de control de xampp Nos situamos con el shell en el directorio mysql
+cd mysql Nos autenticamos
+Jose@DESKTOP-BF0SC2G c:\xampp\mysql# mysql -u root -p` Nos pedirá el password y tras ponerlo (por defecto no lleva)nos dirigirá al prompt de mysql o mariadb en este caso
+Enter password:Welcome to the MariaDB monitor. Commands end with ; or \g.</description>
+    </item>
+    
+    <item>
+      <title>Laravel 1 Instalación de Laravel 8 en Xampp</title>
+      <link>https://canodelacuadra.github.io/posts/instalacion-laravel./</link>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/instalacion-laravel./</guid>
+      <description>Laravel I Instalamos laravel en el entorno de desarrollo que nos procura xampp
+Pasos  Instalar Xampp Intalar Composer Crear Virtual Host Instalar Laravel  Instalar XAMPP Primero que nada, necesitamos xampp, vamos a descargarlo desde la pagina oficial:
+Descargar XAMPP
+Podemos comprobar ahora los requerimientos mínimos de laravel (a día de hoy xampp los trae instalados y activados)
+Requerimientos  PHP &amp;gt;= 7.3 BCMath PHP Extension Ctype PHP Extension Fileinfo PHP Extension JSON PHP Extension Mbstring PHP Extension OpenSSL PHP Extension PDO PHP Extension Tokenizer PHP Extension XML PHP Extension  Podemos comprobar los requerimientos mediante un archivo en httdocs ejecutando la función de php</description>
+    </item>
+    
+    <item>
+      <title>Laravel 0: Qué es Laravel</title>
+      <link>https://canodelacuadra.github.io/posts/que-es-laravel./</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/que-es-laravel./</guid>
+      <description>Laravel 0 Laravel es un framework web basado en PHP. Se denomina framework para artesanos web. La base del framework propone los fundamentos, liberando al artesano web para crear sin preocuparse por las pequeñas cosas.
+Laravel recurre a un modelo de arquitectura MVC (Model View Controller) y gira en torno a las operaciones CRUD (Create, Retrieve, Update, Delete).
+Laravel 8, se lanzó el 8 de septiembre de 2020.</description>
+    </item>
+    
+    <item>
       <title>Git, y los sistemas de control de versiones</title>
       <link>https://canodelacuadra.github.io/posts/git/</link>
       <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
@@ -44,6 +114,27 @@ Crear Conexión $host = &#39;localhost&#39;;$username = &#39;root&#39;;$passwo
       <guid>https://canodelacuadra.github.io/posts/git/</guid>
       <description>Git, Sistema de Control de versiones Git y los Sistemas de control de versiones Los Sistemas de Control de Versiones permiten gestionar los cambios realizados en el código fuente de programas o documentos.
 En los años 90 la mayoría de VCS era sistemas centralizados, en el que un servidor central guarda toda la información y los clientes se conectan al servidor. En el mundo del software libre, el sistema más popular fue CVS (Concurrent Versions System), sustituido a partir del 2004 por Subversion.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Code, Editor web</title>
+      <link>https://canodelacuadra.github.io/posts/vscode/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/vscode/</guid>
+      <description>Visual Studio Code. Tips de uso, configuración y extensiones Visual Studio Code es un editor de programación multiplataforma desarrollado por Microsoft.
+Visual Studio Code es un editor de código fuente ligero pero potente que se ejecuta en su escritorio y está disponible para Windows, macOS y Linux. Viene con soporte incorporado para JavaScript, TypeScript y Node.js y tiene un rico ecosistema de extensiones para otros lenguajes (como C ++, C #, Java, Python, PHP, Go) y tiempos de ejecución (como .</description>
+    </item>
+    
+    <item>
+      <title>Cómo crear un vitualhost en Xampp Windows</title>
+      <link>https://canodelacuadra.github.io/posts/crear-virtualhost/</link>
+      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/crear-virtualhost/</guid>
+      <description>Crear Virtualhost en Xampp con windows  Hay diversas formas, proponemos una sencilla y rápida. (xampp para windows ya viene con Apache configurado para poder crear virtualhost) Lo hacemos pensando en un proyecto que contenga una aplicación escrita con php y mysql    Creamos el Directorio del proyecto dentro de htdocs Ej: app-pedidos
+  Creamos un directorio public (que contendrá las páginas accesibles desde internet)
+  Dentro de public, creamos un index.</description>
     </item>
     
     <item>
@@ -72,9 +163,16 @@ Prerequisitos  Tener node.js y npm instalados de forma global en nuestro equipo 
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://canodelacuadra.github.io/about/</guid>
-      <description>Hugo is the world’s fastest framework for building websites. It is written in Go.
-It makes use of a variety of open source projects including:
- https://github.com/russross/blackfriday https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Learn more and contribute on GitHub.</description>
+      <description>Mi nombre es José Antonio Cano</description>
+    </item>
+    
+    <item>
+      <title>Contacto</title>
+      <link>https://canodelacuadra.github.io/contacto/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/contacto/</guid>
+      <description>Vivo en La Puebla de Montalbán en toledo Email Message  Send</description>
     </item>
     
     <item>
@@ -84,38 +182,6 @@ It makes use of a variety of open source projects including:
       
       <guid>https://canodelacuadra.github.io/posts/archivos-batch/</guid>
       <description>Un archivo de texto con extensión *.bat que contiene una secuencia de órdenes para ser ejecutadas en los sistemas sistemas DOS, OS/2 y Microsoft Windows.Se trata de archivos de texto sin formato, guardados con la extensión .BAT que contienen un conjunto de instrucciones MS-DOS. Cuando se ejecuta este archivo, las órdenes contenidas son ejecutadas en grupo, de forma secuencial, permitiendo automatizar diversas tareas. Cualquier orden reconocible por MS-DOS puede ser utilizado en un archivo batch.</description>
-    </item>
-    
-    <item>
-      <title>Contacto</title>
-      <link>https://canodelacuadra.github.io/contacto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/contacto/</guid>
-      <description>Vivo en La Puebla de Montalbán en toledo Email Message  Send</description>
-    </item>
-    
-    <item>
-      <title>Crear DB con el shell de xampp</title>
-      <link>https://canodelacuadra.github.io/posts/2020-11-30-crear-db-shell-xampp./</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2020-11-30-crear-db-shell-xampp./</guid>
-      <description>Acceder al prompt de mysql en xampp Abrimos el shell de xampp desde el panel de control de xampp Nos situamos con el shell en el directorio mysql
-cd mysql Nos autenticamos
-Jose@DESKTOP-BF0SC2G c:\xampp\mysql# mysql -u root -p` Nos pedirá el password y tras ponerlo (por defecto no lleva)nos dirigirá al prompt de mysql o mariadb en este caso
-Enter password:Welcome to the MariaDB monitor. Commands end with ; or \g.</description>
-    </item>
-    
-    <item>
-      <title>Cómo crear un vitualhost en Xampp Windows</title>
-      <link>https://canodelacuadra.github.io/posts/2020-11-22-crear-virtualhost/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2020-11-22-crear-virtualhost/</guid>
-      <description>Crear Virtualhost en Xampp con windows  Hay diversas formas, proponemos una sencilla y rápida. (xampp para windows ya viene con Apache configurado para poder crear virtualhost) Lo hacemos pensando en un proyecto que contenga una aplicación escrita con php y mysql    Creamos el Directorio del proyecto dentro de htdocs Ej: app-pedidos
-  Creamos un directorio public (que contendrá las páginas accesibles desde internet)
-  Dentro de public, creamos un index.</description>
     </item>
     
     <item>
@@ -139,50 +205,6 @@ div#container y al dar a la tecla intro se expandiría</description>
     </item>
     
     <item>
-      <title>Instalación de Laravel 8 en Xampp</title>
-      <link>https://canodelacuadra.github.io/posts/2020-11-29-que-es-laravel./</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2020-11-29-que-es-laravel./</guid>
-      <description>Laravel 0 Laravel es un framework web basado en PHP. Se denomina framework para artesanos web. La base del framework propone los fundamentos, liberando al artesano web para crear sin preocuparse por las pequeñas cosas.
-Laravel recurre a un modelo de arquitectura MVC (Model View Controller) y gira en torno a las operaciones CRUD (Create, Retrieve, Update, Delete).
-Laravel 8, se lanzó el 8 de septiembre de 2020.</description>
-    </item>
-    
-    <item>
-      <title>Instalación de Laravel 8 en Xampp</title>
-      <link>https://canodelacuadra.github.io/posts/2020-11-30-instalacion-laravel./</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2020-11-30-instalacion-laravel./</guid>
-      <description>Laravel I Instalamos laravel en el entorno de desarrollo que nos procura xampp
-Pasos  Instalar Xampp Intalar Composer Crear Virtual Host Instalar Laravel  Instalar XAMPP Primero que nada, necesitamos xampp, vamos a descargarlo desde la pagina oficial:
-Descargar XAMPP
-Podemos comprobar ahora los requerimientos mínimos de laravel (a día de hoy xampp los trae instalados y activados)
-Requerimientos  PHP &amp;gt;= 7.3 BCMath PHP Extension Ctype PHP Extension Fileinfo PHP Extension JSON PHP Extension Mbstring PHP Extension OpenSSL PHP Extension PDO PHP Extension Tokenizer PHP Extension XML PHP Extension  Podemos comprobar los requerimientos mediante un archivo en httdocs ejecutando la función de php</description>
-    </item>
-    
-    <item>
-      <title>Instalación de Vuepress y Publicación en Github Pages</title>
-      <link>https://canodelacuadra.github.io/posts/2020-12-16-vuepress-instalacion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2020-12-16-vuepress-instalacion/</guid>
-      <description>¿Qué es Vuepress? VuePress es un generador de sitios estáticos, originalmente pensado para escribir la documentación de los propios proyectos de Vue. Un sitio en VuePress es en realidad una SPA (Single-Page Application) que utiliza Vue, Vue Router y webpack como base.
-Instalar vuepress en Windows 10 Vamos a instalar vuepress en windows 10 y publicarlo como contenido estatico en un repositorio de github y visualizar el contenido estático aprovechandonos de gituhub pages.</description>
-    </item>
-    
-    <item>
-      <title>Instalar  con npm</title>
-      <link>https://canodelacuadra.github.io/posts/2020-12-26-npm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2020-12-26-npm/</guid>
-      <description>Iniciar proyectos con NPM Qué es NPM NPM son las siglas de Node Package Manager, es decir, gestor de paquetes de NodeJS, un entorno de ejecución multiplataforma para ejecutar Javascript no sólo en un navegador web (como se concibió originalmente) sino fuera de él, y poder utilizarlo en sistemas de escritorio o servidores web.
-Este gestor de paquetes (muy similar al concepto de apt-get en GNU/Linux), nos permitirá instalar de forma muy sencilla y automática paquetes Javascript (tanto de Node como Javascript para el navegador) y utilizarlo para nuestros fines.</description>
-    </item>
-    
-    <item>
       <title>Instalar Node JS en Windows</title>
       <link>https://canodelacuadra.github.io/posts/instalar-node-windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -203,27 +225,6 @@ Este gestor de paquetes (muy similar al concepto de apt-get en GNU/Linux), nos p
     </item>
     
     <item>
-      <title>Las ruttas el laravel</title>
-      <link>https://canodelacuadra.github.io/posts/2020-12-05-rutas-laravel./</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2020-12-05-rutas-laravel./</guid>
-      <description>Laravel II, Las rutas en Laravel En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.
-Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes. Las rutas de Laravel más básicas aceptan una URI y una Closure (una función anónima), proporcionando un método muy simple y expresivo para definir rutas:</description>
-    </item>
-    
-    <item>
-      <title>Las ruttas el laravel</title>
-      <link>https://canodelacuadra.github.io/posts/2020-12-06-controlador-laravel./</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2020-12-06-controlador-laravel./</guid>
-      <description>Laravel III, Los Controladores Laravel implementa el patrón de diseño MVC para desarrollar las aplicaciones web.
-Cuando un usuario realiza la petición de un recurso, la aplicación se le asigna a un controlador, que será el responsable de solicitar a un modelo unos datos Una vez que el modelo retorna los datos, el controlador acopla esos datos a una vista y se los manda al usuario
-Un controlador es un archivo php que esta dentro de app/http/controllers</description>
-    </item>
-    
-    <item>
       <title>Librería curl</title>
       <link>https://canodelacuadra.github.io/posts/libreria-curl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -236,11 +237,21 @@ Curl es una librería de funciones para conectar con servidores y trabajar con e
     </item>
     
     <item>
-      <title>SSG Generador de sitios estaticos</title>
-      <link>https://canodelacuadra.github.io/posts/2020-12-16-generador-sitios-estaticos/</link>
+      <title>Qué es y cómo Instalar  con npm</title>
+      <link>https://canodelacuadra.github.io/posts/npm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://canodelacuadra.github.io/posts/2020-12-16-generador-sitios-estaticos/</guid>
+      <guid>https://canodelacuadra.github.io/posts/npm/</guid>
+      <description>Iniciar proyectos con NPM Qué es NPM NPM son las siglas de Node Package Manager, es decir, gestor de paquetes de NodeJS, un entorno de ejecución multiplataforma para ejecutar Javascript no sólo en un navegador web (como se concibió originalmente) sino fuera de él, y poder utilizarlo en sistemas de escritorio o servidores web.
+Este gestor de paquetes (muy similar al concepto de apt-get en GNU/Linux), nos permitirá instalar de forma muy sencilla y automática paquetes Javascript (tanto de Node como Javascript para el navegador) y utilizarlo para nuestros fines.</description>
+    </item>
+    
+    <item>
+      <title>SSG Generador de sitios estaticos</title>
+      <link>https://canodelacuadra.github.io/posts/generador-sitios-estaticos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/generador-sitios-estaticos/</guid>
       <description>¿Qué es un generador de sitios estáticos? Un generador de sitios estáticos crea un sitio web creando archivos HTML simples.
 Cuando un usuario visita un sitio web creado por un generador de sitios estáticos, se carga de de la misma forma que si hubieramos creado un sitio web con HTML simple. Por el contrario, un sitio dinámico que se ejecuta en un lenguaje del lado del servidor, como PHP, se construye cada vez que un usuario visita el sitio.</description>
     </item>
@@ -267,34 +278,12 @@ Bash es un shell de Unix, que es una interfaz de línea de comandos (CLI) para i
     </item>
     
     <item>
-      <title>Usa SQLite y PHP</title>
-      <link>https://canodelacuadra.github.io/posts/2021-01-07-sqlite-php/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2021-01-07-sqlite-php/</guid>
-      <description>XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP.
-Crearemos de una nueva base de datos SQLite usando XAMPP, luego accederá a los datos dentro de ella usando PHP.
-Comience por crear y completar una nueva base de datos utilizando el cliente de línea de comandos SQLite, como se muestra a continuación:
-  Abra el símbolo del sistema de Windows haciendo clic en el botón &amp;ldquo;Shell&amp;rdquo; en el panel de control de XAMPP.</description>
-    </item>
-    
-    <item>
       <title>Uso de la CLI en Windows (II)</title>
       <link>https://canodelacuadra.github.io/posts/simbolo-sistema/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://canodelacuadra.github.io/posts/simbolo-sistema/</guid>
       <description>Conocer los comandos de la CLI y usar herramientas de calidad puede hacernos más productivos y también pueden abrir las puertas a varios enfoques de la automatización que son mucho más prácticos con las interfaces textuales (CLI o editores de texto) que con las aplicaciones GUI. Puede mejorar al realizar tareas repetitivas en GUI, hasta el punto de que sus múltiples clics se escuchen como uno solo. El problema es que esto no mejorará la eficiencia de un script especializado.</description>
-    </item>
-    
-    <item>
-      <title>Visual Studio Code, Editor web</title>
-      <link>https://canodelacuadra.github.io/posts/2020-11-28-vscode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://canodelacuadra.github.io/posts/2020-11-28-vscode/</guid>
-      <description>Visual Studio Code. Tips de uso, configuración y extensiones Visual Studio Code es un editor de programación multiplataforma desarrollado por Microsoft.
-Visual Studio Code es un editor de código fuente ligero pero potente que se ejecuta en su escritorio y está disponible para Windows, macOS y Linux. Viene con soporte incorporado para JavaScript, TypeScript y Node.js y tiene un rico ecosistema de extensiones para otros lenguajes (como C ++, C #, Java, Python, PHP, Go) y tiempos de ejecución (como .</description>
     </item>
     
   </channel>

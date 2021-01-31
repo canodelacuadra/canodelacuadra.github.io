@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bases de datos on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/bases-de-datos/</link>
+    <description>Recent content in bases de datos on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/bases-de-datos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comandos básicos de SQL</title>
+      <link>https://canodelacuadra.github.io/posts/comandos-basicos-sql/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/comandos-basicos-sql/</guid>
+      <description>Sintaxis SQL SQL (Structured Query Language) es un lenguaje que usamos para interactuar con un sistema de administración de bases de datos (DBMS). Una guía de los comandos SQL más utilizados
+SQL Create Database CREATE DATABASE IF NOT EXISTS database_name Drop Database DROP DATABASE IF EXISTS database_name Create Table CREATE TABLE IF NOT EXISTS table_name (column_a Datatype Constraints,column_b Datatype Constraints,); Datatypes    Datatype Description     INT(n) Integer values   FLOAT(n, d) Decimal values   VARCHAR(n) String with max number of characters   TEXT String with without set limit (max value of 65,535)   DATE(&#39;YYYY-MM-DD&#39;) Year, month, and day   DATETIME(&#39;YYYY-MM-DD HH:MI:SS&#39;) Year, month, day, hour, minute, and second   TIMESTAMP(&#39;YYYY-MM-DD HH:MI:SS&#39;) Datetime corresponding to UNIX epoch time    Constraints    Constraint Description     PRIMARY KEY Unique identifier   AUTO_INCREMENT Integer value is automatically added and incremented   UNIQUE Value must be unique   NOT NULL Value cannot be NULL   DEFAULT Initialized with default value    Modificar Tabla ALTER TABLE table_aADD column_a DataTypeALTER COLUMN column_a DataType DROP column_aRENAME TO table_b Drop Table DROP TABLE IF EXISTS table_name Select Rows SELECT *, column_a, column_b, AggregateFunction(column_a)AS AliasFROM table_aJOIN table_bON table_a.</description>
+    </item>
+    
+    <item>
+      <title>Usa SQLite y PHP</title>
+      <link>https://canodelacuadra.github.io/posts/sqlite-php/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/sqlite-php/</guid>
+      <description>XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP.
+Crearemos de una nueva base de datos SQLite usando XAMPP, luego accederá a los datos dentro de ella usando PHP.
+Comience por crear y completar una nueva base de datos utilizando el cliente de línea de comandos SQLite, como se muestra a continuación:
+  Abra el símbolo del sistema de Windows haciendo clic en el botón &amp;ldquo;Shell&amp;rdquo; en el panel de control de XAMPP.</description>
+    </item>
+    
+  </channel>
+</rss>

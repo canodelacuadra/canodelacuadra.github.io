@@ -1,8 +1,7 @@
-+++ 
-title = "Contacto"
-sharingicons = false 
-menu = "navbar"
-+++
+---
+date: "2014-04-09"
+title: "Contacto"
+---
 
 Vivo en La Puebla de Montalbán en toledo
 Email

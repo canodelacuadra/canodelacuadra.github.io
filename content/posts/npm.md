@@ -1,8 +1,8 @@
 ---
-layout: "post"
-title: "Instalar  con npm"
+layout: "2020-12-26"
+title: "Qué es y cómo Instalar  con npm"
 cover: "command_line.png"
-categories: [ 'npm', 'node', 'css']
+categories: ['node', 'herramientas']
 ---
 # Iniciar proyectos con NPM
 ## Qué es NPM

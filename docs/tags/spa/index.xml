@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spa on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/spa/</link>
+    <description>Recent content in spa on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Wed, 16 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/spa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalación de Vuepress y Publicación en Github Pages</title>
+      <link>https://canodelacuadra.github.io/posts/vuepress-instalacion/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/vuepress-instalacion/</guid>
+      <description>¿Qué es Vuepress? VuePress es un generador de sitios estáticos, originalmente pensado para escribir la documentación de los propios proyectos de Vue. Un sitio en VuePress es en realidad una SPA (Single-Page Application) que utiliza Vue, Vue Router y webpack como base.
+Instalar vuepress en Windows 10 Vamos a instalar vuepress en windows 10 y publicarlo como contenido estatico en un repositorio de github y visualizar el contenido estático aprovechandonos de gituhub pages.</description>
+    </item>
+    
+  </channel>
+</rss>

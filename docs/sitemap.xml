@@ -3,8 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://canodelacuadra.github.io/acerca/</loc>
-    <lastmod>2021-01-29T11:54:11+01:00</lastmod>
+    <loc>https://canodelacuadra.github.io/tags/bases-de-datos/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   
   <url>
@@ -13,7 +13,7 @@
   </url>
   
   <url>
-    <loc>https://canodelacuadra.github.io/tags/snipets/</loc>
+    <loc>https://canodelacuadra.github.io/tags/sql/</loc>
     <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   
@@ -25,6 +25,91 @@
   <url>
     <loc>https://canodelacuadra.github.io/posts/sql-pdo-php/</loc>
     <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/php/</loc>
+    <lastmod>2021-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/sqlite/</loc>
+    <lastmod>2021-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/sqlite-php/</loc>
+    <lastmod>2021-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/cms/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/vuepress-instalacion/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/spa/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/ssg/</loc>
+    <lastmod>2020-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/frameworks/</loc>
+    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/laravel/</loc>
+    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/controlador-laravel./</loc>
+    <lastmod>2020-12-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/rutas-laravel./</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/crear-db-shell-xampp./</loc>
+    <lastmod>2020-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/instalacion-laravel./</loc>
+    <lastmod>2020-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/linea-de-comandos/</loc>
+    <lastmod>2020-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/mysql/</loc>
+    <lastmod>2020-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/xampp/</loc>
+    <lastmod>2020-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/que-es-laravel./</loc>
+    <lastmod>2020-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -40,6 +125,21 @@
   <url>
     <loc>https://canodelacuadra.github.io/tags/herramientas/</loc>
     <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/tags/visual-studio-code/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/vscode/</loc>
+    <lastmod>2020-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/crear-virtualhost/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -73,6 +173,11 @@
   </url>
   
   <url>
+    <loc>https://canodelacuadra.github.io/contacto/</loc>
+    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://canodelacuadra.github.io/tags/api/</loc>
     <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
@@ -93,47 +198,12 @@
   </url>
   
   <url>
-    <loc>https://canodelacuadra.github.io/contacto/</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-11-30-crear-db-shell-xampp./</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-11-22-crear-virtualhost/</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://canodelacuadra.github.io/posts/linea-comandos/</loc>
     <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://canodelacuadra.github.io/posts/emmet/</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-11-29-que-es-laravel./</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-11-30-instalacion-laravel./</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-12-16-vuepress-instalacion/</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-12-26-npm/</loc>
     <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   
@@ -148,16 +218,6 @@
   </url>
   
   <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-12-05-rutas-laravel./</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-12-06-controlador-laravel./</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://canodelacuadra.github.io/posts/libreria-curl/</loc>
     <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
@@ -168,8 +228,11 @@
   </url>
   
   <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-12-16-generador-sitios-estaticos/</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
+    <loc>https://canodelacuadra.github.io/posts/npm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://canodelacuadra.github.io/posts/generador-sitios-estaticos/</loc>
   </url>
   
   <url>
@@ -183,22 +246,7 @@
   </url>
   
   <url>
-    <loc>https://canodelacuadra.github.io/posts/2021-01-07-sqlite-php/</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://canodelacuadra.github.io/posts/simbolo-sistema/</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/posts/2020-11-28-vscode/</loc>
-    <lastmod>2021-01-31T11:16:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://canodelacuadra.github.io/tags/visualstudiocode/</loc>
     <lastmod>2021-01-31T11:16:09+01:00</lastmod>
   </url>
   

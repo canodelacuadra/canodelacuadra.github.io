@@ -1,8 +1,8 @@
 ---
-layout: "post"
+date: "2020-11-22"
 title: "Cómo crear un vitualhost en Xampp Windows"
 cover: ""
-categories: ['herramientas']
+tags: ['herramientas']
 ---
 
 # Crear Virtualhost en Xampp con windows

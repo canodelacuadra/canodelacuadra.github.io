@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.79.0" />
-  <link rel="canonical" href="/about/">
+  <link rel="canonical" href="/posts/rutas-laravel./">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>About | Canodelacuadra</title>
+  <title>Laravel II Las | Canodelacuadra</title>
 </head>
 
   <body>
@@ -212,7 +212,7 @@
       
       
       
-      <a href="/about/" aria-current="page">
+      <a href="/about/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -243,8 +243,59 @@
         <div>
           
   <main id="main">
-    <h1>About</h1>
-    <p>Mi nombre es José Antonio Cano</p>
+    <h1>Laravel II Las</h1>
+    <h1 id="laravel-ii-las-rutas-en-laravel">Laravel II, Las rutas en Laravel</h1>
+<p>En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.</p>
+<p>Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes.
+Las rutas de Laravel más básicas aceptan una URI y una Closure (una función anónima), proporcionando un método muy simple y expresivo para definir rutas:</p>
+<pre><code class="language-php">Route::get('foo', function () {
+    return 'Hello World';
+});
+</code></pre>
+<p>Las rutas en laravel se basan en un patrón: El patrón FrontController ( Es &ldquo;un controlador que maneja todas las solicitudes de un sitio web &ldquo;). Es decir, que vamos a tener un sólo archivo de la entrada a nuestra aplicación. El archivo public/index.php .</p>
+<p>Los archivos a los que se accede desde el exterior son los que están dentro del directorio o carpeta public. Por seguridad, el resto de directorios de nuestra instalación estarán fuera del acceso</p>
+<p>Y mediante el patrón frontController resolveremos todas las solicitudes que tengamos
+Estas rutas podemos encontrarlas en el directorio routes/web.php</p>
+<blockquote>
+<p>Hay otros archivos además de web pero nos centramos ahora en web</p>
+</blockquote>
+<p>En este archivo veremos definidas todas las rutas de nuestro proyecto
+La sintaxis es la siguiente:</p>
+<p>.</p>
+<pre><code class="language-php">Route::get('/', function () {
+    return view('welcome');
+});
+</code></pre>
+<p>Accedemos al método estático  get de Route que es una clase Trait que nos proporciona Laravel. Un trait es similar a una clase, pero su objetivo es agrupar funcionalidades específicas. Un trait, al igual que las clases abstractas, no se puede instanciar, simplemente facilitan comportamientos a las clases sin necesidad de ser instanciadas</p>
+<pre><code class="language-php">Route::get('/', function () {
+    return view('welcome');
+});
+</code></pre>
+<p>Definimos una raiz  y retorna una vista.
+El método get, tiene dos parámetros: la ruta en sí y el segundo es una función anónima (en el ejemplo anterior viene con una vista. Aun no sabemos lo que es una vista pues se cambia y ponemos simplemente un string)</p>
+<pre><code class="language-php">Route::get('/contacto', function () {
+    return 'Soy la página de contacto';
+});
+</code></pre>
+<p>Podemos generar una ruta para devolver por ejemplo un listado de productos</p>
+<pre><code class="language-php">Route::get('/productos', function () {
+    return 'Aqui irá  mi listado de productos';
+});
+</code></pre>
+<p>Se pueden pasar valores por url  que se recogen  parámetros en la función anónima y que luego se pueden utilizar como variables en nuestra función de respuesta</p>
+<pre><code class="language-php">Route::get('/productos/{producto}', function ($producto) {
+    return &quot;Soy el $producto&quot;;
+});
+</code></pre>
+<blockquote>
+<p>Nota: Laravel snippets es una extensión de visual studio code qeu nos puede ayudar a escribir codigos repetitivos&hellip;</p>
+</blockquote>
+<p>También puede haber rutas con varios parámetros y con parámetros opcionales</p>
+<pre><code class="language-php">Route::get('/productos/{producto}/{categoria?}', function ($producto,$categoria='general') {
+    return &quot;Soy el $producto de categoria $categoria&quot; ;
+});
+</code></pre>
+<p>Pero las rutas deben tender a ser sencillas&hellip; si empiezan a ser complejas es mejor crear controladores externos&hellip;</p>
 
   </main>
 

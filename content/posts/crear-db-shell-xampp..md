@@ -1,8 +1,8 @@
 ---
-layout: "post"
-title: "Crear DB con el shell de xampp"
+date: "2020-11-30"
+title: "Crear DB MySQL con el shell de xampp"
 cover: "command_line.png"
-categories: ['linea-de-comandos', 'mysql', 'xampp']
+tags: ['linea-de-comandos', 'mysql', 'xampp']
 ---
 
 # Acceder al prompt de mysql en xampp

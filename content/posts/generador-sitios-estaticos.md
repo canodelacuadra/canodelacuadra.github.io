@@ -1,8 +1,8 @@
 ---
-layout: "post"
+date: "2020-12-16-"
 title: "SSG Generador de sitios estaticos"
 cover: "command_line.png"
-categories: [ 'ssg', 'cms']
+tags: [ 'ssg', 'cms']
 ---
 
 

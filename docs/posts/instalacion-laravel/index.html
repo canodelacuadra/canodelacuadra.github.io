@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.79.0" />
-  <link rel="canonical" href="/about/">
+  <link rel="canonical" href="/posts/instalacion-laravel./">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>About | Canodelacuadra</title>
+  <title>Laravel 1 Instalación de Laravel 8 en Xampp | Canodelacuadra</title>
 </head>
 
   <body>
@@ -212,7 +212,7 @@
       
       
       
-      <a href="/about/" aria-current="page">
+      <a href="/about/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -243,8 +243,91 @@
         <div>
           
   <main id="main">
-    <h1>About</h1>
-    <p>Mi nombre es José Antonio Cano</p>
+    <h1>Laravel 1 Instalación de Laravel 8 en Xampp</h1>
+    <h1 id="laravel-i">Laravel I</h1>
+<p>Instalamos laravel en el entorno de desarrollo que nos procura xampp</p>
+<h2 id="pasos">Pasos</h2>
+<ol>
+<li>Instalar Xampp</li>
+<li>Intalar Composer</li>
+<li>Crear Virtual Host</li>
+<li>Instalar Laravel</li>
+</ol>
+<h2 id="instalar-xampp">Instalar XAMPP</h2>
+<p>Primero que nada, necesitamos xampp, vamos a descargarlo desde la pagina oficial:</p>
+<p><a href="https://www.apachefriends.org/es/index.html">Descargar XAMPP</a></p>
+<p>Podemos comprobar ahora los requerimientos mínimos de laravel (a día de hoy xampp los trae instalados y activados)</p>
+<h3 id="requerimientos">Requerimientos</h3>
+<ul>
+<li>PHP &gt;= 7.3</li>
+<li>BCMath PHP Extension</li>
+<li>Ctype PHP Extension</li>
+<li>Fileinfo PHP Extension</li>
+<li>JSON PHP Extension</li>
+<li>Mbstring PHP Extension</li>
+<li>OpenSSL PHP Extension</li>
+<li>PDO PHP Extension</li>
+<li>Tokenizer PHP Extension</li>
+<li>XML PHP Extension</li>
+</ul>
+<p>Podemos comprobar los requerimientos mediante un archivo en httdocs ejecutando la función de php</p>
+<pre><code class="language-php">&lt;?php
+phpinfo(); 
+
+</code></pre>
+<p>e ir viendo si están isntalados y acitvados, o mediante línea de comandos</p>
+<pre><code class="language-shell">php --version
+php -m #lista de modulos instalados
+php --ri nombre_modulo #comprueba si están activados
+</code></pre>
+<h2 id="instalar-composer">Instalar Composer</h2>
+<p>Despues de instalar XAMPP, nosotros necesitaremos instalar composer.</p>
+<p>Composer es un gestor de dependencias o paquetes de php que se complementa muy bien con Laravel. En windows es facil de instalar solo ingrese al link y descargue el instalador.</p>
+<p><a href="https://getcomposer.org/download/">Descargar Composer</a></p>
+<p>Despues de instalar, abre una terminal en windows o git bash  y escribe <code>composer </code> . Se deberia mostrar algo parecido a lo siguiente:</p>
+<p><img src="../images/composer.png" alt="Ejemplo de Composer instalado"></p>
+<h2 id="xampp-virtual-host">Xampp Virtual Host</h2>
+<p>Podemos configurar un host virtual en Xampp para un proyecto de Laravel, y en este ejemplo, vamos a configurar el dominio laravel.site para nuestro proyecto. Vamos a instalar laravel en un directorio de htdocs de xampp que podemos llamar simplemente laravel</p>
+<p>Tenemos que editar <strong>httpd-vhosts.conf</strong> que se encuentra en <strong>C:\xampp\apache\conf\extra\httpd-vhosts.conf</strong> y agregar las siguientes líneas al final del archivo para crear el virtual host y dar al directorio permisos:</p>
+<pre><code class="language-apache"># VirtualHost for LARAVEL.SITE
+
+&lt;VirtualHost laravel.site:80&gt;
+  DocumentRoot &quot;C:\xampp\htdocs\laravel\public&quot;
+  ServerAdmin laravel.site
+  &lt;Directory &quot;C:\xampp\htdocs\laravel&quot;&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+  &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+<p>Después de esto, Apache está escuchando laravel.site pero tenemos que configurar nuestro archivo de hosts que permite redirigir laravel.site al localhost. Este archivo  se encuentra en <strong>C:\Windows\System32\drivers\etc</strong></p>
+<p><strong>¡IMPORTANTE!:</strong> Para editar este archivo, debemos hacerlo como administrador. 
+Edite el archivo hosts agregando nuestro localhost para laravel.site:</p>
+<pre><code># localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+127.0.0.1	laravel.site
+</code></pre>
+<p><strong>NOTA:</strong> Puede ser que con el dominio <strong>.dev</strong> tengamos problemas. Por eso usamos <strong>.site</strong> o podríamos usar <strong>.test</strong> .</p>
+<p>Guardamos el archivo y estamos listos para instalar laravel.</p>
+<h2 id="instalar-laravel">Instalar Laravel</h2>
+<p>Estamos preparados para instalar y configurar  Laravel Framework. En primer lugar, tenemos que navegar por terminal a la carpeta htdocs para instalarlo y ejecutar el siguiente comando:</p>
+<pre><code>composer create-project laravel/laravel laravel
+</code></pre>
+<p>En este caso nuestro proyecto se llama laravel, el nombre se especifica al final como por  ejemplo:</p>
+<pre><code>composer create-project laravel/laravel mipagina
+</code></pre>
+<p>Aunque ahora lo haremos con el nombre de laravel porque así lo determinamos al crear el virtualhost, Si lo cambiamos también debemos hacerlo en el virtualhost</p>
+<p>Cuando termine, observaremos el siguiente esquema de directorio dentro de laravel:</p>
+<p><img src="../images/directorio-laravel.png" alt="Ejemplo de directorio laravel"></p>
+<p>Finalmente, inicia apache y MySql desde el panel de control de Xampp. Ejecuta laravel.site en tu navegador y Laravel debe estar instalado.</p>
+<p><img src="../images/laravel-site.PNG" alt="Ejemplo de directorio laravel"></p>
+<h3 id="configuración-de-la-base-de-datos">Configuración de la Base de datos</h3>
+<p>Abra el archivo .env en su IDE o editor de texo- Cambie DB_DATABASE por el nombre de su base de datos y si ha establecido un nombre de usuario y contraseña para su phpmyadmin, especifíquelo; de lo contrario, deje el nombre de usuario como root y la contraseña en blanco.</p>
+<p>La fuente original es esta. Estaba escrito para laravel 5 
+<a href="https://www.codementor.io/magarrent/how-to-install-laravel-5-xampp-windows-du107u9ji">Fuente original</a></p>
 
   </main>
 

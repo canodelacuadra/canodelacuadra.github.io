@@ -1,5 +1,5 @@
 ---
-layout: "post"
+
 date: "2020-7-04"
 title: "Archivos batch (IV)"
 cover: "cmd-herramienta.PNG"

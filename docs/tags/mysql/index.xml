@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/mysql/</link>
+    <description>Recent content in mysql on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Mon, 30 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crear DB MySQL con el shell de xampp</title>
+      <link>https://canodelacuadra.github.io/posts/crear-db-shell-xampp./</link>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/crear-db-shell-xampp./</guid>
+      <description>Acceder al prompt de mysql en xampp Abrimos el shell de xampp desde el panel de control de xampp Nos situamos con el shell en el directorio mysql
+cd mysql Nos autenticamos
+Jose@DESKTOP-BF0SC2G c:\xampp\mysql# mysql -u root -p` Nos pedirá el password y tras ponerlo (por defecto no lleva)nos dirigirá al prompt de mysql o mariadb en este caso
+Enter password:Welcome to the MariaDB monitor. Commands end with ; or \g.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.79.0" />
-  <link rel="canonical" href="/about/">
+  <link rel="canonical" href="/posts/crear-virtualhost/">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>About | Canodelacuadra</title>
+  <title>Cómo crear un vitualhost en Xampp Windows | Canodelacuadra</title>
 </head>
 
   <body>
@@ -212,7 +212,7 @@
       
       
       
-      <a href="/about/" aria-current="page">
+      <a href="/about/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -243,8 +243,52 @@
         <div>
           
   <main id="main">
-    <h1>About</h1>
-    <p>Mi nombre es José Antonio Cano</p>
+    <h1>Cómo crear un vitualhost en Xampp Windows</h1>
+    <h1 id="crear-virtualhost-en-xampp-con-windows">Crear Virtualhost en Xampp con windows</h1>
+<ul>
+<li>Hay diversas formas, proponemos una sencilla y rápida. (xampp para windows ya viene con Apache configurado para poder crear virtualhost)</li>
+<li>Lo hacemos pensando en un proyecto que contenga una aplicación escrita con php y mysql</li>
+</ul>
+<ol>
+<li>
+<p>Creamos el Directorio del proyecto dentro de htdocs Ej: app-pedidos</p>
+</li>
+<li>
+<p>Creamos un directorio public (que contendrá las páginas accesibles desde internet)</p>
+</li>
+<li>
+<p>Dentro de public, creamos un index.php para un Hola Mundo</p>
+</li>
+<li>
+<p>Creamos un virtualhost para app-pedidos que le llamaremos app-pedidos.site</p>
+</li>
+</ol>
+<p>Para crear un virtualhost vamos a</p>
+<pre><code>C:\xampp\apache\conf\extra\httpd-vhosts.conf
+</code></pre>
+<p>Este es el documento especial que tiene xammp para poder poner ordenadamente nuestros virtualhost</p>
+<p>y configuramos el virtualhost por el puerto 80 con la extensión .site (.dev chrome no lo admite) apuntando la directiva root a la carpeta public, y dando permiso de archivo al directorio app-pedidos</p>
+<pre><code># VirtualHost para app-pedidos.site
+
+&lt;VirtualHost app-pedidos.site:80&gt;
+  DocumentRoot &quot;C:\xampp\htdocs\app-pedidos\public&quot;
+  ServerAdmin app-pedidos.site
+  &lt;Directory &quot;C:\xampp\htdocs\app-pedidos&quot;&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+  &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+<ol start="5">
+<li>Ahora nos falta decirle a nuestro equipo que eschuche este domínio local en localhost por el puerto 80</li>
+</ol>
+<p>Vamos al archivo hosts que está en la siguiente ruta</p>
+<pre><code>C:\Windows\System32\drivers\etc\hosts
+</code></pre>
+<p>y añadimos el host`</p>
+<pre><code>127.0.0.1	app-pedidos.site
+</code></pre>
 
   </main>
 

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.79.0" />
-  <link rel="canonical" href="/about/">
+  <link rel="canonical" href="/posts/vuepress-instalacion/">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>About | Canodelacuadra</title>
+  <title>Instalación de Vuepress y Publicación en Github Pages | Canodelacuadra</title>
 </head>
 
   <body>
@@ -212,7 +212,7 @@
       
       
       
-      <a href="/about/" aria-current="page">
+      <a href="/about/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -243,8 +243,160 @@
         <div>
           
   <main id="main">
-    <h1>About</h1>
-    <p>Mi nombre es José Antonio Cano</p>
+    <h1>Instalación de Vuepress y Publicación en Github Pages</h1>
+    <h1 id="qué-es-vuepress">¿Qué es Vuepress?</h1>
+<p>VuePress es un generador de sitios estáticos, originalmente pensado para escribir la documentación de los propios proyectos de Vue. Un sitio en VuePress es en realidad una SPA (Single-Page Application) que utiliza Vue, Vue Router y webpack como base.</p>
+<h2 id="instalar-vuepress-en-windows-10">Instalar vuepress en Windows 10</h2>
+<p>Vamos a instalar vuepress en windows 10 y publicarlo como contenido estatico en un repositorio de github y visualizar el contenido estático aprovechandonos de gituhub pages. VuePress es una fantástica herrmienta para crear documentación en línea.</p>
+<h2 id="requisitos">Requisitos</h2>
+<ul>
+<li>Node instalado para lanzar un servidor y para usar npm</li>
+<li>Git  Bash instalado (Git)</li>
+<li>Un repositorio de github creado con keys SSH</li>
+<li></li>
+</ul>
+<h3 id="paso-1-instalar-la-aplicación-en-nuestro-equipo">Paso 1 Instalar la aplicación en nuestro equipo</h3>
+<p>De las diferentes formas que se nos aconseja en vuepress, hemos seguido las opciones de intalación de forma manual con npm pues nos ha resultado más confiable. 
+<a href="https://vuepress.vuejs.org/guide/getting-started.html#quick-start">Manual de Vuepress</a>.</p>
+<ol>
+<li>
+<p>Creamos un directorio de trabajo y accedemos al mismo</p>
+<pre><code class="language-cmd">mkdir apuntes-app-distribuidas
+cd apuntes-app-distribuidas
+</code></pre>
+</li>
+<li>
+<p>Inicializamos el administrador de paquetes npm que nos creará el package.json de inicio. Podemos dar intro para poner lo que pone por defecto. Luego podremos editarlo si queremos</p>
+<pre><code class="language-cmd">npm init
+</code></pre>
+</li>
+<li>
+<p>Instalamos vuepress localmente (solo en este directorio)</p>
+<pre><code class="language-cmd">npm install -D vuepress
+</code></pre>
+</li>
+<li>
+<p>Al package.json (archivo que se ha creado en la raiz de nuestro sitio) le añadimos dos scripts</p>
+<pre><code class="language-cmd">&quot;scripts&quot;: {
+    &quot;docs:dev&quot;: &quot;vuepress dev docs&quot;,
+    &quot;docs:build&quot;: &quot;vuepress build docs&quot;
+}
+}
+</code></pre>
+</li>
+<li>
+<p>Creamos una carpeta dentro de la raiz que se llame <code>docs</code> y dentro un archivo que se llame README.md que será el index del proyecto. Atención a las mayusculas en el nombre y minúsculas en la extensión: docs/README.md. Escribimos algo en el README.md. como &lsquo;# hola mundo&rsquo;</p>
+</li>
+<li>
+<p>ejecutamos por consola el script de nuestro package.json que se llama docs:dev, VuePress iniciará un servidor de desarrollo de recarga en vivo en http:// localhost:8080 (abre una nueva ventana).</p>
+</li>
+</ol>
+<pre><code class="language-cmd">  npm run docs:dev
+</code></pre>
+<p>Los cambios que hagas en README.md se irán viendo en en vivo cada vez que guardes los cambios.</p>
+<h3 id="paso-2-agregar-contenido-y-personalización">Paso 2 Agregar contenido y personalización</h3>
+<p>Vuepress sigue el criterio de convención por encima de configuración por lo que crearemos archivos y dirctorios según la convención que nos marcan
+<a href="https://vuepress.vuejs.org/guide/directory-structure.html#default-page-routing">directorio de archivos</a></p>
+<ol>
+<li>
+<p>Creamos un directorio dentro de docs que se llame .vuepress /docs/.vuepress</p>
+</li>
+<li>
+<p>Creamos un archivo que se llame config.js dentro de  .vuepress /docs/.vuepress/config.js</p>
+<pre><code class="language-javascript">module.exports = {
+ title: 'Desarrollo de Aplicaciones Distribuidas',
+ description: 'Apuntes para el desarrollo de aplicaciones distribuidas'
+ }
+</code></pre>
+</li>
+</ol>
+<p>Cada vez que cambiamos el archivo de configuración debemos reiniciar el servidor de desarrollo Control+C para salir y npm run docs:dev para volver a iniciarlo</p>
+<p>Ahora debemos ver un  titulo en la pestaña de navegación, un título y una barra de busqueda en el header de nuestra documentación 
+3. Ahora podemos crear todos los documentos que queramos dentro de la carpeta docs: por ejemplo api.md y webservice.md
+4. Para darlos enlaces podemos activar los enlaces del sidebar en config.js en el objeto ThemeConfig, al que después podremos ir añadiéndole más cosas</p>
+<pre><code class="language-javascript">  module.exports = {
+    title: 'Desarrollo de Aplicaciones Distribuidas',
+    description: 'Apuntes para el desarrollo de aplicaciones distribuidas',
+    themeConfig: {
+        sidebar: [
+            ['/webservice', 'Que es un webservice'],
+            ['/api', 'Que es una API']  
+        ]
+    }
+  }
+</code></pre>
+<h3 id="paso-3-generación-de-archivos-estáticos">Paso 3 Generación de archivos estáticos</h3>
+<p>Para generar los archivos estáticos debemos ejecutar</p>
+<pre><code>npm run docs:build
+</code></pre>
+<p>Esto nos creará los archivos estáticos dentro de docs/.vuepress/dist</p>
+<p>Estos archivos deberán implementarse en un servidor, no funcionan ejecutándose en local
+Podemos instalar http server y hacerlo</p>
+<pre><code>npm install --global http-server
+</code></pre>
+<p>y ejecutar dentro del directorio dist</p>
+<pre><code>http-server
+</code></pre>
+<p>Ahora ya podremos ver los archivos ejecutándose convenientemente en servidor</p>
+<h3 id="paso-5-implementación-y-publicación-automatizada-en-github">Paso 5 Implementación y Publicación automatizada en github</h3>
+<p>Creamos un repositorio en github y habilitamos credenciales llaves publicas ssh si no las tenemos.</p>
+<p>Establecer la correcta base en docs/.vuepress/config.js.</p>
+<p>Si está implementando en https://<USERNAME>.github.io/<REPO>/, por ejemplo, su repositorio está en <a href="https://github.com/">https://github.com/</a><USERNAME>/<REPO>, configure baseen &ldquo;/<REPO>/&rdquo;</p>
+<pre><code class="language-javascript">module.exports = {
+   title: 'Desarrollo de Aplicaciones Distribuidas',
+   description: 'Apuntes para el desarrollo de aplicaciones distribuidas',
+   lang: 'es',
+   base: '/apuntes-app-distribuidas/',
+   
+ }
+</code></pre>
+<p>también el objeto de configuración del theme</p>
+<pre><code class="language-javascript">module.exports = {
+   title: 'Desarrollo de Aplicaciones Distribuidas',
+   description: 'Apuntes para el desarrollo de aplicaciones distribuidas',
+   lang: 'es',
+   base: '/apuntes-app-distribuidas/',
+   themeConfig: {
+       repo: 'canodelacuadra/apuntes-app-distribuidas',
+       docsDir: 'gh-pages',
+       sidebar: [
+           ['/webservice', 'Que es un webservice'],
+           ['/api', 'Que es una API']  
+       ]
+   }
+ }
+
+</code></pre>
+<p>Crear un deploy.sh. Este archivo nos servirá para automatizar una serie de línea de comandos.</p>
+<pre><code class="language-sh">#!/usr/bin/env sh
+
+# abort on errors
+set -e
+
+# build
+npm run docs:build
+
+# navigate into the build output directory
+cd docs/.vuepress/dist
+
+# if you are deploying to a custom domain
+# echo 'www.example.com' &gt; CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# if you are deploying to https://&lt;USERNAME&gt;.github.io
+# git push -f git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git master
+
+# if you are deploying to https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;
+git push -f git@github.com:canodelacuadra/apuntes-app-distribuidas.git master:gh-pages
+
+cd -
+</code></pre>
+<p>y luego lanzamos el script en consola</p>
+<pre><code>sh deploy.sh
+</code></pre>
 
   </main>
 

@@ -1,8 +1,8 @@
 ---
-layout: "post"
-title: "Las ruttas el laravel"
+date: "2020-12-05"
+title: "Laravel II Las"
 cover: "command_line.png"
-categories: ['laravel', 'php', 'frameworks']
+tags: ['laravel', 'php', 'frameworks']
 ---
 
 # Laravel II, Las rutas en Laravel 

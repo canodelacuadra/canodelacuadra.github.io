@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.79.0" />
-  <link rel="canonical" href="/about/">
+  <link rel="canonical" href="/posts/crear-db-shell-xampp./">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>About | Canodelacuadra</title>
+  <title>Crear DB MySQL con el shell de xampp | Canodelacuadra</title>
 </head>
 
   <body>
@@ -212,7 +212,7 @@
       
       
       
-      <a href="/about/" aria-current="page">
+      <a href="/about/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -243,8 +243,32 @@
         <div>
           
   <main id="main">
-    <h1>About</h1>
-    <p>Mi nombre es José Antonio Cano</p>
+    <h1>Crear DB MySQL con el shell de xampp</h1>
+    <h1 id="acceder-al-prompt-de-mysql-en-xampp">Acceder al prompt de mysql en xampp</h1>
+<p>Abrimos el shell de xampp desde el panel de control de xampp
+<img src="../images/shell-mysql.png" alt="Shell de mysql"></p>
+<p>Nos situamos con el shell en el directorio mysql</p>
+<pre><code>cd mysql
+</code></pre>
+<p>Nos autenticamos</p>
+<pre><code>Jose@DESKTOP-BF0SC2G c:\xampp\mysql
+# mysql -u root -p`
+</code></pre>
+<p>Nos pedirá el password y tras ponerlo (por defecto no lleva)nos dirigirá al prompt de mysql o mariadb en este caso</p>
+<pre><code class="language-mysql">Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 9
+Server version: 10.4.16-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]&gt;
+</code></pre>
+<p>Y ya estamos dentro y podemos crear, acceder y consultar una base de datos</p>
+<pre><code>CREATE DATABASE laravel
+</code></pre>
 
   </main>
 

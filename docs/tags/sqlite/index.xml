@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sqlite on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/sqlite/</link>
+    <description>Recent content in sqlite on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Usa SQLite y PHP</title>
+      <link>https://canodelacuadra.github.io/posts/sqlite-php/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/sqlite-php/</guid>
+      <description>XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP.
+Crearemos de una nueva base de datos SQLite usando XAMPP, luego accederá a los datos dentro de ella usando PHP.
+Comience por crear y completar una nueva base de datos utilizando el cliente de línea de comandos SQLite, como se muestra a continuación:
+  Abra el símbolo del sistema de Windows haciendo clic en el botón &amp;ldquo;Shell&amp;rdquo; en el panel de control de XAMPP.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 ---
 date: "2020-6-9"
 title: "Emmet"
-tags: ['VisualStudioCode', 'herramientas']
+tags: ['Visual Studio Code', 'herramientas']
 ---
 
 

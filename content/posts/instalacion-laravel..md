@@ -1,6 +1,6 @@
 ---
-layout: "post"
-title: "Instalación de Laravel 8 en Xampp"
+date: "2020-11-30"
+title: "Laravel 1 Instalación de Laravel 8 en Xampp"
 cover: "command_line.png"
 categories: ['laravel', 'php', 'frameworks']
 ---

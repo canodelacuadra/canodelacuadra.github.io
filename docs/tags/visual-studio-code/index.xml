@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Studio Code on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/visual-studio-code/</link>
+    <description>Recent content in Visual Studio Code on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 28 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/visual-studio-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visual Studio Code, Editor web</title>
+      <link>https://canodelacuadra.github.io/posts/vscode/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/vscode/</guid>
+      <description>Visual Studio Code. Tips de uso, configuración y extensiones Visual Studio Code es un editor de programación multiplataforma desarrollado por Microsoft.
+Visual Studio Code es un editor de código fuente ligero pero potente que se ejecuta en su escritorio y está disponible para Windows, macOS y Linux. Viene con soporte incorporado para JavaScript, TypeScript y Node.js y tiene un rico ecosistema de extensiones para otros lenguajes (como C ++, C #, Java, Python, PHP, Go) y tiempos de ejecución (como .</description>
+    </item>
+    
+    <item>
+      <title>Emmet</title>
+      <link>https://canodelacuadra.github.io/posts/emmet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/emmet/</guid>
+      <description>Emmet (anteriormente Zen Codding) nos facilita escribir HTML y CSS,entre otros, por medio de abreviaturas, las cuales se expanden en código html o CSS, tras ejecutarse. Es un plugin que viene ( en algunos editores por defecto) con un buen número de editores de texto avanzados : Notepad++, Visual Studio Code, Brackets, Atom, Sublime Text&amp;hellip;
+Por ejemplo, para escribir un div con id container sería esctibir
+div#container y al dar a la tecla intro se expandiría</description>
+    </item>
+    
+  </channel>
+</rss>

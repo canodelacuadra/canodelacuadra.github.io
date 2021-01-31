@@ -1,8 +1,8 @@
 ---
-layout: "post"
+date: "2021-01-07"
 title: "Usa SQLite y PHP"
 cover: "command_line.png"
-categories: [ 'php', 'bases de datos', 'sqlite']
+tags: [ 'php', 'bases de datos', 'sqlite']
 ---
 
 XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP. 

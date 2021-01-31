@@ -1,11 +1,11 @@
 ---
-layout: "post"
-title: "Las ruttas el laravel"
+date: "2020-12-06"
+title: "Laravel III Los Controladores"
 cover: "command_line.png"
-categories: ['laravel', 'php', 'frameworks']
+tags: ['laravel', 'php', 'frameworks']
 ---
 
-# Laravel III, Los Controladores
+
 
 Laravel implementa el patrón de diseño MVC para desarrollar las aplicaciones web.
 

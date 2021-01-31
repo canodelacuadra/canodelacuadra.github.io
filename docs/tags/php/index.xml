@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/php/</link>
+    <description>Recent content in php on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Usa SQLite y PHP</title>
+      <link>https://canodelacuadra.github.io/posts/sqlite-php/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/sqlite-php/</guid>
+      <description>XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP.
+Crearemos de una nueva base de datos SQLite usando XAMPP, luego accederá a los datos dentro de ella usando PHP.
+Comience por crear y completar una nueva base de datos utilizando el cliente de línea de comandos SQLite, como se muestra a continuación:
+  Abra el símbolo del sistema de Windows haciendo clic en el botón &amp;ldquo;Shell&amp;rdquo; en el panel de control de XAMPP.</description>
+    </item>
+    
+    <item>
+      <title>Laravel III Los Controladores</title>
+      <link>https://canodelacuadra.github.io/posts/controlador-laravel./</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/controlador-laravel./</guid>
+      <description>Laravel implementa el patrón de diseño MVC para desarrollar las aplicaciones web.
+Cuando un usuario realiza la petición de un recurso, la aplicación se le asigna a un controlador, que será el responsable de solicitar a un modelo unos datos Una vez que el modelo retorna los datos, el controlador acopla esos datos a una vista y se los manda al usuario
+Un controlador es un archivo php que esta dentro de app/http/controllers</description>
+    </item>
+    
+    <item>
+      <title>Laravel II Las</title>
+      <link>https://canodelacuadra.github.io/posts/rutas-laravel./</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/rutas-laravel./</guid>
+      <description>Laravel II, Las rutas en Laravel En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.
+Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes. Las rutas de Laravel más básicas aceptan una URI y una Closure (una función anónima), proporcionando un método muy simple y expresivo para definir rutas:</description>
+    </item>
+    
+    <item>
+      <title>Laravel 0: Qué es Laravel</title>
+      <link>https://canodelacuadra.github.io/posts/que-es-laravel./</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/que-es-laravel./</guid>
+      <description>Laravel 0 Laravel es un framework web basado en PHP. Se denomina framework para artesanos web. La base del framework propone los fundamentos, liberando al artesano web para crear sin preocuparse por las pequeñas cosas.
+Laravel recurre a un modelo de arquitectura MVC (Model View Controller) y gira en torno a las operaciones CRUD (Create, Retrieve, Update, Delete).
+Laravel 8, se lanzó el 8 de septiembre de 2020.</description>
+    </item>
+    
+  </channel>
+</rss>

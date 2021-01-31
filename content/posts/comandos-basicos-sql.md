@@ -1,10 +1,10 @@
 ---
-layout: "post"
+
 date: "2021-01-29"
 title: "Comandos básicos de SQL"
 cover: "command_line.png"
-categories: [ 'sql', 'bases de datos']
-tags: ["snipets"]
+tags: [ 'sql', 'bases de datos']
+
 ---
 
 # Sintaxis SQL 

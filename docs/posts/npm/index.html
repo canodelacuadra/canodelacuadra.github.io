@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.79.0" />
-  <link rel="canonical" href="/about/">
+  <link rel="canonical" href="/posts/npm/">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>About | Canodelacuadra</title>
+  <title>Qué es y cómo Instalar  con npm | Canodelacuadra</title>
 </head>
 
   <body>
@@ -212,7 +212,7 @@
       
       
       
-      <a href="/about/" aria-current="page">
+      <a href="/about/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -243,8 +243,48 @@
         <div>
           
   <main id="main">
-    <h1>About</h1>
-    <p>Mi nombre es José Antonio Cano</p>
+    <h1>Qué es y cómo Instalar  con npm</h1>
+    <h1 id="iniciar-proyectos-con-npm">Iniciar proyectos con NPM</h1>
+<h2 id="qué-es-npm">Qué es NPM</h2>
+<p>NPM son las siglas de Node Package Manager, es decir, gestor de paquetes de NodeJS, un entorno de ejecución multiplataforma para ejecutar Javascript no sólo en un navegador web (como se concibió originalmente) sino fuera de él, y poder utilizarlo en sistemas de escritorio o servidores web.</p>
+<p>Este gestor de paquetes (muy similar al concepto de apt-get en GNU/Linux), nos permitirá instalar de forma muy sencilla y automática paquetes Javascript (tanto de Node como Javascript para el navegador) y utilizarlo para nuestros fines.</p>
+<h2 id="instalación">Instalación</h2>
+<p>Instalamos Node globalmente   en nuestra máquina y tendremos npm disponible.</p>
+<p>Comprobamos por consola la versión de npm
+´´´´
+$ npm &ndash;version
+6.14.8
+´´´´</p>
+<h2 id="usos-de-npm">Usos de npm</h2>
+<p>Hay 2 formas principales para instalar con NPM:</p>
+<ul>
+<li>
+<p>A nivel de proyecto: Probablemente la modalidad más utilizada es la de usar NPM como un gestor de dependencias de un proyecto, esto es, un sistema con el que controlamos que paquetes o librerías Javascript están instalados (y que versión), de modo que quedan asociados al proyecto en sí. Esto facilita que si un usuario diferente se descarga el proyecto, pueda gestionarlo fácil y rápidamente (instalar paquetes, actualizarlos, etc&hellip;)</p>
+</li>
+<li>
+<p>A nivel global: Existen algunas situaciones específicas, en las que los paquetes son realmente utilidades que no se utilizan en proyectos, muy común en aplicaciones de línea de comandos (CLI) que usamos desde terminal. En esta modalidad, los paquetes se instalan a nivel del sistema (no en la carpeta del proyecto), por lo que están disponibles siempre que el usuario quiera utilizarlos, sin necesidad de tenerlo en cada proyecto.</p>
+</li>
+</ul>
+<pre><code>npm install -g parrotsay
+</code></pre>
+<h2 id="instalar-un-paquete">Instalar un paquete</h2>
+<p>Con npm init, generamos el archivo  /<strong>package.json</strong> que controlará las dependencias de nuestro proyecto
+´´´´
+npm init -y
+´´´´
+Iniciamos npm con la opción -y para que nos cree el archivo package.json  automáticamente.
+Podemos instalar bootstrap por ejemplo
+´´´´
+npm install bootstrap@next
+´´´´
+Si ponemos solo lo siguiente se nos intalará la última versión&hellip;
+´´´´
+npm install bootstrap
+´´´´
+O desinstalarlo
+´´´´
+npm uninstall bootstrap
+´´´´</p>
 
   </main>
 

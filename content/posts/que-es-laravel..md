@@ -1,8 +1,8 @@
 ---
-layout: "post"
-title: "Instalación de Laravel 8 en Xampp"
+date: "2020-11-29"
+title: "Laravel 0: Qué es Laravel"
 cover: "command_line.png"
-categories: ['laravel', 'php', 'frameworks']
+tags: ['laravel', 'php', 'frameworks']
 ---
 
 # Laravel 0

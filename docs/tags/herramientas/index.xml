@@ -18,6 +18,27 @@ En los años 90 la mayoría de VCS era sistemas centralizados, en el que un serv
     </item>
     
     <item>
+      <title>Visual Studio Code, Editor web</title>
+      <link>https://canodelacuadra.github.io/posts/vscode/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/vscode/</guid>
+      <description>Visual Studio Code. Tips de uso, configuración y extensiones Visual Studio Code es un editor de programación multiplataforma desarrollado por Microsoft.
+Visual Studio Code es un editor de código fuente ligero pero potente que se ejecuta en su escritorio y está disponible para Windows, macOS y Linux. Viene con soporte incorporado para JavaScript, TypeScript y Node.js y tiene un rico ecosistema de extensiones para otros lenguajes (como C ++, C #, Java, Python, PHP, Go) y tiempos de ejecución (como .</description>
+    </item>
+    
+    <item>
+      <title>Cómo crear un vitualhost en Xampp Windows</title>
+      <link>https://canodelacuadra.github.io/posts/crear-virtualhost/</link>
+      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/crear-virtualhost/</guid>
+      <description>Crear Virtualhost en Xampp con windows  Hay diversas formas, proponemos una sencilla y rápida. (xampp para windows ya viene con Apache configurado para poder crear virtualhost) Lo hacemos pensando en un proyecto que contenga una aplicación escrita con php y mysql    Creamos el Directorio del proyecto dentro de htdocs Ej: app-pedidos
+  Creamos un directorio public (que contendrá las páginas accesibles desde internet)
+  Dentro de public, creamos un index.</description>
+    </item>
+    
+    <item>
       <title>Emmet</title>
       <link>https://canodelacuadra.github.io/posts/emmet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
