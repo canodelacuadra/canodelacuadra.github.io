@@ -190,7 +190,7 @@
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
-        <span class="text">Blog</span>
+        <span class="text">Docs</span>
       </a>
     </li>
   
@@ -337,11 +337,12 @@ Cierra la ventana de comandos.</p>
 El comando START permite iniciar una aplicación.
 Al usarlo con la dirección URL de una página web de internet, inicia el navegador web predeterminado y carga la página solicitada.
 Por ejemplo:</p>
-<p>@echo off
-START <a href="https://norfipc.com">https://norfipc.com</a></p>
+<pre><code>@echo off
+START https://norfipc.com
+</code></pre>
 <p>Se pueden incluir varias líneas con direcciones diferentes, incluso usar un navegador determinado, especificando el nombre de su ejecutable justo antes de la dirección.</p>
-<p>Copiar, mover y eliminar archivos
-Con el siguiente código podemos crear un archivo batch que copie un archivo, luego lo mueva a otro directorio, borre el original y vuelva a copiar el copiado.
+<h3 id="copiar-mover-y-eliminar-archivos">Copiar, mover y eliminar archivos</h3>
+<p>Con el siguiente código podemos crear un archivo batch que copie un archivo, luego lo mueva a otro directorio, borre el original y vuelva a copiar el copiado.
 En la carpeta donde crearás el archivo batch, crea un archivo de texto llamado copiame.txt. En él, escribe lo que quieras. Este será el archivo que copiaremos.</p>
 <p>Código:</p>
 <pre><code>@echo off

@@ -19,13 +19,14 @@ Un controlador es un archivo php que esta dentro de app/http/controllers</descri
     </item>
     
     <item>
-      <title>Laravel II Las</title>
+      <title>Laravel II:Rutas</title>
       <link>https://canodelacuadra.github.io/posts/rutas-laravel./</link>
       <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://canodelacuadra.github.io/posts/rutas-laravel./</guid>
-      <description>Laravel II, Las rutas en Laravel En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.
-Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes. Las rutas de Laravel más básicas aceptan una URI y una Closure (una función anónima), proporcionando un método muy simple y expresivo para definir rutas:</description>
+      <description>Las rutas en Laravel En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.
+Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes. Las rutas de Laravel más básicas aceptan una URI y una Closure (una función anónima), proporcionando un método muy simple y expresivo para definir rutas:
+Route::get(&#39;foo&#39;, function () {return &#39;Hello World&#39;;}); Las rutas en laravel se basan en un patrón: El patrón FrontController ( Es &amp;ldquo;un controlador que maneja todas las solicitudes de un sitio web &amp;ldquo;).</description>
     </item>
     
     <item>

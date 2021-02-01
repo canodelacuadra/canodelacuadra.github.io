@@ -60,25 +60,26 @@ Un controlador es un archivo php que esta dentro de app/http/controllers</descri
     </item>
     
     <item>
-      <title>Laravel II Las</title>
+      <title>Laravel II:Rutas</title>
       <link>https://canodelacuadra.github.io/posts/rutas-laravel./</link>
       <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://canodelacuadra.github.io/posts/rutas-laravel./</guid>
-      <description>Laravel II, Las rutas en Laravel En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.
-Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes. Las rutas de Laravel más básicas aceptan una URI y una Closure (una función anónima), proporcionando un método muy simple y expresivo para definir rutas:</description>
+      <description>Las rutas en Laravel En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.
+Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes. Las rutas de Laravel más básicas aceptan una URI y una Closure (una función anónima), proporcionando un método muy simple y expresivo para definir rutas:
+Route::get(&#39;foo&#39;, function () {return &#39;Hello World&#39;;}); Las rutas en laravel se basan en un patrón: El patrón FrontController ( Es &amp;ldquo;un controlador que maneja todas las solicitudes de un sitio web &amp;ldquo;).</description>
     </item>
     
     <item>
       <title>Crear DB MySQL con el shell de xampp</title>
-      <link>https://canodelacuadra.github.io/posts/crear-db-shell-xampp./</link>
+      <link>https://canodelacuadra.github.io/posts/crear-db-shell-xampp/</link>
       <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://canodelacuadra.github.io/posts/crear-db-shell-xampp./</guid>
-      <description>Acceder al prompt de mysql en xampp Abrimos el shell de xampp desde el panel de control de xampp Nos situamos con el shell en el directorio mysql
+      <guid>https://canodelacuadra.github.io/posts/crear-db-shell-xampp/</guid>
+      <description>Abrimos el shell de xampp desde el panel de control de xampp Nos situamos con el shell en el directorio mysql
 cd mysql Nos autenticamos
 Jose@DESKTOP-BF0SC2G c:\xampp\mysql# mysql -u root -p` Nos pedirá el password y tras ponerlo (por defecto no lleva)nos dirigirá al prompt de mysql o mariadb en este caso
-Enter password:Welcome to the MariaDB monitor. Commands end with ; or \g.</description>
+Enter password:Welcome to the MariaDB monitor. Commands end with ; or \g.Your MariaDB connection id is 9Server version: 10.</description>
     </item>
     
     <item>

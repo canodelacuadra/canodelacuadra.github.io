@@ -5,10 +5,10 @@ cover: "command_line.png"
 tags: ['linea-de-comandos', 'mysql', 'xampp']
 ---
 
-# Acceder al prompt de mysql en xampp
+
 
 Abrimos el shell de xampp desde el panel de control de xampp
-![Shell de mysql](../images/shell-mysql.png)
+![Shell de mysql](shell-mysql.png)
 
 Nos situamos con el shell en el directorio mysql
 ````

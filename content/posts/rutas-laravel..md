@@ -1,11 +1,11 @@
 ---
 date: "2020-12-05"
-title: "Laravel II Las"
+title: "Laravel II:Rutas"
 cover: "command_line.png"
 tags: ['laravel', 'php', 'frameworks']
 ---
 
-# Laravel II, Las rutas en Laravel 
+# Las rutas en Laravel 
 En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado.
 
 Para referenciar recursos dentro de nuestra aplicación en Laravel usamos las routes.

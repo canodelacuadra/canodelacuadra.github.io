@@ -12,14 +12,16 @@ Para usar casi cualquier herramienta de desarrollo basada en JavaScript, necesit
 
 Saber cómo configurar una instalación de node js de forma local y usar npm para instalar dependencias es una parte esencial de ser un desarrollador de JavaScript.
 
+{{< note >}}
+Previamente, debemos tener una competencia básica en la línea de comandos . ¡No omita este paso! Si no sabemos cómo usar la línea de comandos, estaremos librando una batalla muy cuesta arriba.
+{{< /note >}}
 
-## Prerrequisitos
-* Competencia básica en la línea de comandos . ¡No omita este paso! Si no sabemos cómo usar la línea de comandos, estaremos librando una batalla muy cuesta arriba. 
-  
-## Objetivos
-* Descubrir  qué es Node.js y npm
-* Configurar Node.js y npm en Windows 
-* Instalar bootstrap con npm
+{{< ticks >}}
+* Descubriremos  qué es Node.js y npm
+* Configuraremos Node.js 
+* Usaremos npm en Windows 
+{{< /ticks >}}
+
 ## ¿Qué es Node.js?
 JavaScript es un lenguaje de programación del lado del cliente , lo que significa que se procesa en el navegador. Con la llegada de Node.js , JavaScript también se puede utilizar como lenguaje del lado del servidor .
 
@@ -40,7 +42,7 @@ Instalar todo en Windows es muy sencillo.
 
 Node.js y npm se pueden instalar desde un enlace de descarga. Vaya a la página de instalación de Node y descargue el instalador de Node. Tengo un sistema operativo Windows 10 de 64 bits, así que elegí ese.
 
- ![node](../images/node.jpg) 
+ ![node](node.jpg) 
 
 Una vez hecho esto, puede probar para ver el funcionamiento de node y npm abriendo PowerShell (o cualquier shell) y escribiendo node -v y npm -v, que verificará el número de versión.
 ````

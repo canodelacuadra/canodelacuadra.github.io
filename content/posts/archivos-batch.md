@@ -114,13 +114,13 @@ Cargar una página de internet
 El comando START permite iniciar una aplicación.
 Al usarlo con la dirección URL de una página web de internet, inicia el navegador web predeterminado y carga la página solicitada.
 Por ejemplo:
-
+````
 @echo off
 START https://norfipc.com
-
+````
 Se pueden incluir varias líneas con direcciones diferentes, incluso usar un navegador determinado, especificando el nombre de su ejecutable justo antes de la dirección.
 
-Copiar, mover y eliminar archivos
+### Copiar, mover y eliminar archivos
 Con el siguiente código podemos crear un archivo batch que copie un archivo, luego lo mueva a otro directorio, borre el original y vuelva a copiar el copiado.
 En la carpeta donde crearás el archivo batch, crea un archivo de texto llamado copiame.txt. En él, escribe lo que quieras. Este será el archivo que copiaremos.
 

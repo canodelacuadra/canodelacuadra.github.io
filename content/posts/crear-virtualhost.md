@@ -16,7 +16,7 @@ tags: ['herramientas']
 4. Creamos un virtualhost para app-pedidos que le llamaremos app-pedidos.site
 
 Para crear un virtualhost vamos a 
-````
+````cmd
 C:\xampp\apache\conf\extra\httpd-vhosts.conf
 ````
 Este es el documento especial que tiene xammp para poder poner ordenadamente nuestros virtualhost
