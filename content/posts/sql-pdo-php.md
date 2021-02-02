@@ -1,12 +1,12 @@
 ---
 layout: "post"
-title: "Uso de  SQL y PHP PDO"
+title: "Extensión PDO de PHP"
 tags: ""
 categories: [ 'php', 'bases de datos', 'pdo']
 date: "2021-01-29"
 ---
 
-# Operaciones PDO con PHP
+# Operaciones SQL PDO con PHP
 código para usar la clase PDO en PHP para conectarse de forma segura y trabajar con una base de datos.
 Primero crearemos una base de datos con la consola mysql de xampp y luego haremos
 

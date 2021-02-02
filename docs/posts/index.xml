@@ -17,12 +17,12 @@ SQL Create Database CREATE DATABASE IF NOT EXISTS database_name Drop Database D
     </item>
     
     <item>
-      <title>Uso de  SQL y PHP PDO</title>
+      <title>Extensión PDO de PHP</title>
       <link>https://canodelacuadra.github.io/posts/sql-pdo-php/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://canodelacuadra.github.io/posts/sql-pdo-php/</guid>
-      <description>Operaciones PDO con PHP código para usar la clase PDO en PHP para conectarse de forma segura y trabajar con una base de datos. Primero crearemos una base de datos con la consola mysql de xampp y luego haremos
+      <description>Operaciones SQL PDO con PHP código para usar la clase PDO en PHP para conectarse de forma segura y trabajar con una base de datos. Primero crearemos una base de datos con la consola mysql de xampp y luego haremos
 Crear Conexión $host = &#39;localhost&#39;;$username = &#39;root&#39;;$password = &#39;&#39;;$dbname = &#39;pdo&#39;;$dsn = &amp;quot;mysql:host=$host;dbname=$dbname&amp;quot;;$options = [PDO::ATTR_ERRMODE =&amp;gt; PDO::ERRMODE_EXCEPTION,PDO::ATTR_EMULATE_PREPARES =&amp;gt; false];$connection = new PDO($dsn, $username, $password, $options); Datatypes    Datatype Description     PDO::PARAM_BOOL Represents a boolean data type   PDO::PARAM_NULL Represents the SQL NULL data type   PDO::PARAM_INT Represents the SQL INTEGER data type   PDO::PARAM_STR Represents the SQL CHAR, VARCHAR, or other string data type    Seleccionar registros $sql = &amp;quot;SELECT * FROM usersWHERE location = :location&amp;quot;;$location = &#39;Chicago&#39;;$statement = $connection-&amp;gt;prepare($sql);$statement-&amp;gt;bindParam(&#39;:location&#39;, $location, PDO::PARAM_STR);$statement-&amp;gt;execute();$rows = $statement-&amp;gt;fetchAll(PDO::FETCH_ASSOC);foreach ($rows as $row) {echo $row[&#39;location&#39;];}  Crear Registro $sql = &amp;quot;INSERT INTO users (username, email) VALUES (:username, :email)&amp;quot;;$username = &#39;Tania&#39;;$email = &#39;tania@example.</description>
     </item>
     
