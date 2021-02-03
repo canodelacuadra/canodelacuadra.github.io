@@ -39,6 +39,16 @@ Visual Studio Code es un editor de código fuente ligero pero potente que se eje
     </item>
     
     <item>
+      <title>http-server, herramienta de servidor http</title>
+      <link>https://canodelacuadra.github.io/posts/servidor-http-server-node/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/servidor-http-server-node/</guid>
+      <description>http-server es un servidor http de línea de comandos simple y sin configuración. Es lo suficientemente simple y lo suficientemente adaptable como para usarse para pruebas, desarrollo local y aprendizaje.
+Prerequisitos  Tener node.js y npm instalados de forma global en nuestro equipo  Objetivos  Conseguir un servidor http de pruebas de forma rápida en un directorio dado  Instalación a través de NPM Globalmente a través de npm</description>
+    </item>
+    
+    <item>
       <title>Emmet</title>
       <link>https://canodelacuadra.github.io/posts/emmet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -59,6 +69,16 @@ div#container y al dar a la tecla intro se expandiría</description>
 Permite realizar peticiones HTTP con el objetivo de transferir información con sintaxis de URL.
 En el contexto de PHP, permite armar un script que literalmente se comporte como un navegador para así realizar una petición a otro servidor remoto. Su utilidad es muy similar al objeto XMLHttpRequest de JavaScript en el sentido de comunicarse con un servidor distinto para la obtención de recursos, datos u otra información.
 Curl es una librería de funciones para conectar con servidores y trabajar con ellos (transferir datos: enviar o recibir datos) mediante línea de comandos.</description>
+    </item>
+    
+    <item>
+      <title>Qué es y cómo Instalar  con npm</title>
+      <link>https://canodelacuadra.github.io/posts/npm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/npm/</guid>
+      <description>Iniciar proyectos con NPM Qué es NPM NPM son las siglas de Node Package Manager, es decir, gestor de paquetes de NodeJS, un entorno de ejecución multiplataforma para ejecutar Javascript no sólo en un navegador web (como se concibió originalmente) sino fuera de él, y poder utilizarlo en sistemas de escritorio o servidores web.
+Este gestor de paquetes (muy similar al concepto de apt-get en GNU/Linux), nos permitirá instalar de forma muy sencilla y automática paquetes Javascript (tanto de Node como Javascript para el navegador) y utilizarlo para nuestros fines.</description>
     </item>
     
   </channel>

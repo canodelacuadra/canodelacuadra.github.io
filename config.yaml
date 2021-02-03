@@ -22,7 +22,7 @@ params:
   homeMetaContent: Sitio dedicado a la documentación de desarrollo web.
   footer: Hecho con [Hugo](https://gohugo.io/). El Theme es [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Implementado en  [Github Pages](https://canodelacuadra.github.io/).
   # For more date formats see https://gohugo.io/functions/format/
-  dateFormat: Jan 2, 2006
+  dateFormat: "2006-01-02"
   codePenUser: canodelacuadra
   katex: true
   hideHeaderLinks: false

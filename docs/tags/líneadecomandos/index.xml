@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language><atom:link href="https://canodelacuadra.github.io/tags/l%C3%ADneadecomandos/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Archivos batch (IV)</title>
+      <link>https://canodelacuadra.github.io/posts/archivos-batch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/archivos-batch/</guid>
+      <description>Un archivo de texto con extensión *.bat que contiene una secuencia de órdenes para ser ejecutadas en los sistemas sistemas DOS, OS/2 y Microsoft Windows.Se trata de archivos de texto sin formato, guardados con la extensión .BAT que contienen un conjunto de instrucciones MS-DOS. Cuando se ejecuta este archivo, las órdenes contenidas son ejecutadas en grupo, de forma secuencial, permitiendo automatizar diversas tareas. Cualquier orden reconocible por MS-DOS puede ser utilizado en un archivo batch.</description>
+    </item>
+    
+    <item>
+      <title>Cómo se usa la línea de comandos bash (III)</title>
+      <link>https://canodelacuadra.github.io/posts/linea-comandos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/linea-comandos/</guid>
+      <description>Puede que os haya pasado lo que a mí: utilicé ordenadores durante veinte años sin tocar la línea de comandos. No sabía nada al respecto, y me parecía aterrador y abrumador. Pensé que era algo de lo que solo los usuarios realmente avanzados sabían algo. Cuando me encontré con una situación en la que tuve que obtener algunos conocimientos básicos de línea de comandos (empezando a utilizar git&amp;hellip;), descubrí lo útil poderosa y fácil que es.</description>
+    </item>
+    
+    <item>
       <title>Librería curl</title>
       <link>https://canodelacuadra.github.io/posts/libreria-curl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -16,6 +34,36 @@
 Permite realizar peticiones HTTP con el objetivo de transferir información con sintaxis de URL.
 En el contexto de PHP, permite armar un script que literalmente se comporte como un navegador para así realizar una petición a otro servidor remoto. Su utilidad es muy similar al objeto XMLHttpRequest de JavaScript en el sentido de comunicarse con un servidor distinto para la obtención de recursos, datos u otra información.
 Curl es una librería de funciones para conectar con servidores y trabajar con ellos (transferir datos: enviar o recibir datos) mediante línea de comandos.</description>
+    </item>
+    
+    <item>
+      <title>Tablas de comandos CLI, CMD y bash (Anexo)</title>
+      <link>https://canodelacuadra.github.io/posts/lista-comandos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/lista-comandos/</guid>
+      <description>Depende en el entorno del sistema operativo que nos movamos pueden variar los comandos de la CLI. Esta tabla pretende ser un anexo de ayuda por si queremos que nos sirva de referencia y tenerlos ordenados y comparados.
+ Se puede ir actualizando y mejorando porque son muchos&amp;hellip; ¡Hay que probarlos! Y si alguno no funciona, buscar alternativas
+ shell Bash o cmd CMD es la CLI habitual de Windows .</description>
+    </item>
+    
+    <item>
+      <title>un script de shell con bash (V)</title>
+      <link>https://canodelacuadra.github.io/posts/script-bash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/script-bash/</guid>
+      <description>Los scripts de Bash son una heramienta poderosa para la administración y el desarrollo del sistema. Al principio puede ser aterrador pero puede ser sencillo.
+Bash es un shell de Unix, que es una interfaz de línea de comandos (CLI) para interactuar con un sistema operativo (SO). Cualquier comando que pueda ejecutar desde la línea de comandos puede usarse en un script bash. Las secuencias de comandos se utilizan para ejecutar una serie de comandos.</description>
+    </item>
+    
+    <item>
+      <title>Uso de la CLI en Windows (II)</title>
+      <link>https://canodelacuadra.github.io/posts/simbolo-sistema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/simbolo-sistema/</guid>
+      <description>Conocer los comandos de la CLI y usar herramientas de calidad puede hacernos más productivos y también pueden abrir las puertas a varios enfoques de la automatización que son mucho más prácticos con las interfaces textuales (CLI o editores de texto) que con las aplicaciones GUI. Puede mejorar al realizar tareas repetitivas en GUI, hasta el punto de que sus múltiples clics se escuchen como uno solo. El problema es que esto no mejorará la eficiencia de un script especializado.</description>
     </item>
     
   </channel>

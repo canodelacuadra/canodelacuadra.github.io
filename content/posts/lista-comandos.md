@@ -2,8 +2,7 @@
 layout: "post"
 date: "2020-7-06"
 title: "Tablas de comandos CLI, CMD y bash (Anexo)"
-cover: "command_line.png"
-categories: ['LíneaDeComandos']
+tags: ['LíneaDeComandos']
 ---
 
 Depende en el entorno del sistema operativo que nos movamos pueden variar los comandos de la CLI. Esta tabla pretende ser un anexo de ayuda por si queremos que nos sirva de referencia y tenerlos ordenados y comparados.

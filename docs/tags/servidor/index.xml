@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>servidor on Canodelacuadra</title>
+    <link>https://canodelacuadra.github.io/tags/servidor/</link>
+    <description>Recent content in servidor on Canodelacuadra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://canodelacuadra.github.io/tags/servidor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>http-server, herramienta de servidor http</title>
+      <link>https://canodelacuadra.github.io/posts/servidor-http-server-node/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/servidor-http-server-node/</guid>
+      <description>http-server es un servidor http de línea de comandos simple y sin configuración. Es lo suficientemente simple y lo suficientemente adaptable como para usarse para pruebas, desarrollo local y aprendizaje.
+Prerequisitos  Tener node.js y npm instalados de forma global en nuestro equipo  Objetivos  Conseguir un servidor http de pruebas de forma rápida en un directorio dado  Instalación a través de NPM Globalmente a través de npm</description>
+    </item>
+    
+  </channel>
+</rss>

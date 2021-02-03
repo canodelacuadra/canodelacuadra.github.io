@@ -2,7 +2,7 @@
 date: "2020-11-15"
 title: "http-server, herramienta de servidor http"
 cover: "command_line.png"
-categories: ['Node', 'herramientas','servidor']
+tags: ['Node', 'herramientas','servidor']
 ---
 http-server es un servidor http de línea de comandos simple y sin configuración. Es lo suficientemente simple y lo suficientemente adaptable como para usarse para pruebas, desarrollo local y aprendizaje.
 

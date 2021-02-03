@@ -1,7 +1,6 @@
 ---
 date: "2021-01-07"
 title: "Usa SQLite y PHP"
-cover: "command_line.png"
 tags: [ 'php', 'bases de datos', 'sqlite']
 ---
 

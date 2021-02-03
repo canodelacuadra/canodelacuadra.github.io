@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.79.0" />
-  <link rel="canonical" href="/posts/sqlite-php/">
+  <link rel="canonical" href="/tags/servidor/">
 
   
 
@@ -39,7 +39,7 @@
 
   
   
-  <title>Usa SQLite y PHP | Canodelacuadra</title>
+  <title>servidor | Canodelacuadra</title>
 </head>
 
   <body>
@@ -199,7 +199,7 @@
       
       
       
-      <a href="/tags/" >
+      <a href="/tags/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -245,95 +245,53 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1>
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      Usa SQLite y PHP
-    </h1>
-    <div class="meta">
-    <small>Fecha Creación: 07-Jan-2021</small> |
-    <small>Última Modificación: 31-Jan-2021</small>
-    <small><strong>Tags: </strong></small>
+<main id="main">
+  <h1>servidor</h1>
+  
+  <input
+    id="search"
+    type="text"
+    placeholder="Buscar por título..."
+    aria-label="Buscar por título"
+  />
+  
+  <ul class="patterns-list" id="list">
     
-    <small class='tags'> 
-<a href="/tags/php">php</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/bases-de-datos">bases de datos</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/sqlite">sqlite</a>
-        </small>
-        
-    </div>
-
-    <p>XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP.</p>
-<p>Crearemos de una nueva base de datos SQLite usando XAMPP, luego accederá a los datos dentro de ella usando PHP.</p>
-<p>Comience por crear y completar una nueva base de datos utilizando el cliente de línea de comandos SQLite, como se muestra a continuación:</p>
-<ol>
-<li>
-<p>Abra el símbolo del sistema de Windows haciendo clic en el botón &ldquo;Shell&rdquo; en el panel de control de XAMPP.</p>
-</li>
-<li>
-<p>Cambie al subdirectorio htdocs \ de su directorio de instalación de XAMPP (normalmente C: \ xampp ) y cree un nuevo archivo de base de datos SQLite llamado mydb.sq3 con el cliente de línea de comandos SQLite:</p>
-</li>
-</ol>
-<pre><code>cd C:\xampp\htdocs
-sqlite3 mydb.sq3
-</code></pre>
-<p>Ahora debería ver un indicador SQLite.</p>
-<p>En el indicador sqlite&gt; , cree una nueva tabla para contener sus datos. En este ejemplo, la tabla se denomina artículos y contiene 3 columnas, para el ID del artículo, el nombre del artículo y el costo del artículo. Puede usar la sintaxis estándar CREATE TABLE para crear la tabla, y puede obtener más información sobre los tipos de datos integrados de SQLite aquí .</p>
-<pre><code class="language-sql">CREATE TABLE items (id INTEGER PRIMARY KEY, name TEXT, price REAL);
-</code></pre>
-<p>Agregue algunos datos a la nueva tabla de inventario usando los comandos INSERT, como se muestra a continuación:</p>
-<pre><code class="language-sql">INSERT INTO items VALUES ('1001', 'Salt', 3.15);
-INSERT INTO items VALUES ('1002', 'Pepper', 2.75);
-INSERT INTO items VALUES ('1003', 'Eggs', 2.00);
-INSERT INTO items VALUES ('1004', 'Bacon', 7.25);
-INSERT INTO items VALUES ('1005', 'Milk', 1.15);
-INSERT INTO items VALUES ('1006', 'Strawberries', 8.73);
-INSERT INTO items VALUES ('1007', 'Cereal', 2.65);
-</code></pre>
-<p>Ahora también puede ejecutar una consulta SELECT en los datos. Por ejemplo, la siguiente consulta devuelve todos los artículos que cuestan menos de $ 3:</p>
-<pre><code class="language-sql">SELECT * FROM items WHERE price &lt; 3.00;
-</code></pre>
-<p>imagen2
-Una vez que haya terminado de usar la base de datos, salga de ella escribiendo <code>.quit</code> en el  sqlite&gt;prompt .</p>
-<blockquote>
-<p>El archivo de la base de datos (en este ejemplo, mydb.sq3 ) contiene todas sus tablas y datos, por lo que debe recordar hacer una copia de seguridad con regularidad.</p>
-</blockquote>
-<p>Los pasos anteriores describieron cómo crear y usar una base de datos SQLite usando el cliente de línea de comandos. Sin embargo, la mayoría de las veces, utilizará una base de datos SQLite en combinación con una aplicación web impulsada por PHP.</p>
-<h2 id="php-sqlite">Php SQLite</h2>
-<p>XAMPP incluye la extensión PHP SQLite, por lo que hacer esto no es nada difícil.</p>
-<p>Para conectarse a su base de datos SQLite y ejecutar consultas en ella con PHP, use su editor de texto para crear un script de ejemplo llamado sqlite.php en el subdirectorio htdocs de su directorio de instalación de XAMPP y llénelo con el siguiente código:</p>
-<pre><code class="language-php">&lt;?php
-$db = new SQLite3('mydb.sq3');
-$sql = &quot;SELECT * FROM items WHERE price &lt; 3.00&quot;;
-$result = $db-&gt;query($sql);
-while ($row = $result-&gt;fetchArray(SQLITE3_ASSOC)){
-  echo $row['name'] . ': $' . $row['price'] . '&lt;br/&gt;';
-}
-unset($db)
-</code></pre>
-<ol>
-<li>
-<p>La primera línea de código crea un nuevo objeto SQLite3, utilizando el archivo de base de datos mydb.sq3 que creó anteriormente.</p>
-</li>
-<li>
-<p>Luego, el método query() del objeto creadp se usa para ejecutar una consulta SELECT en la base de datos, y el método fetchArray() del objeto  resultado se usa para iterar sobre el conjunto de resultados.</p>
-</li>
-<li>
-<p>Agregar el parámetro SQLITE3_ASSOC al método fetchArray() le dice a PHP que devuelva los resultados como una matriz asociativa, lo que facilita el acceso a los campos individuales del conjunto de resultados y los muestra en una página web.</p>
-</li>
-</ol>
-<p>Una vez hecho esto, guarde sus cambios y asegúrese de que su servidor Apache esté funcionando. Luego, vaya a http: //localhost/sqlite.php para ejecutar el script. Debería ver algo como esto:</p>
-<p>Para obtener más información sobre las potentes funciones de SQLite , lea la documentación de SQLite .https://sqlite.org/index.html</p>
-
-  </main>
+    <li>
+      <h2>
+        <a href="/posts/servidor-http-server-node/">
+          <svg
+            class="bookmark"
+            aria-hidden="true"
+            viewBox="0 0 40 50"
+            focusable="false"
+          >
+            <use xlink:href="#bookmark"></use>
+          </svg>
+          http-server, herramienta de servidor http
+        </a>
+      </h2>
+      
+      <small> 2020-11-15</small>
+    
+      <small><strong>Tags: </strong></small>
+      
+      <small class='tags'>
+        <a href="/tags/node">Node</a>
+      </small>
+      
+      <small class='tags'>
+        <a href="/tags/herramientas">herramientas</a>
+      </small>
+      
+      <small class='tags'>
+        <a href="/tags/servidor">servidor</a>
+      </small>
+      
+    </li>
+    
+  </ul>
+</main>
 
           
             <footer role="contentinfo">

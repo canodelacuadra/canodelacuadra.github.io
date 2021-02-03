@@ -1,10 +1,9 @@
 ---
-layout: "post"
 date: "2020-7-05"
 title: "un script de shell con bash (V)"
 cover: "shell-bash.png"
-categories: ['LíneaDeComandos']
-tags: ['consola']
+tags: ['LíneaDeComandos']
+
 ---
 
 

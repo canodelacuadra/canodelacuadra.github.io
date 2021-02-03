@@ -1,5 +1,5 @@
 ---
-date: "2020-6-9"
+date: "2020-06-9"
 title: "Emmet"
 tags: ['Visual Studio Code', 'herramientas']
 ---

@@ -18,6 +18,16 @@
     </item>
     
     <item>
+      <title>http-server, herramienta de servidor http</title>
+      <link>https://canodelacuadra.github.io/posts/servidor-http-server-node/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/servidor-http-server-node/</guid>
+      <description>http-server es un servidor http de línea de comandos simple y sin configuración. Es lo suficientemente simple y lo suficientemente adaptable como para usarse para pruebas, desarrollo local y aprendizaje.
+Prerequisitos  Tener node.js y npm instalados de forma global en nuestro equipo  Objetivos  Conseguir un servidor http de pruebas de forma rápida en un directorio dado  Instalación a través de NPM Globalmente a través de npm</description>
+    </item>
+    
+    <item>
       <title>Instalar Node JS en Windows</title>
       <link>https://canodelacuadra.github.io/posts/instalar-node-windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -25,6 +35,16 @@
       <guid>https://canodelacuadra.github.io/posts/instalar-node-windows/</guid>
       <description>Node.js es un popular entorno de ejecución de código abierto que puede ejecutar JavaScript fuera del navegador mediante el motor JavaScript V8, que es el mismo motor que se utiliza para ejecutar JavaScript en el navegador web Google Chrome . El tiempo de ejecución de Node se usa comúnmente para crear herramientas de línea de comandos y servidores web
  Por qué aprender y usar node.js y npm Para usar casi cualquier herramienta de desarrollo basada en JavaScript, necesitará saber cómo usar npm y Node.</description>
+    </item>
+    
+    <item>
+      <title>Qué es y cómo Instalar  con npm</title>
+      <link>https://canodelacuadra.github.io/posts/npm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://canodelacuadra.github.io/posts/npm/</guid>
+      <description>Iniciar proyectos con NPM Qué es NPM NPM son las siglas de Node Package Manager, es decir, gestor de paquetes de NodeJS, un entorno de ejecución multiplataforma para ejecutar Javascript no sólo en un navegador web (como se concibió originalmente) sino fuera de él, y poder utilizarlo en sistemas de escritorio o servidores web.
+Este gestor de paquetes (muy similar al concepto de apt-get en GNU/Linux), nos permitirá instalar de forma muy sencilla y automática paquetes Javascript (tanto de Node como Javascript para el navegador) y utilizarlo para nuestros fines.</description>
     </item>
     
   </channel>

@@ -2,8 +2,7 @@
 layout: "post"
 date: "2020-1-7-02"
 title: "Uso de la CLI en Windows (II)"
-cover: "cmd-herramienta.PNG"
-categories: ['LíneaDeComandos']
+tags: ['LíneaDeComandos']
 ---
 Conocer los comandos de la CLI y usar herramientas de calidad  puede hacernos más productivos y también pueden abrir las puertas a varios enfoques de la automatización que son mucho más prácticos con las interfaces textuales (CLI o editores de texto) que con las aplicaciones GUI.
 Puede mejorar al realizar tareas repetitivas en GUI, hasta el punto de que sus múltiples clics se escuchen como uno solo. El problema es que esto no mejorará la eficiencia de un script especializado. Además, realizar las mismas operaciones de forma manual introduce tanto una carga cognitiva adicional como una mayor posibilidad de error humano. Como de costumbre, dependemos de computadoras para manejar tareas que los humanos pueden considerar aburridas, repetitivas o abrumadoras.

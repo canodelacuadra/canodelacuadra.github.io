@@ -1,8 +1,6 @@
 ---
-layout: "post"
 title: "Extensión PDO de PHP"
-tags: ""
-categories: [ 'php', 'bases de datos', 'pdo']
+tags:  [ 'php', 'bases de datos']
 date: "2021-01-29"
 ---
 

@@ -2,8 +2,7 @@
 layout: "post"
 date: "2020-7-03"
 title: "Cómo se usa la línea de comandos bash (III)"
-cover: "bash.png"
-categories: ["LíneaDeComandos"]
+tags: ["LíneaDeComandos"]
 ---
 
 Puede que os haya pasado lo que a mí: utilicé ordenadores durante veinte años sin tocar la `línea de comandos`. No sabía nada al respecto, y me parecía aterrador y abrumador. Pensé que era algo de lo que solo los usuarios realmente avanzados sabían algo. Cuando me encontré con una situación en la que tuve que obtener algunos conocimientos básicos de línea de comandos (empezando a utilizar git...), descubrí lo útil poderosa y fácil que es.
