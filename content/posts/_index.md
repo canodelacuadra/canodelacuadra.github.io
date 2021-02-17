@@ -1,3 +1,3 @@
 ---
-title: Blog
+title: Web Techie Blog
 ---

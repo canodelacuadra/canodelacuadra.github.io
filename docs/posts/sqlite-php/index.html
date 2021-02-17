@@ -36,6 +36,17 @@
   
     <link rel="stylesheet" href="/css/custom_02.css">
   
+  <style>
+    .intro-and-nav{
+      background-color: #eeeeee;
+
+    }
+    footer{
+      border-top:1px solid black;
+    padding-top: 1em;
+       background-color: #eeeeee;
+    }
+  </style>
 
   
   
@@ -43,7 +54,7 @@
 </head>
 
   <body>
-    <a href="#main">skip to content</a>
+    <a href="#main">Saltar al contenido</a>
     <noscript>
   <style>
     body {
@@ -154,7 +165,7 @@
         <img src="/images/logo.svg" alt="">
       </a>
       <p class="library-desc">
-         Un proyecto de documentación personal creado con Hugo. 
+         Notas, Fragmentos, apuntes, documentación de Tecnología Web. 
       </p>
     </div>
     <nav id="patterns-nav" class="patterns" role="navigation">
@@ -190,7 +201,7 @@
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
-        <span class="text">Docs</span>
+        <span class="text">Techi Blog</span>
       </a>
     </li>
   
@@ -245,33 +256,66 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1>
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      Usa SQLite y PHP
-    </h1>
-    <div class="meta">
-    <small>Fecha Creación: 07-Jan-2021</small> |
-    <small>Última Modificación: 31-Jan-2021</small>
-    <small><strong>Tags: </strong></small>
-    
-    <small class='tags'> 
-<a href="/tags/php">php</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/bases-de-datos">bases de datos</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/sqlite">sqlite</a>
-        </small>
-        
-    </div>
+<main id="main">
+  <h1>
+    <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <use xlink:href="#bookmark"></use>
+    </svg>
+    Usa SQLite y PHP
+  </h1>
 
-    <p>XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP.</p>
+  <div class="date">
+    
+    
+    <strong>Fecha de Publicación: </strong>2021-01-07
+    
+    
+    <br>
+    <strong>Última modificación: </strong>2021-02-03
+    
+    
+  </div>
+
+  
+  <div class="tags">
+    <strong>Tags: </strong>
+    <ul aria-label="">
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/php/">php</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/bases-de-datos/">bases de datos</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/sqlite/">sqlite</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  
+  
+
+
+  
+
+  <p>XAMPP viene con soporte integrado para SQLite, lo que facilita comenzar a crear aplicaciones basadas en bases de datos con PHP.</p>
 <p>Crearemos de una nueva base de datos SQLite usando XAMPP, luego accederá a los datos dentro de ella usando PHP.</p>
 <p>Comience por crear y completar una nueva base de datos utilizando el cliente de línea de comandos SQLite, como se muestra a continuación:</p>
 <ol>
@@ -333,7 +377,11 @@ unset($db)
 <p>Una vez hecho esto, guarde sus cambios y asegúrese de que su servidor Apache esté funcionando. Luego, vaya a http: //localhost/sqlite.php para ejecutar el script. Debería ver algo como esto:</p>
 <p>Para obtener más información sobre las potentes funciones de SQLite , lea la documentación de SQLite .https://sqlite.org/index.html</p>
 
-  </main>
+</main>
+<div id="disqus-container">
+  
+</div>
+
 
           
             <footer role="contentinfo">

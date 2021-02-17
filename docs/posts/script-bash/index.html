@@ -36,6 +36,17 @@
   
     <link rel="stylesheet" href="/css/custom_02.css">
   
+  <style>
+    .intro-and-nav{
+      background-color: #eeeeee;
+
+    }
+    footer{
+      border-top:1px solid black;
+    padding-top: 1em;
+       background-color: #eeeeee;
+    }
+  </style>
 
   
   
@@ -43,7 +54,7 @@
 </head>
 
   <body>
-    <a href="#main">skip to content</a>
+    <a href="#main">Saltar al contenido</a>
     <noscript>
   <style>
     body {
@@ -154,7 +165,7 @@
         <img src="/images/logo.svg" alt="">
       </a>
       <p class="library-desc">
-         Un proyecto de documentación personal creado con Hugo. 
+         Notas, Fragmentos, apuntes, documentación de Tecnología Web. 
       </p>
     </div>
     <nav id="patterns-nav" class="patterns" role="navigation">
@@ -190,7 +201,7 @@
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
-        <span class="text">Docs</span>
+        <span class="text">Techi Blog</span>
       </a>
     </li>
   
@@ -245,25 +256,157 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1>
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      un script de shell con bash (V)
-    </h1>
-    <div class="meta">
-    <small>Fecha Creación: 01-Jan-0001</small> |
-    <small>Última Modificación: 31-Jan-2021</small>
-    <small><strong>Tags: </strong></small>
-    
-    <small class='tags'> 
-<a href="/tags/l%C3%ADneadecomandos">LíneaDeComandos</a>
-        </small>
-        
-    </div>
+<main id="main">
+  <h1>
+    <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <use xlink:href="#bookmark"></use>
+    </svg>
+    un script de shell con bash (V)
+  </h1>
 
-    <p>Los scripts de Bash son una heramienta poderosa para la administración y el desarrollo del sistema.  Al principio puede ser aterrador pero puede ser sencillo.</p>
+  <div class="date">
+    
+    
+    <strong>Fecha de Publicación: </strong>0001-01-01
+    
+    
+    <br>
+    <strong>Última modificación: </strong>2021-02-03
+    
+    
+  </div>
+
+  
+  <div class="tags">
+    <strong>Tags: </strong>
+    <ul aria-label="">
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/l%C3%ADneadecomandos/">LíneaDeComandos</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  
+  
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Índice de Contenidos</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#1-crear-un-directorio-bin">
+            1. Crear un directorio bin
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#2-exportar-la-ruta-de-tu-directorio-bin">
+            2. Exportar la ruta de tu directorio bin
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#3-crear-un-archivo-script-y-hacerlo-ejecutable">
+            3. Crear un archivo script y hacerlo ejecutable
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#variables">
+            Variables
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#toma-de-datos">
+            Toma de datos
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#condicionales">
+            Condicionales
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#haciendo-bucles">
+            Haciendo bucles
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#script-de-ejemplo-esqueleto_web">
+            Script de ejemplo esqueleto_web
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#script-de-ejemplo-git-deploy">
+            Script de ejemplo git-deploy
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#conclusion">
+            Conclusion
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+  
+
+  <p>Los scripts de Bash son una heramienta poderosa para la administración y el desarrollo del sistema.  Al principio puede ser aterrador pero puede ser sencillo.</p>
 <p>Bash es un shell de Unix, que es una interfaz de línea de comandos (CLI) para interactuar con un sistema operativo (SO). <strong>Cualquier comando que pueda ejecutar desde la línea de comandos</strong> puede usarse en un script bash. Las secuencias de comandos se utilizan para ejecutar una serie de comandos.</p>
 <p>Bash está disponible por defecto en los sistemas operativos Unix: Mac y Linux. En windows 10 se puede habilitar o podemos disponer de él al instalar el control de versiones de  Git</p>
 <p>Esto no pretende ser una guía exhaustiva para hacer script de bash, pretende tan solo realizar un primer script y aplicar los conceptos más básicos.</p>
@@ -502,7 +645,11 @@ To https://github.com/me/repo.git
 <li><a href="https://bioinf.comav.upv.es/courses/unix/scripts_bash.html">https://bioinf.comav.upv.es/courses/unix/scripts_bash.html</a></li>
 </ul>
 
-  </main>
+</main>
+<div id="disqus-container">
+  
+</div>
+
 
           
             <footer role="contentinfo">

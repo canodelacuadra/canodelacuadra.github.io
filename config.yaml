@@ -18,7 +18,7 @@ imaging:
   quality: 99
 
 params:
-  description: Un proyecto de documentación personal creado con Hugo.
+  description: Notas, Fragmentos, apuntes, documentación de Tecnología Web.
   homeMetaContent: Sitio dedicado a la documentación de desarrollo web.
   footer: Hecho con [Hugo](https://gohugo.io/). El Theme es [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Implementado en  [Github Pages](https://canodelacuadra.github.io/).
   # For more date formats see https://gohugo.io/functions/format/
@@ -41,7 +41,7 @@ menu:
     - name: Home
       url: /
       weight: 1
-    - name: Docs
+    - name: Techi Blog
       url: /posts/
       weight: 2
     - name: Tags

@@ -36,6 +36,17 @@
   
     <link rel="stylesheet" href="/css/custom_02.css">
   
+  <style>
+    .intro-and-nav{
+      background-color: #eeeeee;
+
+    }
+    footer{
+      border-top:1px solid black;
+    padding-top: 1em;
+       background-color: #eeeeee;
+    }
+  </style>
 
   
   
@@ -43,7 +54,7 @@
 </head>
 
   <body>
-    <a href="#main">skip to content</a>
+    <a href="#main">Saltar al contenido</a>
     <noscript>
   <style>
     body {
@@ -154,7 +165,7 @@
         <img src="/images/logo.svg" alt="">
       </a>
       <p class="library-desc">
-         Un proyecto de documentación personal creado con Hugo. 
+         Notas, Fragmentos, apuntes, documentación de Tecnología Web. 
       </p>
     </div>
     <nav id="patterns-nav" class="patterns" role="navigation">
@@ -190,7 +201,7 @@
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
-        <span class="text">Docs</span>
+        <span class="text">Techi Blog</span>
       </a>
     </li>
   
@@ -245,29 +256,95 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1>
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      Creando una web con Webpack - Node
-    </h1>
-    <div class="meta">
-    <small>Fecha Creación: 16-Nov-2020</small> |
-    <small>Última Modificación: 31-Jan-2021</small>
-    <small><strong>Tags: </strong></small>
-    
-    <small class='tags'> 
-<a href="/tags/node">Node</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/javascript">Javascript</a>
-        </small>
-        
-    </div>
+<main id="main">
+  <h1>
+    <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <use xlink:href="#bookmark"></use>
+    </svg>
+    Creando una web con Webpack - Node
+  </h1>
 
-    <blockquote>
+  <div class="date">
+    
+    
+    <strong>Fecha de Publicación: </strong>2020-11-16
+    
+    
+    <br>
+    <strong>Última modificación: </strong>2021-01-31
+    
+    
+  </div>
+
+  
+  <div class="tags">
+    <strong>Tags: </strong>
+    <ul aria-label="">
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/node/">Node</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/javascript/">Javascript</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  
+  
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Índice de Contenidos</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#instalaci%c3%b3n">
+            Instalación
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#configuracion-de-compilaci%c3%b3n--basica">
+            Configuracion de compilación basica
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#plugins">
+            Plugins
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+  
+
+  <blockquote>
 <p>Los modulos de Javascript permiten la importación y exportación de código entre diferentes ficheros Javascript. Webpack es una herramienta que  permite compilar módulos de JavaScript. Dada una gran cantidad de archivos, webpack, genera un solo archivo (o algunos archivos) que ejecutan su aplicación web.</p>
 </blockquote>
 <p>En la actualidad, muchos sitios web ya no están escritos sólo HTML simple y un poco de JavaScript opcional. A menudo, están completamente creados por JavaScript. Para conseguirlo, tenemos que agrupar, minificar y transpilar el código en algo que todos los navegadores comprendan (html, css y javascript), que es donde entra Webpack.</p>
@@ -389,7 +466,11 @@ app.append(heading)
 </code></pre>
 <p>Verá nuestro JavaScript inyectado en el DOM, diciendo &ldquo;¡Interesante!&rdquo;. También notará que el archivo del paquete está minimizado.</p>
 
-  </main>
+</main>
+<div id="disqus-container">
+  
+</div>
+
 
           
             <footer role="contentinfo">

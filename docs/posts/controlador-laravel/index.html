@@ -36,6 +36,17 @@
   
     <link rel="stylesheet" href="/css/custom_02.css">
   
+  <style>
+    .intro-and-nav{
+      background-color: #eeeeee;
+
+    }
+    footer{
+      border-top:1px solid black;
+    padding-top: 1em;
+       background-color: #eeeeee;
+    }
+  </style>
 
   
   
@@ -43,7 +54,7 @@
 </head>
 
   <body>
-    <a href="#main">skip to content</a>
+    <a href="#main">Saltar al contenido</a>
     <noscript>
   <style>
     body {
@@ -154,7 +165,7 @@
         <img src="/images/logo.svg" alt="">
       </a>
       <p class="library-desc">
-         Un proyecto de documentación personal creado con Hugo. 
+         Notas, Fragmentos, apuntes, documentación de Tecnología Web. 
       </p>
     </div>
     <nav id="patterns-nav" class="patterns" role="navigation">
@@ -190,7 +201,7 @@
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
-        <span class="text">Docs</span>
+        <span class="text">Techi Blog</span>
       </a>
     </li>
   
@@ -245,33 +256,66 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1>
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      Laravel III Los Controladores
-    </h1>
-    <div class="meta">
-    <small>Fecha Creación: 06-Dec-2020</small> |
-    <small>Última Modificación: 31-Jan-2021</small>
-    <small><strong>Tags: </strong></small>
-    
-    <small class='tags'> 
-<a href="/tags/laravel">laravel</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/php">php</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/frameworks">frameworks</a>
-        </small>
-        
-    </div>
+<main id="main">
+  <h1>
+    <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <use xlink:href="#bookmark"></use>
+    </svg>
+    Laravel III Los Controladores
+  </h1>
 
-    <p>Laravel implementa el patrón de diseño MVC para desarrollar las aplicaciones web.</p>
+  <div class="date">
+    
+    
+    <strong>Fecha de Publicación: </strong>2020-12-06
+    
+    
+    <br>
+    <strong>Última modificación: </strong>2021-01-31
+    
+    
+  </div>
+
+  
+  <div class="tags">
+    <strong>Tags: </strong>
+    <ul aria-label="">
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/laravel/">laravel</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/php/">php</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/frameworks/">frameworks</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  
+  
+
+
+  
+
+  <p>Laravel implementa el patrón de diseño MVC para desarrollar las aplicaciones web.</p>
 <p>Cuando un usuario realiza la petición de un recurso, la aplicación se le asigna a un controlador, que será el responsable  de solicitar a un modelo unos datos
 Una vez que el modelo retorna los datos, el controlador acopla esos datos a una vista
 y se los manda al usuario</p>
@@ -280,7 +324,11 @@ y se los manda al usuario</p>
 <pre><code>php artisan make:controller HomeController
 </code></pre>
 
-  </main>
+</main>
+<div id="disqus-container">
+  
+</div>
+
 
           
             <footer role="contentinfo">

@@ -36,6 +36,17 @@
   
     <link rel="stylesheet" href="/css/custom_02.css">
   
+  <style>
+    .intro-and-nav{
+      background-color: #eeeeee;
+
+    }
+    footer{
+      border-top:1px solid black;
+    padding-top: 1em;
+       background-color: #eeeeee;
+    }
+  </style>
 
   
   
@@ -43,7 +54,7 @@
 </head>
 
   <body>
-    <a href="#main">skip to content</a>
+    <a href="#main">Saltar al contenido</a>
     <noscript>
   <style>
     body {
@@ -154,7 +165,7 @@
         <img src="/images/logo.svg" alt="">
       </a>
       <p class="library-desc">
-         Un proyecto de documentación personal creado con Hugo. 
+         Notas, Fragmentos, apuntes, documentación de Tecnología Web. 
       </p>
     </div>
     <nav id="patterns-nav" class="patterns" role="navigation">
@@ -190,7 +201,7 @@
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
-        <span class="text">Docs</span>
+        <span class="text">Techi Blog</span>
       </a>
     </li>
   
@@ -245,33 +256,93 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1>
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      Instalación de Vuepress y Publicación en Github Pages
-    </h1>
-    <div class="meta">
-    <small>Fecha Creación: 16-Dec-2020</small> |
-    <small>Última Modificación: 31-Jan-2021</small>
-    <small><strong>Tags: </strong></small>
-    
-    <small class='tags'> 
-<a href="/tags/ssg">ssg</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/cms">cms</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/spa">spa</a>
-        </small>
-        
-    </div>
+<main id="main">
+  <h1>
+    <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <use xlink:href="#bookmark"></use>
+    </svg>
+    Instalación de Vuepress y Publicación en Github Pages
+  </h1>
 
-    <h1 id="qué-es-vuepress">¿Qué es Vuepress?</h1>
+  <div class="date">
+    
+    
+    <strong>Fecha de Publicación: </strong>2020-12-16
+    
+    
+    <br>
+    <strong>Última modificación: </strong>2021-01-31
+    
+    
+  </div>
+
+  
+  <div class="tags">
+    <strong>Tags: </strong>
+    <ul aria-label="">
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/ssg/">ssg</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/cms/">cms</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/spa/">spa</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  
+  
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Índice de Contenidos</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#instalar-vuepress-en-windows-10">
+            Instalar vuepress en Windows 10
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#requisitos">
+            Requisitos
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+  
+
+  <h1 id="qué-es-vuepress">¿Qué es Vuepress?</h1>
 <p>VuePress es un generador de sitios estáticos, originalmente pensado para escribir la documentación de los propios proyectos de Vue. Un sitio en VuePress es en realidad una SPA (Single-Page Application) que utiliza Vue, Vue Router y webpack como base.</p>
 <h2 id="instalar-vuepress-en-windows-10">Instalar vuepress en Windows 10</h2>
 <p>Vamos a instalar vuepress en windows 10 y publicarlo como contenido estatico en un repositorio de github y visualizar el contenido estático aprovechandonos de gituhub pages. VuePress es una fantástica herrmienta para crear documentación en línea.</p>
@@ -425,7 +496,11 @@ cd -
 <pre><code>sh deploy.sh
 </code></pre>
 
-  </main>
+</main>
+<div id="disqus-container">
+  
+</div>
+
 
           
             <footer role="contentinfo">

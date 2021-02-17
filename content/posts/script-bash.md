@@ -1,7 +1,6 @@
 ---
 date: "2020-7-05"
 title: "un script de shell con bash (V)"
-cover: "shell-bash.png"
 tags: ['LíneaDeComandos']
 
 ---

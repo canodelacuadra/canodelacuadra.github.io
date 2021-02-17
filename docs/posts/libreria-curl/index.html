@@ -36,6 +36,17 @@
   
     <link rel="stylesheet" href="/css/custom_02.css">
   
+  <style>
+    .intro-and-nav{
+      background-color: #eeeeee;
+
+    }
+    footer{
+      border-top:1px solid black;
+    padding-top: 1em;
+       background-color: #eeeeee;
+    }
+  </style>
 
   
   
@@ -43,7 +54,7 @@
 </head>
 
   <body>
-    <a href="#main">skip to content</a>
+    <a href="#main">Saltar al contenido</a>
     <noscript>
   <style>
     body {
@@ -154,7 +165,7 @@
         <img src="/images/logo.svg" alt="">
       </a>
       <p class="library-desc">
-         Un proyecto de documentación personal creado con Hugo. 
+         Notas, Fragmentos, apuntes, documentación de Tecnología Web. 
       </p>
     </div>
     <nav id="patterns-nav" class="patterns" role="navigation">
@@ -190,7 +201,7 @@
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
-        <span class="text">Docs</span>
+        <span class="text">Techi Blog</span>
       </a>
     </li>
   
@@ -245,33 +256,103 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1>
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      Librería curl
-    </h1>
-    <div class="meta">
-    <small>Fecha Creación: 01-Jan-0001</small> |
-    <small>Última Modificación: 31-Jan-2021</small>
-    <small><strong>Tags: </strong></small>
-    
-    <small class='tags'> 
-<a href="/tags/l%C3%ADneadecomandos">LíneaDeComandos</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/api">api</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/herramientas">herramientas</a>
-        </small>
-        
-    </div>
+<main id="main">
+  <h1>
+    <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <use xlink:href="#bookmark"></use>
+    </svg>
+    Librería curl
+  </h1>
 
-    <p><strong>Curl</strong><br>
+  <div class="date">
+    
+    
+    <strong>Fecha de Publicación: </strong>0001-01-01
+    
+    
+    <br>
+    <strong>Última modificación: </strong>2021-01-31
+    
+    
+  </div>
+
+  
+  <div class="tags">
+    <strong>Tags: </strong>
+    <ul aria-label="">
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/l%C3%ADneadecomandos/">LíneaDeComandos</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/api/">api</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/herramientas/">herramientas</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  
+  
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Índice de Contenidos</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#sintaxis-b%c3%a1sica-del-comando-curl">
+            Sintaxis básica del comando Curl
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#recuperar-un-recurso-o-p%c3%a1gina-web">
+            Recuperar un recurso o página web
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#guardar-datos-a-un-archivo">
+            Guardar datos a un archivo
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+  
+
+  <p><strong>Curl</strong><br>
 Permite realizar peticiones HTTP con el objetivo de transferir información con sintaxis de URL.</p>
 <p>En el contexto de PHP, permite armar un script que literalmente se comporte como un navegador para así realizar una petición a otro servidor remoto.
 Su utilidad es muy similar al objeto XMLHttpRequest de JavaScript en el sentido de comunicarse con un servidor distinto para la obtención de recursos, datos u otra información.</p>
@@ -445,7 +526,11 @@ content-length: 6518
 <p>Podemos leer también
 <a href="https://www.taniarascia.com/making-api-requests-postman-curl/">https://www.taniarascia.com/making-api-requests-postman-curl/</a></p>
 
-  </main>
+</main>
+<div id="disqus-container">
+  
+</div>
+
 
           
             <footer role="contentinfo">

@@ -1,6 +1,6 @@
 ---
 date: "2020-7-04"
-title: "Archivos batch (IV)"
+title: "Archivos bat y  batch (IV)"
 tags: ['LíneaDeComandos']
 ---
 

@@ -36,6 +36,17 @@
   
     <link rel="stylesheet" href="/css/custom_02.css">
   
+  <style>
+    .intro-and-nav{
+      background-color: #eeeeee;
+
+    }
+    footer{
+      border-top:1px solid black;
+    padding-top: 1em;
+       background-color: #eeeeee;
+    }
+  </style>
 
   
   
@@ -43,7 +54,7 @@
 </head>
 
   <body>
-    <a href="#main">skip to content</a>
+    <a href="#main">Saltar al contenido</a>
     <noscript>
   <style>
     body {
@@ -154,7 +165,7 @@
         <img src="/images/logo.svg" alt="">
       </a>
       <p class="library-desc">
-         Un proyecto de documentación personal creado con Hugo. 
+         Notas, Fragmentos, apuntes, documentación de Tecnología Web. 
       </p>
     </div>
     <nav id="patterns-nav" class="patterns" role="navigation">
@@ -190,7 +201,7 @@
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
-        <span class="text">Docs</span>
+        <span class="text">Techi Blog</span>
       </a>
     </li>
   
@@ -245,29 +256,105 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1>
-      <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      Qué es y cómo Instalar  con npm
-    </h1>
-    <div class="meta">
-    <small>Fecha Creación: 01-Jan-0001</small> |
-    <small>Última Modificación: 31-Jan-2021</small>
-    <small><strong>Tags: </strong></small>
-    
-    <small class='tags'> 
-<a href="/tags/node">node</a>
-        </small>
-        
-    <small class='tags'> 
-<a href="/tags/herramientas">herramientas</a>
-        </small>
-        
-    </div>
+<main id="main">
+  <h1>
+    <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+      <use xlink:href="#bookmark"></use>
+    </svg>
+    Qué es y cómo Instalar  con npm
+  </h1>
 
-    <h1 id="iniciar-proyectos-con-npm">Iniciar proyectos con NPM</h1>
+  <div class="date">
+    
+    
+    <strong>Fecha de Publicación: </strong>0001-01-01
+    
+    
+    <br>
+    <strong>Última modificación: </strong>2021-02-03
+    
+    
+  </div>
+
+  
+  <div class="tags">
+    <strong>Tags: </strong>
+    <ul aria-label="">
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/node/">node</a>
+      </li>
+      
+      <li>
+        <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+          <use xlink:href="#tag"></use>
+        </svg>
+        
+        <a href="/tags/herramientas/">herramientas</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  
+  
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Índice de Contenidos</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#qu%c3%a9-es-npm">
+            Qué es NPM
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#instalaci%c3%b3n">
+            Instalación
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#usos-de-npm">
+            Usos de npm
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#instalar-un-paquete">
+            Instalar un paquete
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+  
+
+  <h1 id="iniciar-proyectos-con-npm">Iniciar proyectos con NPM</h1>
 <h2 id="qué-es-npm">Qué es NPM</h2>
 <p>NPM son las siglas de Node Package Manager, es decir, gestor de paquetes de NodeJS, un entorno de ejecución multiplataforma para ejecutar Javascript no sólo en un navegador web (como se concibió originalmente) sino fuera de él, y poder utilizarlo en sistemas de escritorio o servidores web.</p>
 <p>Este gestor de paquetes (muy similar al concepto de apt-get en GNU/Linux), nos permitirá instalar de forma muy sencilla y automática paquetes Javascript (tanto de Node como Javascript para el navegador) y utilizarlo para nuestros fines.</p>
@@ -309,7 +396,11 @@ O desinstalarlo
 npm uninstall bootstrap
 ´´´´</p>
 
-  </main>
+</main>
+<div id="disqus-container">
+  
+</div>
+
 
           
             <footer role="contentinfo">
