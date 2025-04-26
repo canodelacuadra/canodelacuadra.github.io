@@ -1,0 +1,139 @@
+import React, { useState } from "react";
+import ForceGraph2D from 'react-force-graph-2d';
+import "./SkillMap.css"; // Importamos la hoja de estilos
+
+const data = {
+    nodes: [
+        { id: "Jose", group: 0, x: 0, y: 0, fx: 0, fy: 0 },
+        { id: "HTML", group: 1, x: -80, y: -60, fx: -80, fy: -60 },
+        { id: "CSS", group: 1, x: 0, y: -80, fx: 0, fy: -80 },
+        { id: "JavaScript", group: 1, x: 80, y: -60, fx: 80, fy: -60 },
+        { id: "Node.js", group: 2, x: 120, y: 0, fx: 120, fy: 0 },
+        { id: "Express", group: 2, x: 80, y: 60, fx: 80, fy: 60 },
+        { id: "API REST", group: 2, x: 140, y: 80, fx: 140, fy: 80 },
+        { id: "MySQL", group: 3, x: 180, y: 20, fx: 180, fy: 20 },
+        { id: "MongoDB", group: 3, x: 180, y: -40, fx: 180, fy: -40 },
+        { id: "Git", group: 4, x: -80, y: 60, fx: -80, fy: 60 },
+        { id: "GitHub", group: 4, x: -140, y: 80, fx: -140, fy: 80 },
+        { id: "CLI", group: 4, x: -140, y: 20, fx: -140, fy: 20 },
+        { id: "WordPress", group: 5, x: 0, y: 80, fx: 0, fy: 80 }
+    ],
+    links: [
+        { source: "Jose", target: "HTML" },
+        { source: "Jose", target: "CSS" },
+        { source: "Jose", target: "JavaScript" },
+        { source: "JavaScript", target: "Node.js" },
+        { source: "Node.js", target: "Express" },
+        { source: "Express", target: "API REST" },
+        { source: "Express", target: "MySQL" },
+        { source: "Express", target: "MongoDB" },
+        { source: "Jose", target: "Git" },
+        { source: "Git", target: "GitHub" },
+        { source: "Git", target: "CLI" },
+        { source: "Jose", target: "WordPress" }
+    ]
+};
+
+const projectMap = {
+    "Jose": [
+        { name: "Curriculum", web: "https://canodelacuadra.github.io/curriculum" },
+
+    ],
+    "Node.js": [
+        { name: "API de tareas", repo: "https://github.com/tuusuario/api-tareas", web: "https://tuproyecto.com" },
+        { name: "Chat en tiempo real", repo: "https://github.com/tuusuario/chat-realtime" }
+    ],
+    "WordPress": [
+        { name: "CMS personalizado", web: "https://cms-personalizado.com" },
+        { name: "Tienda online", web: "https://mitienda.com" }
+    ],
+    "MongoDB": [
+        { name: "Base de datos de películas", repo: "https://github.com/tuusuario/movies-db" }
+    ],
+    "HTML": [
+        { name: "Landing page", web: "https://landingpage.com" }
+    ],
+    "GitHub": [
+        { name: "Repositorios abiertos", repo: "https://github.com/tuusuario" }
+    ]
+};
+
+
+export default function SkillMap() {
+    const [selectedSkill, setSelectedSkill] = useState(null);
+
+    const handleNodeClick = node => {
+        setSelectedSkill(node.id);
+    };
+
+    return (
+        <div id="skill-map" className="skill-map-container">
+            {/* <h1 className="skill-map-title">WebSkills de Canodelacuadra</h1> */}
+            <p className="skill-map-instruction">
+                Haz clic en las tecnologías para ver proyectos relacionados &nbsp;&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                </svg>
+            </p>
+            <div className="skill-map-graph">
+                <ForceGraph2D
+                    graphData={data}
+                    d3VelocityDecay={0.3}
+                    onEngineStop={() => {
+                        // Detiene cualquier simulación para dejarlo estático
+                        console.log("Motor parado, posiciones fijadas.");
+                    }}
+                    enableZoomPanInteraction={false}
+                    nodeAutoColorBy="group"
+                    onNodeClick={handleNodeClick}
+                    nodeLabel="id"
+                    nodeCanvasObject={(node, ctx, globalScale) => {
+                        const label = node.id;
+                        const fontSize = 14 / globalScale;
+                        ctx.font = `bold ${fontSize}px Sans-Serif`;
+                        ctx.fillStyle = node.color;
+                        ctx.beginPath();
+                        ctx.arc(node.x, node.y, 12, 0, 2 * Math.PI, false); // bolitas más grandes
+                        ctx.fill();
+                        ctx.fillStyle = "#333";
+                        ctx.font = "bold";
+                        ctx.fillText(label, node.x + 12, node.y + 4);
+                    }}
+                    nodePointerAreaPaint={(node, color, ctx) => {
+                        ctx.fillStyle = color;
+                        ctx.beginPath();
+                        ctx.arc(node.x, node.y, 14, 0, 2 * Math.PI, false); // mismo radio que en nodeCanvasObject
+                        ctx.fill();
+                    }}
+                />
+
+            </div>
+
+            {selectedSkill && (
+                <div className="skill-map-projects">
+                    <h2>Proyectos con {selectedSkill}</h2>
+                    <ul>
+                        {projectMap[selectedSkill]?.map((proj, idx) => (
+                            <li key={idx}>
+                                {proj.name}
+                                {" "}
+                                {proj.web && (
+                                    <a href={proj.web} target="_blank" rel="noopener noreferrer">
+                                        ⚓ Web
+                                    </a>
+                                )}
+                                {" "}
+                                {proj.repo && (
+                                    <a href={proj.repo} target="_blank" rel="noopener noreferrer">
+                                        ☁️ Repo
+                                    </a>
+                                )}
+                            </li>
+                        )) || <li>No hay proyectos aún.</li>}
+                    </ul>
+                    <button onClick={() => setSelectedSkill(null)}>Cerrar</button>
+                </div>
+            )}
+        </div>
+    );
+}

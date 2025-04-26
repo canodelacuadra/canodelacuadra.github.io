@@ -1,0 +1,110 @@
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 40px 40px;
+    }
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-color: #0d0d0d;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path fill="none" stroke="%23aaaaaa22" stroke-width="1" d="M 60 0 L 0 0 0 60"/></svg>');
+    background-size: 60px 60px;
+    color: #fff;
+    /* texto claro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+    animation: moveBackground 60s linear infinite;
+}
+
+.hero-content {
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.tagcloud-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    color: #FFEB3B;
+    font-size: 150%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    /* para que no interfiera con el scroll o clicks */
+}
+
+.tagcloud-container>.tagcloud {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+}
+
+.hero-content button {
+    background-color: #00bcd4;
+    /* un color brillante tipo cian (puedes cambiarlo por el color de tus nodos) */
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #0097a7;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    background: #00bcd4;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    right: 8%;
+    width: 30px;
+    height: 30px;
+    background: #00bcd4;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.hero-content figure {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+
+
+}

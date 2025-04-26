@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "particular";
+    src: url("./fonts/CalSans-Regular.ttf");
+}
+
+body {
+    font-family: "particular",
+        'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+
+}
+
+body {
+    background-color: #0d0d0d;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path fill="none" stroke="%23aaaaaa22" stroke-width="1" d="M 60 0 L 0 0 0 60"/></svg>');
+    background-size: 60px 60px;
+    color: #fff;
+    /* texto claro */
+}
