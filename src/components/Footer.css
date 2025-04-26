@@ -1,0 +1,29 @@
+.footer {
+    background-color: #0d0d0d;
+    /* mismo tono oscuro */
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #ccc;
+}
+
+.footer .social-icons {
+    margin-bottom: 1rem;
+}
+
+.footer .social-icons a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #0097A7;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #00E5FF;
+    /* un poquito más brillante al pasar el ratón */
+    transform: scale(1.2);
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: #666;
+}

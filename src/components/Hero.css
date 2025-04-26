@@ -51,6 +51,10 @@
     pointer-events: none;
     /* para que no interfiera con el scroll o clicks */
 }
+.tagcloud-container>.tagcloud:first-child {
+  
+    color: #b5a300;
+}
 
 .tagcloud-container>.tagcloud {
     position: absolute !important;

@@ -4,8 +4,8 @@ import retrato from "../assets/canodelacuadra.jpeg"
 import './Hero.css';
 
 const skills = [
-    "HTML", "CSS", "JavaScript", "React", "Node.js", "Express",
-    "MongoDB", "MySQL", "Git", "GitHub", "WordPress", "API REST", "CLI"
+    "HTML", "CSS", "Bootstrap", "JavaScript", "React", "PHP", "Node.js", "Express",
+    "MongoDB", "MySQL", "Git", "GitHub", "WordPress", "API REST", "CLI", "React", "Vite"
 ];
 
 export default function Hero() {
@@ -37,7 +37,9 @@ export default function Hero() {
 
                 <h1>@canodelacuadra</h1>
                 <p>Bienvenido a mi Porfolio</p>
-                <button onClick={handleScroll}>Descubre mi   Skills Map</button>
+                <button onClick={handleScroll}>
+                    &#9803; Echa un vistazo a  mi   SkillsMap
+                </button>
             </div>
             <div className="tagcloud-container"></div>
         </section>
