@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import TagCloud from "TagCloud";
-import retrato from "../assets/canodelacuadra.jpeg"
+import Avatar from './Avatar';
 import './Hero.css';
 
 const skills = [
@@ -28,14 +28,13 @@ export default function Hero() {
     return (
         <section className="hero-section">
             <div className="hero-content">
-                <figure>
-                    <img
-                        width="150"
-                        height="150"
-                        src={retrato} />
-                </figure>
 
-                <h1>@canodelacuadra</h1>
+
+
+
+                <h1>
+                    <Avatar />
+                </h1>
                 <p>Bienvenido a mi Porfolio</p>
                 <button onClick={handleScroll}>
                     &#9803; Echa un vistazo a  mi   SkillsMap

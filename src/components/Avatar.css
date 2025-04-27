@@ -1,0 +1,32 @@
+.avatar {
+    font-family: 'Fira Code', monospace;
+    font-size: 2rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    text-shadow: 0 0 5px #0097A7;
+}
+
+.brace {
+    color: #00e5ff;
+    font-size: 2.5rem;
+}
+
+.name {
+    color: #ffffff;
+}
+
+.avatar:hover {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #0097A7;
+    }
+
+    to {
+        text-shadow: 0 0 20px #dbf6f9;
+    }
+}
